@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\DiscountBenefit $discountBenefit
- * @property \EbaySdk\Marketing\Types\DiscountSpecification $discountSpecification
+ * @property \EbaySdk\Api\Marketing\Types\DiscountBenefit $discountBenefit
+ * @property \EbaySdk\Api\Marketing\Types\DiscountSpecification $discountSpecification
  * @property integer $ruleOrder
  */
 class DiscountRule extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -20,13 +20,13 @@ class DiscountRule extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'discountBenefit' => [
-            'type' => 'EbaySdk\Marketing\Types\DiscountBenefit',
+            'type' => 'EbaySdk\Api\Marketing\Types\DiscountBenefit',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountBenefit'
         ],
         'discountSpecification' => [
-            'type' => 'EbaySdk\Marketing\Types\DiscountSpecification',
+            'type' => 'EbaySdk\Api\Marketing\Types\DiscountSpecification',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountSpecification'

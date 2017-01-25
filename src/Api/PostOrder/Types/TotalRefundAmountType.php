@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Amount $actualRefundAmount
- * @property \EbaySdk\PostOrder\Types\Amount $estimatedRefundAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $actualRefundAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $estimatedRefundAmount
  */
 class TotalRefundAmountType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class TotalRefundAmountType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'actualRefundAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualRefundAmount'
         ],
         'estimatedRefundAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimatedRefundAmount'

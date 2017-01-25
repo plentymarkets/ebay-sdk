@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\Amount $amount
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $amount
  */
 class Tax extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class Tax extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'amount' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'

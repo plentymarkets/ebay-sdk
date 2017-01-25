@@ -9,18 +9,18 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\CategoryType[] $categoryTypes
+ * @property \EbaySdk\Api\Account\Types\CategoryType[] $categoryTypes
  * @property string $description
  * @property boolean $extendedHolidayReturnsOffered
- * @property \EbaySdk\Account\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\Account\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $name
- * @property \EbaySdk\Account\Enums\RefundMethodEnum $refundMethod
+ * @property \EbaySdk\Api\Account\Enums\RefundMethodEnum $refundMethod
  * @property string $restockingFeePercentage
  * @property string $returnInstructions
- * @property \EbaySdk\Account\Enums\ReturnMethodEnum $returnMethod
- * @property \EbaySdk\Account\Types\TimeDuration $returnPeriod
+ * @property \EbaySdk\Api\Account\Enums\ReturnMethodEnum $returnMethod
+ * @property \EbaySdk\Api\Account\Types\TimeDuration $returnPeriod
  * @property boolean $returnsAccepted
- * @property \EbaySdk\Account\Enums\ReturnShippingCostPayerEnum $returnShippingCostPayer
+ * @property \EbaySdk\Api\Account\Enums\ReturnShippingCostPayerEnum $returnShippingCostPayer
  */
 class ReturnPolicyRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -29,7 +29,7 @@ class ReturnPolicyRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'categoryTypes' => [
-            'type' => 'EbaySdk\Account\Types\CategoryType',
+            'type' => 'EbaySdk\Api\Account\Types\CategoryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'categoryTypes'
@@ -83,7 +83,7 @@ class ReturnPolicyRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'returnMethod'
         ],
         'returnPeriod' => [
-            'type' => 'EbaySdk\Account\Types\TimeDuration',
+            'type' => 'EbaySdk\Api\Account\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPeriod'

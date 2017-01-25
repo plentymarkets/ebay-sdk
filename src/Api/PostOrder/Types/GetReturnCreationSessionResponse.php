@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ReturnRequestType $returnRequest
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnRequestType $returnRequest
  */
 class GetReturnCreationSessionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class GetReturnCreationSessionResponse extends \Plenty\Modules\Market\Ebay\Api\T
      */
     private static $propertyTypes = [
         'returnRequest' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnRequestType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnRequestType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnRequest'

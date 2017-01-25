@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Enums\AvailabilityTypeEnum $availabilityType
- * @property \EbaySdk\Inventory\Types\TimeDuration $fulfillmentTime
+ * @property \EbaySdk\Api\Inventory\Enums\AvailabilityTypeEnum $availabilityType
+ * @property \EbaySdk\Api\Inventory\Types\TimeDuration $fulfillmentTime
  * @property string $merchantLocationKey
  * @property integer $quantity
  */
@@ -27,7 +27,7 @@ class PickupAtLocationAvailability extends \Plenty\Modules\Market\Ebay\Api\Types
             'elementName' => 'availabilityType'
         ],
         'fulfillmentTime' => [
-            'type' => 'EbaySdk\Inventory\Types\TimeDuration',
+            'type' => 'EbaySdk\Api\Inventory\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fulfillmentTime'

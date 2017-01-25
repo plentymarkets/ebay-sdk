@@ -14,9 +14,11 @@ class EbaySdkServiceProvider extends ServiceProvider
 	 */
 	public function register()
 	{
-		$this->getApplication()->register(EbaySdkRouteServiceProvider::class);
 	}
 
+	/**
+	 * @return void
+	 */
 	public function boot()
 	{
 	}

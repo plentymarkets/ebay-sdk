@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Account\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Account\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Account\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Account\Types\ErrorDetailV3[] $warnings
  */
 class OptOutOfProgramRestResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,13 +25,13 @@ class OptOutOfProgramRestResponse extends \Plenty\Modules\Market\Ebay\Api\Types\
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Account\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Account\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Account\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Account\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

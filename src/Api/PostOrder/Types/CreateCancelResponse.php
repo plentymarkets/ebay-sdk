@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $cancelId
- * @property \EbaySdk\PostOrder\Types\OrderEligibilityResult $orderEligibilityResult
+ * @property \EbaySdk\Api\PostOrder\Types\OrderEligibilityResult $orderEligibilityResult
  */
 class CreateCancelResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class CreateCancelResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'cancelId'
         ],
         'orderEligibilityResult' => [
-            'type' => 'EbaySdk\PostOrder\Types\OrderEligibilityResult',
+            'type' => 'EbaySdk\Api\PostOrder\Types\OrderEligibilityResult',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'orderEligibilityResult'

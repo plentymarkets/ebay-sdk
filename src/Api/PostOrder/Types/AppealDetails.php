@@ -10,10 +10,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $appealCloseReasonEnum
- * @property \EbaySdk\PostOrder\Types\DateTime $appealDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $appealDate
  * @property string $appealReasonCode
  * @property string $appealStatus
- * @property \EbaySdk\PostOrder\Enums\AppealStatusEnum $appealStatusEnum
+ * @property \EbaySdk\Api\PostOrder\Enums\AppealStatusEnum $appealStatusEnum
  * @property boolean $eligibleForAppeal
  */
 class AppealDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -29,7 +29,7 @@ class AppealDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'appealCloseReasonEnum'
         ],
         'appealDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'appealDate'

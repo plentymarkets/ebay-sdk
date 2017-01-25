@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Analytics\Types;
 
 /**
  *
- * @property \EbaySdk\Analytics\Enums\CycleTypeEnum $cycleType
+ * @property \EbaySdk\Api\Analytics\Enums\CycleTypeEnum $cycleType
  * @property string $evaluationDate
  * @property string $evaluationMonth
  */

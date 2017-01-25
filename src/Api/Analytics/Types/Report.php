@@ -10,11 +10,11 @@ namespace EbaySdk\Api\Analytics\Types;
 /**
  *
  * @property string $endDate
- * @property \EbaySdk\Analytics\Types\Header $header
+ * @property \EbaySdk\Api\Analytics\Types\Header $header
  * @property string $lastUpdatedDate
- * @property \EbaySdk\Analytics\Types\Record[] $records
+ * @property \EbaySdk\Api\Analytics\Types\Record[] $records
  * @property string $startDate
- * @property \EbaySdk\Analytics\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Analytics\Types\ErrorDetailV3[] $warnings
  */
 class Report extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -29,7 +29,7 @@ class Report extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'endDate'
         ],
         'header' => [
-            'type' => 'EbaySdk\Analytics\Types\Header',
+            'type' => 'EbaySdk\Api\Analytics\Types\Header',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'header'
@@ -41,7 +41,7 @@ class Report extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'lastUpdatedDate'
         ],
         'records' => [
-            'type' => 'EbaySdk\Analytics\Types\Record',
+            'type' => 'EbaySdk\Api\Analytics\Types\Record',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'records'
@@ -53,7 +53,7 @@ class Report extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'startDate'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Analytics\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Analytics\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

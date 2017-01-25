@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $draftId
- * @property \EbaySdk\PostOrder\Types\ReturnRequestType $returnRequest
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnRequestType $returnRequest
  */
 class CreateReturnRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class CreateReturnRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'draftId'
         ],
         'returnRequest' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnRequestType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnRequestType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnRequest'

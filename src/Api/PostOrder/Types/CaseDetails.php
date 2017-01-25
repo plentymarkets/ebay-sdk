@@ -11,15 +11,15 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $buyerFinalAcceptResolution
  * @property string $buyerInitExpectResolution
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
- * @property \EbaySdk\PostOrder\Types\DateTime $escalationDate
- * @property \EbaySdk\PostOrder\Types\DateTime $expirationDate
- * @property \EbaySdk\PostOrder\Types\DateTime $lastBuyerRespDate
- * @property \EbaySdk\PostOrder\Types\DateTime $lastSellerRespDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $escalationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $expirationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $lastBuyerRespDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $lastSellerRespDate
  * @property boolean $paypalPaid
- * @property \EbaySdk\PostOrder\Types\RefundAmounts $refundAmounts
- * @property \EbaySdk\PostOrder\Types\DateTime $refundDeadlineDate
- * @property \EbaySdk\PostOrder\Types\RefundType $refundType
+ * @property \EbaySdk\Api\PostOrder\Types\RefundAmounts $refundAmounts
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $refundDeadlineDate
+ * @property \EbaySdk\Api\PostOrder\Types\RefundType $refundType
  */
 class CaseDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -40,31 +40,31 @@ class CaseDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyerInitExpectResolution'
         ],
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
         ],
         'escalationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'escalationDate'
         ],
         'expirationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'expirationDate'
         ],
         'lastBuyerRespDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lastBuyerRespDate'
         ],
         'lastSellerRespDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lastSellerRespDate'
@@ -76,19 +76,19 @@ class CaseDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'paypalPaid'
         ],
         'refundAmounts' => [
-            'type' => 'EbaySdk\PostOrder\Types\RefundAmounts',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RefundAmounts',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundAmounts'
         ],
         'refundDeadlineDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundDeadlineDate'
         ],
         'refundType' => [
-            'type' => 'EbaySdk\PostOrder\Types\RefundType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RefundType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundType'

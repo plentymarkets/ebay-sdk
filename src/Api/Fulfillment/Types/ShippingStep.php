@@ -11,7 +11,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  *
  * @property string $shippingCarrierCode
  * @property string $shippingServiceCode
- * @property \EbaySdk\Fulfillment\Types\Contact $shipTo
+ * @property \EbaySdk\Api\Fulfillment\Types\Contact $shipTo
  */
 class ShippingStep extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -32,7 +32,7 @@ class ShippingStep extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'shippingServiceCode'
         ],
         'shipTo' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Contact',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Contact',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipTo'

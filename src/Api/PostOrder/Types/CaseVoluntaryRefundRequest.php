@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Text $comments
+ * @property \EbaySdk\Api\PostOrder\Types\Text $comments
  */
 class CaseVoluntaryRefundRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class CaseVoluntaryRefundRequest extends \Plenty\Modules\Market\Ebay\Api\Types\B
      */
     private static $propertyTypes = [
         'comments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'comments'

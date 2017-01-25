@@ -9,17 +9,17 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\Amount $additionalShippingCost
+ * @property \EbaySdk\Api\Account\Types\Amount $additionalShippingCost
  * @property boolean $buyerResponsibleForPickup
  * @property boolean $buyerResponsibleForShipping
- * @property \EbaySdk\Account\Types\Amount $cashOnDeliveryFee
+ * @property \EbaySdk\Api\Account\Types\Amount $cashOnDeliveryFee
  * @property boolean $freeShipping
  * @property string $shippingCarrierCode
- * @property \EbaySdk\Account\Types\Amount $shippingCost
+ * @property \EbaySdk\Api\Account\Types\Amount $shippingCost
  * @property string $shippingServiceCode
- * @property \EbaySdk\Account\Types\RegionSet $shipToLocations
+ * @property \EbaySdk\Api\Account\Types\RegionSet $shipToLocations
  * @property integer $sortOrder
- * @property \EbaySdk\Account\Types\Amount $surcharge
+ * @property \EbaySdk\Api\Account\Types\Amount $surcharge
  */
 class ShippingService extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -28,7 +28,7 @@ class ShippingService extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'additionalShippingCost' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'additionalShippingCost'
@@ -46,7 +46,7 @@ class ShippingService extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyerResponsibleForShipping'
         ],
         'cashOnDeliveryFee' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cashOnDeliveryFee'
@@ -64,7 +64,7 @@ class ShippingService extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'shippingCarrierCode'
         ],
         'shippingCost' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'
@@ -76,7 +76,7 @@ class ShippingService extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'shippingServiceCode'
         ],
         'shipToLocations' => [
-            'type' => 'EbaySdk\Account\Types\RegionSet',
+            'type' => 'EbaySdk\Api\Account\Types\RegionSet',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipToLocations'
@@ -88,7 +88,7 @@ class ShippingService extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'sortOrder'
         ],
         'surcharge' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'surcharge'

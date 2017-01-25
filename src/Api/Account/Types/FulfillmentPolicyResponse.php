@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\FulfillmentPolicy[] $fulfillmentPolicies
+ * @property \EbaySdk\Api\Account\Types\FulfillmentPolicy[] $fulfillmentPolicies
  * @property string $href
  * @property integer $limit
  * @property string $next
@@ -24,7 +24,7 @@ class FulfillmentPolicyResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
      */
     private static $propertyTypes = [
         'fulfillmentPolicies' => [
-            'type' => 'EbaySdk\Account\Types\FulfillmentPolicy',
+            'type' => 'EbaySdk\Api\Account\Types\FulfillmentPolicy',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'fulfillmentPolicies'

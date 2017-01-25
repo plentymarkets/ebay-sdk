@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ListDataType[] $all
+ * @property \EbaySdk\Api\PostOrder\Types\ListDataType[] $all
  * @property boolean $isMultiple
- * @property \EbaySdk\PostOrder\Types\ListDataType[] $selected
+ * @property \EbaySdk\Api\PostOrder\Types\ListDataType[] $selected
  */
 class ConditionListDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,7 +20,7 @@ class ConditionListDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'all' => [
-            'type' => 'EbaySdk\PostOrder\Types\ListDataType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ListDataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'all'
@@ -32,7 +32,7 @@ class ConditionListDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'isMultiple'
         ],
         'selected' => [
-            'type' => 'EbaySdk\PostOrder\Types\ListDataType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ListDataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'selected'

@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\Amount $forEachAmount
+ * @property \EbaySdk\Api\Marketing\Types\Amount $forEachAmount
  * @property integer $forEachQuantity
- * @property \EbaySdk\Marketing\Types\Amount $minAmount
+ * @property \EbaySdk\Api\Marketing\Types\Amount $minAmount
  * @property integer $minQuantity
  * @property integer $numberOfDiscountedItems
  */
@@ -22,7 +22,7 @@ class DiscountSpecification extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'forEachAmount' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'forEachAmount'
@@ -34,7 +34,7 @@ class DiscountSpecification extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'forEachQuantity'
         ],
         'minAmount' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minAmount'

@@ -12,7 +12,7 @@ namespace EbaySdk\Api\Marketing\Types;
  * @property string $adId
  * @property string $bidPercentage
  * @property string $inventoryReferenceId
- * @property \EbaySdk\Marketing\Enums\InventoryReferenceTypeEnum $inventoryReferenceType
+ * @property \EbaySdk\Api\Marketing\Enums\InventoryReferenceTypeEnum $inventoryReferenceType
  * @property string $listingId
  */
 class Ad extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

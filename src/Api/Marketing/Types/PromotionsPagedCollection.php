@@ -14,7 +14,7 @@ namespace EbaySdk\Api\Marketing\Types;
  * @property string $next
  * @property integer $offset
  * @property string $prev
- * @property \EbaySdk\Marketing\Types\PromotionDetail[] $promotions
+ * @property \EbaySdk\Api\Marketing\Types\PromotionDetail[] $promotions
  * @property integer $total
  */
 class PromotionsPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -54,7 +54,7 @@ class PromotionsPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
             'elementName' => 'prev'
         ],
         'promotions' => [
-            'type' => 'EbaySdk\Marketing\Types\PromotionDetail',
+            'type' => 'EbaySdk\Api\Marketing\Types\PromotionDetail',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'promotions'

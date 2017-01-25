@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Enums\CountryCodeEnum $countryCode
+ * @property \EbaySdk\Api\Account\Enums\CountryCodeEnum $countryCode
  * @property string $salesTaxJurisdictionId
  * @property string $salesTaxPercentage
  * @property boolean $shippingAndHandlingTaxed

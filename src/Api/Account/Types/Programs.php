@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\Program[] $programs
+ * @property \EbaySdk\Api\Account\Types\Program[] $programs
  */
 class Programs extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class Programs extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'programs' => [
-            'type' => 'EbaySdk\Account\Types\Program',
+            'type' => 'EbaySdk\Api\Account\Types\Program',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'programs'

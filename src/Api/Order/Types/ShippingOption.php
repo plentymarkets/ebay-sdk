@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\Amount $baseDeliveryCost
- * @property \EbaySdk\Order\Types\Amount $deliveryDiscount
+ * @property \EbaySdk\Api\Order\Types\Amount $baseDeliveryCost
+ * @property \EbaySdk\Api\Order\Types\Amount $deliveryDiscount
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
  * @property boolean $selected
@@ -25,13 +25,13 @@ class ShippingOption extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'baseDeliveryCost' => [
-            'type' => 'EbaySdk\Order\Types\Amount',
+            'type' => 'EbaySdk\Api\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'baseDeliveryCost'
         ],
         'deliveryDiscount' => [
-            'type' => 'EbaySdk\Order\Types\Amount',
+            'type' => 'EbaySdk\Api\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deliveryDiscount'

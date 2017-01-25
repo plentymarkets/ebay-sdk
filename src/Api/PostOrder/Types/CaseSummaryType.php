@@ -11,12 +11,12 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $buyer
  * @property integer $caseId
- * @property \EbaySdk\PostOrder\Types\Rsp:CaseStatusEnum $caseStatusEnum
- * @property \EbaySdk\PostOrder\Types\Amount $claimAmount
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Types\Rsp:CaseStatusEnum $caseStatusEnum
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $claimAmount
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
  * @property integer $itemId
- * @property \EbaySdk\PostOrder\Types\DateTime $lastModifiedDate
- * @property \EbaySdk\PostOrder\Types\DateTime $respondByDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $lastModifiedDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $respondByDate
  * @property string $seller
  * @property integer $transactionId
  */
@@ -39,19 +39,19 @@ class CaseSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'caseId'
         ],
         'caseStatusEnum' => [
-            'type' => 'EbaySdk\PostOrder\Types\Rsp:CaseStatusEnum',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Rsp:CaseStatusEnum',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseStatusEnum'
         ],
         'claimAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'claimAmount'
         ],
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
@@ -63,13 +63,13 @@ class CaseSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemId'
         ],
         'lastModifiedDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lastModifiedDate'
         ],
         'respondByDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'respondByDate'

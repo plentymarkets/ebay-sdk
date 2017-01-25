@@ -10,13 +10,13 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $buyer
- * @property \EbaySdk\PostOrder\Types\Amount $claimAmount
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $claimAmount
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
  * @property integer $inquiryId
- * @property \EbaySdk\PostOrder\Enums\InquiryStatusEnum $inquiryStatusEnum
+ * @property \EbaySdk\Api\PostOrder\Enums\InquiryStatusEnum $inquiryStatusEnum
  * @property integer $itemId
- * @property \EbaySdk\PostOrder\Types\DateTime $lastModifiedDate
- * @property \EbaySdk\PostOrder\Types\DateTime $respondByDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $lastModifiedDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $respondByDate
  * @property string $seller
  * @property integer $transactionId
  */
@@ -33,13 +33,13 @@ class InquirySummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyer'
         ],
         'claimAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'claimAmount'
         ],
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
@@ -63,13 +63,13 @@ class InquirySummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemId'
         ],
         'lastModifiedDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lastModifiedDate'
         ],
         'respondByDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'respondByDate'

@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CarrierShippingCostInfoType[] $carriers
+ * @property \EbaySdk\Api\PostOrder\Types\CarrierShippingCostInfoType[] $carriers
  * @property string $returnShipmentPayer
  */
 class EstimatedShippingInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -19,7 +19,7 @@ class EstimatedShippingInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
      */
     private static $propertyTypes = [
         'carriers' => [
-            'type' => 'EbaySdk\PostOrder\Types\CarrierShippingCostInfoType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CarrierShippingCostInfoType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'carriers'

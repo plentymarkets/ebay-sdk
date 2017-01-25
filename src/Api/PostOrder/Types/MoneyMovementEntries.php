@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\MoneyMovementEntry[] $moneyMovementEntryList
+ * @property \EbaySdk\Api\PostOrder\Types\MoneyMovementEntry[] $moneyMovementEntryList
  */
 class MoneyMovementEntries extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class MoneyMovementEntries extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'moneyMovementEntryList' => [
-            'type' => 'EbaySdk\PostOrder\Types\MoneyMovementEntry',
+            'type' => 'EbaySdk\Api\PostOrder\Types\MoneyMovementEntry',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'moneyMovementEntryList'

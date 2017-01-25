@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleActionDetailType $actionDetail
- * @property \EbaySdk\PostOrder\Types\RuleConditionDetailType[] $condition
- * @property \EbaySdk\PostOrder\Types\RuleSummaryType $ruleSummary
+ * @property \EbaySdk\Api\PostOrder\Types\RuleActionDetailType $actionDetail
+ * @property \EbaySdk\Api\PostOrder\Types\RuleConditionDetailType[] $condition
+ * @property \EbaySdk\Api\PostOrder\Types\RuleSummaryType $ruleSummary
  */
 class RuleDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,19 +20,19 @@ class RuleDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'actionDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleActionDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleActionDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actionDetail'
         ],
         'condition' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleConditionDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleConditionDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'condition'
         ],
         'ruleSummary' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleSummaryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleSummaryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ruleSummary'

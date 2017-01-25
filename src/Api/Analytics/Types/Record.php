@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Analytics\Types;
 
 /**
  *
- * @property \EbaySdk\Analytics\Types\Value[] $dimensionValues
- * @property \EbaySdk\Analytics\Types\Value[] $metricValues
+ * @property \EbaySdk\Api\Analytics\Types\Value[] $dimensionValues
+ * @property \EbaySdk\Api\Analytics\Types\Value[] $metricValues
  */
 class Record extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class Record extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'dimensionValues' => [
-            'type' => 'EbaySdk\Analytics\Types\Value',
+            'type' => 'EbaySdk\Api\Analytics\Types\Value',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'dimensionValues'
         ],
         'metricValues' => [
-            'type' => 'EbaySdk\Analytics\Types\Value',
+            'type' => 'EbaySdk\Api\Analytics\Types\Value',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'metricValues'

@@ -9,21 +9,21 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ReturnAddressType $buyerAddress
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnAddressType $buyerAddress
  * @property string $buyerLoginName
- * @property \EbaySdk\PostOrder\Types\ReturnCloseInfoType $closeInfo
- * @property \EbaySdk\PostOrder\Types\DispositionRuleDetailType[] $dispositionRuleDetail
- * @property \EbaySdk\PostOrder\Types\ReturnFileType[] $files
- * @property \EbaySdk\PostOrder\Types\ReturnHoldInfoType $holdInfo
- * @property \EbaySdk\PostOrder\Types\ItemDetailType $itemDetail
- * @property \EbaySdk\PostOrder\Enums\MarketplaceIdEnum $marketplaceId
- * @property \EbaySdk\PostOrder\Types\MoneyMovementDetailType[] $moneyMovementInfo
- * @property \EbaySdk\PostOrder\Types\RefundInfoType $refundInfo
- * @property \EbaySdk\PostOrder\Types\ShipmentType $replacementShipmentInfo
- * @property \EbaySdk\PostOrder\Types\ReturnResponseHistoryType[] $responseHistory
- * @property \EbaySdk\PostOrder\Types\ShipmentType $returnShipmentInfo
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnCloseInfoType $closeInfo
+ * @property \EbaySdk\Api\PostOrder\Types\DispositionRuleDetailType[] $dispositionRuleDetail
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnFileType[] $files
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnHoldInfoType $holdInfo
+ * @property \EbaySdk\Api\PostOrder\Types\ItemDetailType $itemDetail
+ * @property \EbaySdk\Api\PostOrder\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\PostOrder\Types\MoneyMovementDetailType[] $moneyMovementInfo
+ * @property \EbaySdk\Api\PostOrder\Types\RefundInfoType $refundInfo
+ * @property \EbaySdk\Api\PostOrder\Types\ShipmentType $replacementShipmentInfo
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnResponseHistoryType[] $responseHistory
+ * @property \EbaySdk\Api\PostOrder\Types\ShipmentType $returnShipmentInfo
  * @property string $RMANumber
- * @property \EbaySdk\PostOrder\Types\ReturnAddressType $sellerAddress
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnAddressType $sellerAddress
  * @property string $sellerLoginName
  */
 class ReturnDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -33,7 +33,7 @@ class ReturnDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'buyerAddress' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnAddressType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnAddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerAddress'
@@ -45,31 +45,31 @@ class ReturnDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyerLoginName'
         ],
         'closeInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnCloseInfoType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnCloseInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'closeInfo'
         ],
         'dispositionRuleDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\DispositionRuleDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DispositionRuleDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'dispositionRuleDetail'
         ],
         'files' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnFileType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnFileType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'files'
         ],
         'holdInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnHoldInfoType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnHoldInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'holdInfo'
         ],
         'itemDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\ItemDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ItemDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemDetail'
@@ -81,31 +81,31 @@ class ReturnDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'marketplaceId'
         ],
         'moneyMovementInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\MoneyMovementDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\MoneyMovementDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'moneyMovementInfo'
         ],
         'refundInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\RefundInfoType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RefundInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundInfo'
         ],
         'replacementShipmentInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\ShipmentType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ShipmentType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'replacementShipmentInfo'
         ],
         'responseHistory' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnResponseHistoryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnResponseHistoryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'responseHistory'
         ],
         'returnShipmentInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\ShipmentType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ShipmentType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnShipmentInfo'
@@ -117,7 +117,7 @@ class ReturnDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'RMANumber'
         ],
         'sellerAddress' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnAddressType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnAddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerAddress'

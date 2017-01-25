@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\OfferKeyWithId[] $offers
+ * @property \EbaySdk\Api\Inventory\Types\OfferKeyWithId[] $offers
  */
 class OfferKeysWithId extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class OfferKeysWithId extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'offers' => [
-            'type' => 'EbaySdk\Inventory\Types\OfferKeyWithId',
+            'type' => 'EbaySdk\Api\Inventory\Types\OfferKeyWithId',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'offers'

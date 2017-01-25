@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Account\Types;
 /**
  *
  * @property boolean $lifetime
- * @property \EbaySdk\Account\Types\TimeDuration $timeDuration
+ * @property \EbaySdk\Api\Account\Types\TimeDuration $timeDuration
  */
 class LookbackPeriod extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class LookbackPeriod extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'lifetime'
         ],
         'timeDuration' => [
-            'type' => 'EbaySdk\Account\Types\TimeDuration',
+            'type' => 'EbaySdk\Api\Account\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'timeDuration'

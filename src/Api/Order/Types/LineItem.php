@@ -9,15 +9,15 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\Amount $baseUnitPrice
- * @property \EbaySdk\Order\Types\Image $image
+ * @property \EbaySdk\Api\Order\Types\Amount $baseUnitPrice
+ * @property \EbaySdk\Api\Order\Types\Image $image
  * @property string $itemId
  * @property string $lineItemId
- * @property \EbaySdk\Order\Types\Amount $netPrice
- * @property \EbaySdk\Order\Types\Promotion[] $promotions
+ * @property \EbaySdk\Api\Order\Types\Amount $netPrice
+ * @property \EbaySdk\Api\Order\Types\Promotion[] $promotions
  * @property integer $quantity
- * @property \EbaySdk\Order\Types\Seller $seller
- * @property \EbaySdk\Order\Types\ShippingOption[] $shippingOptions
+ * @property \EbaySdk\Api\Order\Types\Seller $seller
+ * @property \EbaySdk\Api\Order\Types\ShippingOption[] $shippingOptions
  * @property string $shortDescription
  * @property string $title
  */
@@ -28,13 +28,13 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'baseUnitPrice' => [
-            'type' => 'EbaySdk\Order\Types\Amount',
+            'type' => 'EbaySdk\Api\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'baseUnitPrice'
         ],
         'image' => [
-            'type' => 'EbaySdk\Order\Types\Image',
+            'type' => 'EbaySdk\Api\Order\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'image'
@@ -52,13 +52,13 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'lineItemId'
         ],
         'netPrice' => [
-            'type' => 'EbaySdk\Order\Types\Amount',
+            'type' => 'EbaySdk\Api\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'netPrice'
         ],
         'promotions' => [
-            'type' => 'EbaySdk\Order\Types\Promotion',
+            'type' => 'EbaySdk\Api\Order\Types\Promotion',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'promotions'
@@ -70,13 +70,13 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'quantity'
         ],
         'seller' => [
-            'type' => 'EbaySdk\Order\Types\Seller',
+            'type' => 'EbaySdk\Api\Order\Types\Seller',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'seller'
         ],
         'shippingOptions' => [
-            'type' => 'EbaySdk\Order\Types\ShippingOption',
+            'type' => 'EbaySdk\Api\Order\Types\ShippingOption',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingOptions'

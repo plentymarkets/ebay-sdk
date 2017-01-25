@@ -10,10 +10,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $action
- * @property \EbaySdk\PostOrder\Enums\UserPartyEnum $actor
- * @property \EbaySdk\PostOrder\Types\DateTime $date
+ * @property \EbaySdk\Api\PostOrder\Enums\UserPartyEnum $actor
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $date
  * @property string $description
- * @property \EbaySdk\PostOrder\Types\MoneyMovementEntries $moneyMovement
+ * @property \EbaySdk\Api\PostOrder\Types\MoneyMovementEntries $moneyMovement
  */
 class ClaimHistoryEventModel extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -34,7 +34,7 @@ class ClaimHistoryEventModel extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'actor'
         ],
         'date' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'date'
@@ -46,7 +46,7 @@ class ClaimHistoryEventModel extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'description'
         ],
         'moneyMovement' => [
-            'type' => 'EbaySdk\PostOrder\Types\MoneyMovementEntries',
+            'type' => 'EbaySdk\Api\PostOrder\Types\MoneyMovementEntries',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'moneyMovement'

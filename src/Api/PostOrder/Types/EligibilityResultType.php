@@ -10,11 +10,11 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $caseId
- * @property \EbaySdk\PostOrder\Types\ReturnEligibilityErrorDetailType[] $eligibilityErrorDetail
- * @property \EbaySdk\PostOrder\Types\StatusType $eligibilityStatus
- * @property \EbaySdk\PostOrder\Types\DateTime $eligibleStartDate
- * @property \EbaySdk\PostOrder\Types\DateTime $returnCreationDate
- * @property \EbaySdk\PostOrder\Types\DateTime $returnDeadline
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnEligibilityErrorDetailType[] $eligibilityErrorDetail
+ * @property \EbaySdk\Api\PostOrder\Types\StatusType $eligibilityStatus
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $eligibleStartDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $returnCreationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $returnDeadline
  * @property string $returnId
  */
 class EligibilityResultType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -30,31 +30,31 @@ class EligibilityResultType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'caseId'
         ],
         'eligibilityErrorDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnEligibilityErrorDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnEligibilityErrorDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'eligibilityErrorDetail'
         ],
         'eligibilityStatus' => [
-            'type' => 'EbaySdk\PostOrder\Types\StatusType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\StatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibilityStatus'
         ],
         'eligibleStartDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibleStartDate'
         ],
         'returnCreationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnCreationDate'
         ],
         'returnDeadline' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnDeadline'

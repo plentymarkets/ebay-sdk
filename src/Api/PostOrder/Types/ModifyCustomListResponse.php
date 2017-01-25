@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property integer $listId
- * @property \EbaySdk\PostOrder\Types\RuleSummaryType[] $ruleAffected
+ * @property \EbaySdk\Api\PostOrder\Types\RuleSummaryType[] $ruleAffected
  */
 class ModifyCustomListResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class ModifyCustomListResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
             'elementName' => 'listId'
         ],
         'ruleAffected' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleSummaryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleSummaryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ruleAffected'

@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Inventory\Types;
 /**
  *
  * @property string $date
- * @property \EbaySdk\Inventory\Types\Interval[] $intervals
+ * @property \EbaySdk\Api\Inventory\Types\Interval[] $intervals
  */
 class SpecialHours extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class SpecialHours extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'date'
         ],
         'intervals' => [
-            'type' => 'EbaySdk\Inventory\Types\Interval',
+            'type' => 'EbaySdk\Api\Inventory\Types\Interval',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'intervals'

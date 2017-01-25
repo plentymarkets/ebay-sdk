@@ -10,8 +10,8 @@ namespace EbaySdk\Api\Fulfillment\Types;
 /**
  *
  * @property string $cancelledDate
- * @property \EbaySdk\Fulfillment\Types\CancelRequest[] $cancelRequests
- * @property \EbaySdk\Fulfillment\Enums\CancelStateEnum $cancelState
+ * @property \EbaySdk\Api\Fulfillment\Types\CancelRequest[] $cancelRequests
+ * @property \EbaySdk\Api\Fulfillment\Enums\CancelStateEnum $cancelState
  */
 class CancelStatus extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -26,7 +26,7 @@ class CancelStatus extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'cancelledDate'
         ],
         'cancelRequests' => [
-            'type' => 'EbaySdk\Fulfillment\Types\CancelRequest',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\CancelRequest',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'cancelRequests'

@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ListDataType[] $dataList
- * @property \EbaySdk\PostOrder\Types\ConditionDataRangeType $dataRange
+ * @property \EbaySdk\Api\PostOrder\Types\ListDataType[] $dataList
+ * @property \EbaySdk\Api\PostOrder\Types\ConditionDataRangeType $dataRange
  * @property boolean $isEbayPlus
  * @property boolean $storeCategory
  * @property integer $storeId
@@ -22,13 +22,13 @@ class RuleConditionInputType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
      */
     private static $propertyTypes = [
         'dataList' => [
-            'type' => 'EbaySdk\PostOrder\Types\ListDataType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ListDataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'dataList'
         ],
         'dataRange' => [
-            'type' => 'EbaySdk\PostOrder\Types\ConditionDataRangeType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ConditionDataRangeType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'dataRange'

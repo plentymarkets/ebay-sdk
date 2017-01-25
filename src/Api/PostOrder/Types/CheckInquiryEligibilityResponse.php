@@ -9,17 +9,17 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\DateTime $earliestPossibleFilingDate
- * @property \EbaySdk\PostOrder\Types\EligibilityResponseError[] $errors
- * @property \EbaySdk\PostOrder\Types\DateTime $estimatedDeliveryDate
- * @property \EbaySdk\PostOrder\Enums\InquiryEligibilityStatusEnum $inquiryEligibilityStatus
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $earliestPossibleFilingDate
+ * @property \EbaySdk\Api\PostOrder\Types\EligibilityResponseError[] $errors
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $estimatedDeliveryDate
+ * @property \EbaySdk\Api\PostOrder\Enums\InquiryEligibilityStatusEnum $inquiryEligibilityStatus
  * @property string $inquiryId
- * @property \EbaySdk\PostOrder\Types\DateTime $latestPossibleFilingDate
- * @property \EbaySdk\PostOrder\Types\EligibilityResponseError[] $nonOverridableErrors
- * @property \EbaySdk\PostOrder\Enums\PaymentDenialReasonEnum $paypalReasonToDenyRequestFiling
- * @property \EbaySdk\PostOrder\Types\DateTime $returnFilingDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $latestPossibleFilingDate
+ * @property \EbaySdk\Api\PostOrder\Types\EligibilityResponseError[] $nonOverridableErrors
+ * @property \EbaySdk\Api\PostOrder\Enums\PaymentDenialReasonEnum $paypalReasonToDenyRequestFiling
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $returnFilingDate
  * @property string $returnId
- * @property \EbaySdk\PostOrder\Types\EligibilityResponseError[] $warnings
+ * @property \EbaySdk\Api\PostOrder\Types\EligibilityResponseError[] $warnings
  */
 class CheckInquiryEligibilityResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -28,19 +28,19 @@ class CheckInquiryEligibilityResponse extends \Plenty\Modules\Market\Ebay\Api\Ty
      */
     private static $propertyTypes = [
         'earliestPossibleFilingDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'earliestPossibleFilingDate'
         ],
         'errors' => [
-            'type' => 'EbaySdk\PostOrder\Types\EligibilityResponseError',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EligibilityResponseError',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'estimatedDeliveryDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimatedDeliveryDate'
@@ -58,13 +58,13 @@ class CheckInquiryEligibilityResponse extends \Plenty\Modules\Market\Ebay\Api\Ty
             'elementName' => 'inquiryId'
         ],
         'latestPossibleFilingDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'latestPossibleFilingDate'
         ],
         'nonOverridableErrors' => [
-            'type' => 'EbaySdk\PostOrder\Types\EligibilityResponseError',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EligibilityResponseError',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'nonOverridableErrors'
@@ -76,7 +76,7 @@ class CheckInquiryEligibilityResponse extends \Plenty\Modules\Market\Ebay\Api\Ty
             'elementName' => 'paypalReasonToDenyRequestFiling'
         ],
         'returnFilingDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnFilingDate'
@@ -88,7 +88,7 @@ class CheckInquiryEligibilityResponse extends \Plenty\Modules\Market\Ebay\Api\Ty
             'elementName' => 'returnId'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\PostOrder\Types\EligibilityResponseError',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EligibilityResponseError',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Analytics\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Analytics\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Analytics\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Analytics\Types\ErrorDetailV3[] $warnings
  */
 class GetAllSellerProfilesRestResponse extends \EbaySdk\Api\Analytics\Types\FindSellerStandardsProfilesResponse
 {
@@ -25,13 +25,13 @@ class GetAllSellerProfilesRestResponse extends \EbaySdk\Api\Analytics\Types\Find
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Analytics\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Analytics\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Analytics\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Analytics\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

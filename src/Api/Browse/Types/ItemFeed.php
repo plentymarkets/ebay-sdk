@@ -25,7 +25,7 @@ namespace EbaySdk\Api\Browse\Types;
  * @property string $itemId
  * @property string $material
  * @property string $mpn
- * @property \EbaySdk\Browse\Enums\CurrencyCodeEnum $priceCurrency
+ * @property \EbaySdk\Api\Browse\Enums\CurrencyCodeEnum $priceCurrency
  * @property string $priceValue
  * @property integer $quantity
  * @property string $sellerFeedbackPercentage

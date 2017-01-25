@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ConditionListDetailType $dataList
+ * @property \EbaySdk\Api\PostOrder\Types\ConditionListDetailType $dataList
  * @property boolean $isChecked
  * @property boolean $isEbayPlus
  * @property boolean $isInvalid
@@ -23,7 +23,7 @@ class RuleConditionDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'dataList' => [
-            'type' => 'EbaySdk\PostOrder\Types\ConditionListDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ConditionListDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'dataList'

@@ -9,12 +9,12 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\Amount $amount
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $amount
  * @property string $paymentDate
- * @property \EbaySdk\Fulfillment\Types\PaymentHold[] $paymentHolds
- * @property \EbaySdk\Fulfillment\Enums\PaymentMethodTypeEnum $paymentMethod
+ * @property \EbaySdk\Api\Fulfillment\Types\PaymentHold[] $paymentHolds
+ * @property \EbaySdk\Api\Fulfillment\Enums\PaymentMethodTypeEnum $paymentMethod
  * @property string $paymentReferenceId
- * @property \EbaySdk\Fulfillment\Enums\PaymentStatusEnum $paymentStatus
+ * @property \EbaySdk\Api\Fulfillment\Enums\PaymentStatusEnum $paymentStatus
  */
 class Payment extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -23,7 +23,7 @@ class Payment extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'amount' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'
@@ -35,7 +35,7 @@ class Payment extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'paymentDate'
         ],
         'paymentHolds' => [
-            'type' => 'EbaySdk\Fulfillment\Types\PaymentHold',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\PaymentHold',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'paymentHolds'

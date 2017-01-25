@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\LookbackPeriod $lookbackPeriod
- * @property \EbaySdk\Account\Types\Amount $returnedInventoryValue
+ * @property \EbaySdk\Api\Account\Types\LookbackPeriod $lookbackPeriod
+ * @property \EbaySdk\Api\Account\Types\Amount $returnedInventoryValue
  * @property integer $returnedQuantity
  */
 class ReturnSnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -20,13 +20,13 @@ class ReturnSnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'lookbackPeriod' => [
-            'type' => 'EbaySdk\Account\Types\LookbackPeriod',
+            'type' => 'EbaySdk\Api\Account\Types\LookbackPeriod',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lookbackPeriod'
         ],
         'returnedInventoryValue' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnedInventoryValue'

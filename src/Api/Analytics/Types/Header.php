@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Analytics\Types;
 
 /**
  *
- * @property \EbaySdk\Analytics\Types\Definition[] $dimensionKeys
- * @property \EbaySdk\Analytics\Types\Definition[] $metrics
+ * @property \EbaySdk\Api\Analytics\Types\Definition[] $dimensionKeys
+ * @property \EbaySdk\Api\Analytics\Types\Definition[] $metrics
  */
 class Header extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class Header extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'dimensionKeys' => [
-            'type' => 'EbaySdk\Analytics\Types\Definition',
+            'type' => 'EbaySdk\Api\Analytics\Types\Definition',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'dimensionKeys'
         ],
         'metrics' => [
-            'type' => 'EbaySdk\Analytics\Types\Definition',
+            'type' => 'EbaySdk\Api\Analytics\Types\Definition',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'metrics'

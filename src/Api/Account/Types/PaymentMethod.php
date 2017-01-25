@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Enums\PaymentInstrumentBrandEnum[] $brands
- * @property \EbaySdk\Account\Enums\PaymentMethodTypeEnum $paymentMethodType
- * @property \EbaySdk\Account\Types\RecipientAccountReference $recipientAccountReference
+ * @property \EbaySdk\Api\Account\Enums\PaymentInstrumentBrandEnum[] $brands
+ * @property \EbaySdk\Api\Account\Enums\PaymentMethodTypeEnum $paymentMethodType
+ * @property \EbaySdk\Api\Account\Types\RecipientAccountReference $recipientAccountReference
  */
 class PaymentMethod extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -32,7 +32,7 @@ class PaymentMethod extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'paymentMethodType'
         ],
         'recipientAccountReference' => [
-            'type' => 'EbaySdk\Account\Types\RecipientAccountReference',
+            'type' => 'EbaySdk\Api\Account\Types\RecipientAccountReference',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'recipientAccountReference'

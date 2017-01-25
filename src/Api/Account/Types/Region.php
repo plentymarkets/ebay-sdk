@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Account\Types;
 /**
  *
  * @property string $regionName
- * @property \EbaySdk\Account\Enums\RegionTypeEnum $regionType
+ * @property \EbaySdk\Api\Account\Enums\RegionTypeEnum $regionType
  */
 class Region extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

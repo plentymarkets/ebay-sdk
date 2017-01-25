@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\PriceQuantity[] $requests
+ * @property \EbaySdk\Api\Inventory\Types\PriceQuantity[] $requests
  */
 class BulkPriceQuantity extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BulkPriceQuantity extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'requests' => [
-            'type' => 'EbaySdk\Inventory\Types\PriceQuantity',
+            'type' => 'EbaySdk\Api\Inventory\Types\PriceQuantity',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'requests'

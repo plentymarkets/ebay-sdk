@@ -9,17 +9,17 @@ namespace EbaySdk\Api\Browse\Types;
 
 /**
  *
- * @property \EbaySdk\Browse\Types\Image[] $additionalImages
+ * @property \EbaySdk\Api\Browse\Types\Image[] $additionalImages
  * @property string $categoryPath
  * @property string $description
- * @property \EbaySdk\Browse\Types\Image $image
+ * @property \EbaySdk\Api\Browse\Types\Image $image
  * @property string $itemGroupId
- * @property \EbaySdk\Browse\Types\ItemDigest[] $items
- * @property \EbaySdk\Browse\Types\ReviewRating $reviewRating
+ * @property \EbaySdk\Api\Browse\Types\ItemDigest[] $items
+ * @property \EbaySdk\Api\Browse\Types\ReviewRating $reviewRating
  * @property string $shortDescription
  * @property string $title
- * @property \EbaySdk\Browse\Types\TypedNameValue[] $variesByLocalizedAspects
- * @property \EbaySdk\Browse\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Browse\Types\TypedNameValue[] $variesByLocalizedAspects
+ * @property \EbaySdk\Api\Browse\Types\ErrorDetailV3[] $warnings
  */
 class ItemGroup extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -28,7 +28,7 @@ class ItemGroup extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'additionalImages' => [
-            'type' => 'EbaySdk\Browse\Types\Image',
+            'type' => 'EbaySdk\Api\Browse\Types\Image',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'additionalImages'
@@ -46,7 +46,7 @@ class ItemGroup extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'description'
         ],
         'image' => [
-            'type' => 'EbaySdk\Browse\Types\Image',
+            'type' => 'EbaySdk\Api\Browse\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'image'
@@ -58,13 +58,13 @@ class ItemGroup extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemGroupId'
         ],
         'items' => [
-            'type' => 'EbaySdk\Browse\Types\ItemDigest',
+            'type' => 'EbaySdk\Api\Browse\Types\ItemDigest',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'items'
         ],
         'reviewRating' => [
-            'type' => 'EbaySdk\Browse\Types\ReviewRating',
+            'type' => 'EbaySdk\Api\Browse\Types\ReviewRating',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'reviewRating'
@@ -82,13 +82,13 @@ class ItemGroup extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'title'
         ],
         'variesByLocalizedAspects' => [
-            'type' => 'EbaySdk\Browse\Types\TypedNameValue',
+            'type' => 'EbaySdk\Api\Browse\Types\TypedNameValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'variesByLocalizedAspects'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Browse\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Browse\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

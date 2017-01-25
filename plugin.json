@@ -1,8 +1,9 @@
 {
+  "version": 0.1,
   "name": "EbaySdk",
   "description": "Ebay SDK",
   "namespace": "EbaySdk",
-  "author": "plentymarkets",
+  "author": "plentymarkets GmbH",
   "type": "general",
   "serviceProvider": "EbaySdk\\EbaySdkServiceProvider"
 }

@@ -11,7 +11,7 @@ namespace EbaySdk\Api\Inventory\Types;
  *
  * @property integer $availableQuantity
  * @property string $offerId
- * @property \EbaySdk\Inventory\Types\Amount $price
+ * @property \EbaySdk\Api\Inventory\Types\Amount $price
  */
 class OfferPriceQuantity extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -32,7 +32,7 @@ class OfferPriceQuantity extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'offerId'
         ],
         'price' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'

@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\Image $logoImage
- * @property \EbaySdk\Order\Enums\PaymentMethodBrandEnum $paymentMethodBrandType
+ * @property \EbaySdk\Api\Order\Types\Image $logoImage
+ * @property \EbaySdk\Api\Order\Enums\PaymentMethodBrandEnum $paymentMethodBrandType
  */
 class PaymentMethodBrand extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,7 +19,7 @@ class PaymentMethodBrand extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'logoImage' => [
-            'type' => 'EbaySdk\Order\Types\Image',
+            'type' => 'EbaySdk\Api\Order\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'logoImage'

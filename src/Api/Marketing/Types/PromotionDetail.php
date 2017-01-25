@@ -11,13 +11,13 @@ namespace EbaySdk\Api\Marketing\Types;
  *
  * @property string $description
  * @property string $endDate
- * @property \EbaySdk\Marketing\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\Marketing\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $name
- * @property \EbaySdk\Marketing\Enums\PromotionPriorityEnum $priority
+ * @property \EbaySdk\Api\Marketing\Enums\PromotionPriorityEnum $priority
  * @property string $promotionHref
  * @property string $promotionId
  * @property string $promotionImageUrl
- * @property \EbaySdk\Marketing\Enums\PromotionStatusEnum $promotionStatus
+ * @property \EbaySdk\Api\Marketing\Enums\PromotionStatusEnum $promotionStatus
  * @property string $startDate
  */
 class PromotionDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

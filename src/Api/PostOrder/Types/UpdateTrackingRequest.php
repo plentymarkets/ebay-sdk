@@ -9,10 +9,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Enums\ShippingCarrierEnum $newCarrierEnum
+ * @property \EbaySdk\Api\PostOrder\Enums\ShippingCarrierEnum $newCarrierEnum
  * @property string $newCarrierName
  * @property string $newTrackingNumber
- * @property \EbaySdk\PostOrder\Enums\ShippingCarrierEnum $usedCarrierEnum
+ * @property \EbaySdk\Api\PostOrder\Enums\ShippingCarrierEnum $usedCarrierEnum
  * @property string $usedCarrierName
  * @property string $usedTrackingNumber
  */

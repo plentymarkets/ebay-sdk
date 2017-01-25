@@ -10,11 +10,11 @@ namespace EbaySdk\Api\Fulfillment\Types;
 /**
  *
  * @property boolean $ebaySupportedFulfillment
- * @property \EbaySdk\Fulfillment\Types\Address $finalDestinationAddress
- * @property \EbaySdk\Fulfillment\Types\FulfillmentInstructionsType $fulfillmentInstructionsType
+ * @property \EbaySdk\Api\Fulfillment\Types\Address $finalDestinationAddress
+ * @property \EbaySdk\Api\Fulfillment\Types\FulfillmentInstructionsType $fulfillmentInstructionsType
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
- * @property \EbaySdk\Fulfillment\Types\ShippingStep $shippingStep
+ * @property \EbaySdk\Api\Fulfillment\Types\ShippingStep $shippingStep
  */
 class FulfillmentStartInstruction extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -29,13 +29,13 @@ class FulfillmentStartInstruction extends \Plenty\Modules\Market\Ebay\Api\Types\
             'elementName' => 'ebaySupportedFulfillment'
         ],
         'finalDestinationAddress' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Address',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Address',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'finalDestinationAddress'
         ],
         'fulfillmentInstructionsType' => [
-            'type' => 'EbaySdk\Fulfillment\Types\FulfillmentInstructionsType',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\FulfillmentInstructionsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fulfillmentInstructionsType'
@@ -53,7 +53,7 @@ class FulfillmentStartInstruction extends \Plenty\Modules\Market\Ebay\Api\Types\
             'elementName' => 'minEstimatedDeliveryDate'
         ],
         'shippingStep' => [
-            'type' => 'EbaySdk\Fulfillment\Types\ShippingStep',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\ShippingStep',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingStep'

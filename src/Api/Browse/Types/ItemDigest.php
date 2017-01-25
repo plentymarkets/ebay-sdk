@@ -10,18 +10,18 @@ namespace EbaySdk\Api\Browse\Types;
 /**
  *
  * @property string $ageGroup
- * @property \EbaySdk\Browse\Enums\AvailabilityStatusEnum $availabilityStatusForShipToHome
+ * @property \EbaySdk\Api\Browse\Enums\AvailabilityStatusEnum $availabilityStatusForShipToHome
  * @property string $brand
  * @property string $color
  * @property string $gender
- * @property \EbaySdk\Browse\Types\Image $image
+ * @property \EbaySdk\Api\Browse\Types\Image $image
  * @property string $itemHref
  * @property string $itemId
- * @property \EbaySdk\Browse\Types\TypedNameValue[] $localizedAspects
+ * @property \EbaySdk\Api\Browse\Types\TypedNameValue[] $localizedAspects
  * @property string $material
  * @property string $pattern
- * @property \EbaySdk\Browse\Types\Amount $price
- * @property \EbaySdk\Browse\Enums\PriceDisplayConditionEnum $priceDisplayCondition
+ * @property \EbaySdk\Api\Browse\Types\Amount $price
+ * @property \EbaySdk\Api\Browse\Enums\PriceDisplayConditionEnum $priceDisplayCondition
  * @property integer $quantitySold
  * @property string $size
  * @property string $sizeSystem
@@ -65,7 +65,7 @@ class ItemDigest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'gender'
         ],
         'image' => [
-            'type' => 'EbaySdk\Browse\Types\Image',
+            'type' => 'EbaySdk\Api\Browse\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'image'
@@ -83,7 +83,7 @@ class ItemDigest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemId'
         ],
         'localizedAspects' => [
-            'type' => 'EbaySdk\Browse\Types\TypedNameValue',
+            'type' => 'EbaySdk\Api\Browse\Types\TypedNameValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'localizedAspects'
@@ -101,7 +101,7 @@ class ItemDigest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'pattern'
         ],
         'price' => [
-            'type' => 'EbaySdk\Browse\Types\Amount',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'

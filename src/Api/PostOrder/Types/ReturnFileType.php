@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
  * @property string $fileData
  * @property string $fileFormat
  * @property string $fileId
@@ -25,7 +25,7 @@ class ReturnFileType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'

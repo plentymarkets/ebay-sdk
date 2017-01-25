@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Account\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Account\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Account\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Account\Types\ErrorDetailV3[] $warnings
  */
 class GetPaymentPoliciesByMarketplaceRestResponse extends \EbaySdk\Api\Account\Types\PaymentPolicyResponse
 {
@@ -25,13 +25,13 @@ class GetPaymentPoliciesByMarketplaceRestResponse extends \EbaySdk\Api\Account\T
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Account\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Account\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Account\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Account\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

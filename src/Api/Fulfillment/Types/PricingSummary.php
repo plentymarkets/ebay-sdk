@@ -9,14 +9,14 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\Amount $adjustment
- * @property \EbaySdk\Fulfillment\Types\Amount $deliveryCost
- * @property \EbaySdk\Fulfillment\Types\Amount $deliveryDiscount
- * @property \EbaySdk\Fulfillment\Types\Amount $fee
- * @property \EbaySdk\Fulfillment\Types\Amount $priceDiscountSubtotal
- * @property \EbaySdk\Fulfillment\Types\Amount $priceSubtotal
- * @property \EbaySdk\Fulfillment\Types\Amount $tax
- * @property \EbaySdk\Fulfillment\Types\Amount $total
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $adjustment
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $deliveryCost
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $deliveryDiscount
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $fee
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $priceDiscountSubtotal
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $priceSubtotal
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $tax
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $total
  */
 class PricingSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,49 +25,49 @@ class PricingSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'adjustment' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'adjustment'
         ],
         'deliveryCost' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deliveryCost'
         ],
         'deliveryDiscount' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deliveryDiscount'
         ],
         'fee' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fee'
         ],
         'priceDiscountSubtotal' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'priceDiscountSubtotal'
         ],
         'priceSubtotal' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'priceSubtotal'
         ],
         'tax' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'tax'
         ],
         'total' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'total'

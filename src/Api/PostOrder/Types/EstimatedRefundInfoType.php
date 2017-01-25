@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Amount $buyerTotalAmount
- * @property \EbaySdk\PostOrder\Types\EstimatedRefundDetailType $estimatedRefundDetail
- * @property \EbaySdk\PostOrder\Types\Amount $sellerTotalAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $buyerTotalAmount
+ * @property \EbaySdk\Api\PostOrder\Types\EstimatedRefundDetailType $estimatedRefundDetail
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $sellerTotalAmount
  */
 class EstimatedRefundInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,19 +20,19 @@ class EstimatedRefundInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'buyerTotalAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerTotalAmount'
         ],
         'estimatedRefundDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\EstimatedRefundDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EstimatedRefundDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimatedRefundDetail'
         ],
         'sellerTotalAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerTotalAmount'

@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Browse\Types;
 
 /**
  *
- * @property \EbaySdk\Browse\Types\ItemFeed[] $itemFeed
+ * @property \EbaySdk\Api\Browse\Types\ItemFeed[] $itemFeed
  */
 class ItemFeedResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class ItemFeedResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'itemFeed' => [
-            'type' => 'EbaySdk\Browse\Types\ItemFeed',
+            'type' => 'EbaySdk\Api\Browse\Types\ItemFeed',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'itemFeed'

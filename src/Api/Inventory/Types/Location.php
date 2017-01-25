@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\Address $address
- * @property \EbaySdk\Inventory\Types\GeoCoordinates $geoCoordinates
+ * @property \EbaySdk\Api\Inventory\Types\Address $address
+ * @property \EbaySdk\Api\Inventory\Types\GeoCoordinates $geoCoordinates
  */
 class Location extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class Location extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'address' => [
-            'type' => 'EbaySdk\Inventory\Types\Address',
+            'type' => 'EbaySdk\Api\Inventory\Types\Address',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'address'
         ],
         'geoCoordinates' => [
-            'type' => 'EbaySdk\Inventory\Types\GeoCoordinates',
+            'type' => 'EbaySdk\Api\Inventory\Types\GeoCoordinates',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'geoCoordinates'

@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $itemPictureUrl
- * @property \EbaySdk\PostOrder\Types\Amount $itemPrice
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $itemPrice
  * @property string $itemTitle
  * @property string $viewPurchasedItemUrl
  */
@@ -27,7 +27,7 @@ class ItemDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemPictureUrl'
         ],
         'itemPrice' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemPrice'

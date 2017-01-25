@@ -14,7 +14,7 @@ namespace EbaySdk\Api\PostOrder\Types;
  * @property string $severity
  * @property string $category
  * @property string $message
- * @property \EbaySdk\PostOrder\Types\ErrorParameter[] $parameter
+ * @property \EbaySdk\Api\PostOrder\Types\ErrorParameter[] $parameter
  * @property string $longMessage
  * @property integer $httpStatusCode
  */
@@ -55,7 +55,7 @@ class Error extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'message'
         ],
         'parameter' => [
-            'type' => 'EbaySdk\PostOrder\Types\ErrorParameter',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ErrorParameter',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'parameter'

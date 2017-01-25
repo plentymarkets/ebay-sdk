@@ -12,12 +12,12 @@ namespace EbaySdk\Api\Inventory\Types;
  * @property integer $availableQuantity
  * @property string $categoryId
  * @property string $listingDescription
- * @property \EbaySdk\Inventory\Types\ListingPolicies $listingPolicies
+ * @property \EbaySdk\Api\Inventory\Types\ListingPolicies $listingPolicies
  * @property string $merchantLocationKey
- * @property \EbaySdk\Inventory\Types\PricingSummary $pricingSummary
+ * @property \EbaySdk\Api\Inventory\Types\PricingSummary $pricingSummary
  * @property integer $quantityLimitPerBuyer
  * @property string[] $storeCategoryNames
- * @property \EbaySdk\Inventory\Types\Tax $tax
+ * @property \EbaySdk\Api\Inventory\Types\Tax $tax
  */
 class EbayOfferDetailsWithId extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -44,7 +44,7 @@ class EbayOfferDetailsWithId extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'listingDescription'
         ],
         'listingPolicies' => [
-            'type' => 'EbaySdk\Inventory\Types\ListingPolicies',
+            'type' => 'EbaySdk\Api\Inventory\Types\ListingPolicies',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'listingPolicies'
@@ -56,7 +56,7 @@ class EbayOfferDetailsWithId extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'merchantLocationKey'
         ],
         'pricingSummary' => [
-            'type' => 'EbaySdk\Inventory\Types\PricingSummary',
+            'type' => 'EbaySdk\Api\Inventory\Types\PricingSummary',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'pricingSummary'
@@ -74,7 +74,7 @@ class EbayOfferDetailsWithId extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'storeCategoryNames'
         ],
         'tax' => [
-            'type' => 'EbaySdk\Inventory\Types\Tax',
+            'type' => 'EbaySdk\Api\Inventory\Types\Tax',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'tax'

@@ -15,7 +15,7 @@ namespace EbaySdk\Api\PostOrder\Types;
  * @property string $eventPostalCode
  * @property string $eventStateOrProvince
  * @property string $eventStatus
- * @property \EbaySdk\PostOrder\Types\DateTime $eventTime
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $eventTime
  */
 class ScanDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -60,7 +60,7 @@ class ScanDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'eventStatus'
         ],
         'eventTime' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eventTime'

@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Enums\DayOfWeekEnum $dayOfWeekEnum
- * @property \EbaySdk\Inventory\Types\Interval[] $intervals
+ * @property \EbaySdk\Api\Inventory\Enums\DayOfWeekEnum $dayOfWeekEnum
+ * @property \EbaySdk\Api\Inventory\Types\Interval[] $intervals
  */
 class OperatingHours extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class OperatingHours extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'dayOfWeekEnum'
         ],
         'intervals' => [
-            'type' => 'EbaySdk\Inventory\Types\Interval',
+            'type' => 'EbaySdk\Api\Inventory\Types\Interval',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'intervals'

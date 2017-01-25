@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\DateTime $actionDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $actionDate
  * @property string $activityParty
- * @property \EbaySdk\PostOrder\Enums\CancelActivityTypeEnum $activityType
+ * @property \EbaySdk\Api\PostOrder\Enums\CancelActivityTypeEnum $activityType
  * @property string $stateFrom
  * @property string $stateTo
  */
@@ -22,7 +22,7 @@ class CancelActivityHistory extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'actionDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actionDate'

@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $warnings
  */
 class CreateOrReplaceInventoryItemRestResponse extends \EbaySdk\Api\Inventory\Types\BaseResponse
 {
@@ -25,13 +25,13 @@ class CreateOrReplaceInventoryItemRestResponse extends \EbaySdk\Api\Inventory\Ty
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

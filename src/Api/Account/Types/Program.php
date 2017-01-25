@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Enums\ProgramTypeEnum $programType
+ * @property \EbaySdk\Api\Account\Enums\ProgramTypeEnum $programType
  */
 class Program extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

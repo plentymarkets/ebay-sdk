@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\Region[] $regionExcluded
- * @property \EbaySdk\Account\Types\Region[] $regionIncluded
+ * @property \EbaySdk\Api\Account\Types\Region[] $regionExcluded
+ * @property \EbaySdk\Api\Account\Types\Region[] $regionIncluded
  */
 class RegionSet extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class RegionSet extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'regionExcluded' => [
-            'type' => 'EbaySdk\Account\Types\Region',
+            'type' => 'EbaySdk\Api\Account\Types\Region',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'regionExcluded'
         ],
         'regionIncluded' => [
-            'type' => 'EbaySdk\Account\Types\Region',
+            'type' => 'EbaySdk\Api\Account\Types\Region',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'regionIncluded'

@@ -11,8 +11,8 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $carrier
  * @property string $currentStatus
- * @property \EbaySdk\PostOrder\Types\DateTime $estimateFromDate
- * @property \EbaySdk\PostOrder\Types\DateTime $estimateToDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $estimateFromDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $estimateToDate
  * @property string $trackingNumber
  * @property string $trackingURL
  */
@@ -35,13 +35,13 @@ class ShipmentTrackingDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\B
             'elementName' => 'currentStatus'
         ],
         'estimateFromDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimateFromDate'
         ],
         'estimateToDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimateToDate'

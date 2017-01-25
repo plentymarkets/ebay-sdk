@@ -9,11 +9,11 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\Availability $availability
- * @property \EbaySdk\Inventory\Enums\ConditionEnum $condition
+ * @property \EbaySdk\Api\Inventory\Types\Availability $availability
+ * @property \EbaySdk\Api\Inventory\Enums\ConditionEnum $condition
  * @property string $conditionDescription
- * @property \EbaySdk\Inventory\Types\PackageWeightAndSize $packageWeightAndSize
- * @property \EbaySdk\Inventory\Types\Product $product
+ * @property \EbaySdk\Api\Inventory\Types\PackageWeightAndSize $packageWeightAndSize
+ * @property \EbaySdk\Api\Inventory\Types\Product $product
  * @property string $sku
  */
 class InventoryItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -23,7 +23,7 @@ class InventoryItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'availability' => [
-            'type' => 'EbaySdk\Inventory\Types\Availability',
+            'type' => 'EbaySdk\Api\Inventory\Types\Availability',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'availability'
@@ -41,13 +41,13 @@ class InventoryItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'conditionDescription'
         ],
         'packageWeightAndSize' => [
-            'type' => 'EbaySdk\Inventory\Types\PackageWeightAndSize',
+            'type' => 'EbaySdk\Api\Inventory\Types\PackageWeightAndSize',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'packageWeightAndSize'
         ],
         'product' => [
-            'type' => 'EbaySdk\Inventory\Types\Product',
+            'type' => 'EbaySdk\Api\Inventory\Types\Product',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'product'

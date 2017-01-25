@@ -9,10 +9,10 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\Amount $amount
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $amount
  * @property string $refundDate
  * @property string $refundReferenceId
- * @property \EbaySdk\Fulfillment\Enums\RefundStatusEnum $refundStatus
+ * @property \EbaySdk\Api\Fulfillment\Enums\RefundStatusEnum $refundStatus
  */
 class OrderRefund extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -21,7 +21,7 @@ class OrderRefund extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'amount' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'

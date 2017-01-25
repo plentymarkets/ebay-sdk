@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\DeleteAdsByInventoryReferenceRequest[] $requests
+ * @property \EbaySdk\Api\Marketing\Types\DeleteAdsByInventoryReferenceRequest[] $requests
  */
 class BulkDeleteAdsByInventoryReferenceRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BulkDeleteAdsByInventoryReferenceRequest extends \Plenty\Modules\Market\Eb
      */
     private static $propertyTypes = [
         'requests' => [
-            'type' => 'EbaySdk\Marketing\Types\DeleteAdsByInventoryReferenceRequest',
+            'type' => 'EbaySdk\Api\Marketing\Types\DeleteAdsByInventoryReferenceRequest',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'requests'

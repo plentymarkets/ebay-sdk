@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleDetailInputType $ruleDetail
+ * @property \EbaySdk\Api\PostOrder\Types\RuleDetailInputType $ruleDetail
  */
 class CreateDispositionRuleRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class CreateDispositionRuleRequest extends \Plenty\Modules\Market\Ebay\Api\Types
      */
     private static $propertyTypes = [
         'ruleDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleDetailInputType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleDetailInputType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ruleDetail'

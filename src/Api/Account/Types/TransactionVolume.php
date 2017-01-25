@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Account\Types;
 /**
  *
  * @property string $firstOrderDate
- * @property \EbaySdk\Account\Types\TransactionSnapshot $transactionSnapshots
+ * @property \EbaySdk\Api\Account\Types\TransactionSnapshot $transactionSnapshots
  */
 class TransactionVolume extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class TransactionVolume extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'firstOrderDate'
         ],
         'transactionSnapshots' => [
-            'type' => 'EbaySdk\Account\Types\TransactionSnapshot',
+            'type' => 'EbaySdk\Api\Account\Types\TransactionSnapshot',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'transactionSnapshots'

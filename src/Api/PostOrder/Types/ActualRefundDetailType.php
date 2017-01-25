@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RefundDetailType $actualRefund
- * @property \EbaySdk\PostOrder\Enums\ReturnRefundInitiatorEnum $refundInitiationType
- * @property \EbaySdk\PostOrder\Types\DateTime $refundIssuedDate
+ * @property \EbaySdk\Api\PostOrder\Types\RefundDetailType $actualRefund
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnRefundInitiatorEnum $refundInitiationType
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $refundIssuedDate
  * @property string $refundStatus
  */
 class ActualRefundDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -21,7 +21,7 @@ class ActualRefundDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
      */
     private static $propertyTypes = [
         'actualRefund' => [
-            'type' => 'EbaySdk\PostOrder\Types\RefundDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RefundDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualRefund'
@@ -33,7 +33,7 @@ class ActualRefundDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'refundInitiationType'
         ],
         'refundIssuedDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundIssuedDate'

@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleActionDataDetailType[] $actionData
- * @property \EbaySdk\PostOrder\Types\RuleActionDataType $actionDataType
+ * @property \EbaySdk\Api\PostOrder\Types\RuleActionDataDetailType[] $actionData
+ * @property \EbaySdk\Api\PostOrder\Types\RuleActionDataType $actionDataType
  */
 class RuleActionInputType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class RuleActionInputType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'actionData' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleActionDataDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleActionDataDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'actionData'
         ],
         'actionDataType' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleActionDataType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleActionDataType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actionDataType'

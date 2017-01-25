@@ -14,7 +14,7 @@ namespace EbaySdk\Api\Account\Types;
  * @property string $next
  * @property integer $offset
  * @property string $prev
- * @property \EbaySdk\Account\Types\ReturnPolicy[] $returnPolicies
+ * @property \EbaySdk\Api\Account\Types\ReturnPolicy[] $returnPolicies
  * @property integer $total
  */
 class ReturnPolicyResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -54,7 +54,7 @@ class ReturnPolicyResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'prev'
         ],
         'returnPolicies' => [
-            'type' => 'EbaySdk\Account\Types\ReturnPolicy',
+            'type' => 'EbaySdk\Api\Account\Types\ReturnPolicy',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'returnPolicies'

@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CancelDetail $cancelDetail
+ * @property \EbaySdk\Api\PostOrder\Types\CancelDetail $cancelDetail
  */
 class GetCancelDetailResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class GetCancelDetailResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'cancelDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\CancelDetail',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CancelDetail',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cancelDetail'

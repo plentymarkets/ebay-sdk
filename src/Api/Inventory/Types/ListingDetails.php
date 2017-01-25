@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Inventory\Types;
 /**
  *
  * @property string $listingId
- * @property \EbaySdk\Inventory\Enums\ListingStatusEnum $listingStatus
+ * @property \EbaySdk\Api\Inventory\Enums\ListingStatusEnum $listingStatus
  * @property integer $soldQuantity
  */
 class ListingDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

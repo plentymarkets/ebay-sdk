@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Text $message
+ * @property \EbaySdk\Api\PostOrder\Types\Text $message
  */
 class SellerProvideRefundInfoRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class SellerProvideRefundInfoRequest extends \Plenty\Modules\Market\Ebay\Api\Typ
      */
     private static $propertyTypes = [
         'message' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'message'

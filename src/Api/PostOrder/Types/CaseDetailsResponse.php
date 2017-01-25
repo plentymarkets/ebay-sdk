@@ -9,33 +9,33 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ActionDeadlines $actionDeadlines
- * @property \EbaySdk\PostOrder\Types\AppealDetails $appealDetails
+ * @property \EbaySdk\Api\PostOrder\Types\ActionDeadlines $actionDeadlines
+ * @property \EbaySdk\Api\PostOrder\Types\AppealDetails $appealDetails
  * @property string $buyerClosureReason
  * @property string $buyerProtectedProgramLink
- * @property \EbaySdk\PostOrder\Types\CaseDetails $caseDetails
- * @property \EbaySdk\PostOrder\Types\ClaimHistoryResponse $caseHistoryDetails
+ * @property \EbaySdk\Api\PostOrder\Types\CaseDetails $caseDetails
+ * @property \EbaySdk\Api\PostOrder\Types\ClaimHistoryResponse $caseHistoryDetails
  * @property string $caseId
  * @property integer $caseQuantity
  * @property string $caseType
- * @property \EbaySdk\PostOrder\Types\Amount $claimAmount
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
- * @property \EbaySdk\PostOrder\Enums\UserPartyEnum $escalatedBy
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $claimAmount
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Enums\UserPartyEnum $escalatedBy
  * @property string $escalateReason
  * @property string $eventTicketsLink
  * @property string $extTransactionId
  * @property integer $fsnadDaysToAddTrackingAfterShippingItem
- * @property \EbaySdk\PostOrder\Types\DateTime $fsnadShipToSellerByDate
- * @property \EbaySdk\PostOrder\Enums\UserPartyEnum $initiator
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $fsnadShipToSellerByDate
+ * @property \EbaySdk\Api\PostOrder\Enums\UserPartyEnum $initiator
  * @property string $itemId
- * @property \EbaySdk\PostOrder\Types\DateTime $lastModifiedDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $lastModifiedDate
  * @property string $payForItemLink
  * @property string $priceSignatureConfirmationAmount
  * @property string $recalledItemLink
- * @property \EbaySdk\PostOrder\Types\ReturnAddress $returnDetails
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnAddress $returnDetails
  * @property string $returnId
  * @property string $sellerClosureReason
- * @property \EbaySdk\PostOrder\Types\Amount $shippingFee
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $shippingFee
  * @property string $status
  * @property string $transactionId
  */
@@ -46,13 +46,13 @@ class CaseDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'actionDeadlines' => [
-            'type' => 'EbaySdk\PostOrder\Types\ActionDeadlines',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ActionDeadlines',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actionDeadlines'
         ],
         'appealDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\AppealDetails',
+            'type' => 'EbaySdk\Api\PostOrder\Types\AppealDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'appealDetails'
@@ -70,13 +70,13 @@ class CaseDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyerProtectedProgramLink'
         ],
         'caseDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\CaseDetails',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CaseDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseDetails'
         ],
         'caseHistoryDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\ClaimHistoryResponse',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ClaimHistoryResponse',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseHistoryDetails'
@@ -100,13 +100,13 @@ class CaseDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'caseType'
         ],
         'claimAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'claimAmount'
         ],
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
@@ -142,7 +142,7 @@ class CaseDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'fsnadDaysToAddTrackingAfterShippingItem'
         ],
         'fsnadShipToSellerByDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fsnadShipToSellerByDate'
@@ -160,7 +160,7 @@ class CaseDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemId'
         ],
         'lastModifiedDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lastModifiedDate'
@@ -184,7 +184,7 @@ class CaseDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'recalledItemLink'
         ],
         'returnDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnAddress',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnDetails'
@@ -202,7 +202,7 @@ class CaseDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'sellerClosureReason'
         ],
         'shippingFee' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingFee'

@@ -11,7 +11,7 @@ namespace EbaySdk\Api\Inventory\Types;
  *
  * @property string $href
  * @property integer $limit
- * @property \EbaySdk\Inventory\Types\InventoryLocationResponse[] $locations
+ * @property \EbaySdk\Api\Inventory\Types\InventoryLocationResponse[] $locations
  * @property string $next
  * @property integer $offset
  * @property string $prev
@@ -36,7 +36,7 @@ class LocationResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'limit'
         ],
         'locations' => [
-            'type' => 'EbaySdk\Inventory\Types\InventoryLocationResponse',
+            'type' => 'EbaySdk\Api\Inventory\Types\InventoryLocationResponse',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'locations'

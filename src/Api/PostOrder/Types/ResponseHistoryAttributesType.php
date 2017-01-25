@@ -11,10 +11,10 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $carrierUsed
  * @property string $escalateReason
- * @property \EbaySdk\PostOrder\Types\MoneyMovementRef $moneyMovementRef
- * @property \EbaySdk\PostOrder\Types\Amount $partialRefundAmount
+ * @property \EbaySdk\Api\PostOrder\Types\MoneyMovementRef $moneyMovementRef
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $partialRefundAmount
  * @property string $RMA
- * @property \EbaySdk\PostOrder\Types\ReturnAddressType $sellerReturnAddress
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnAddressType $sellerReturnAddress
  * @property string $toEmailAddress
  * @property string $trackingNumber
  */
@@ -37,13 +37,13 @@ class ResponseHistoryAttributesType extends \Plenty\Modules\Market\Ebay\Api\Type
             'elementName' => 'escalateReason'
         ],
         'moneyMovementRef' => [
-            'type' => 'EbaySdk\PostOrder\Types\MoneyMovementRef',
+            'type' => 'EbaySdk\Api\PostOrder\Types\MoneyMovementRef',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'moneyMovementRef'
         ],
         'partialRefundAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'partialRefundAmount'
@@ -55,7 +55,7 @@ class ResponseHistoryAttributesType extends \Plenty\Modules\Market\Ebay\Api\Type
             'elementName' => 'RMA'
         ],
         'sellerReturnAddress' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnAddressType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnAddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerReturnAddress'

@@ -11,7 +11,7 @@ namespace EbaySdk\Api\Inventory\Types;
  *
  * @property double $height
  * @property double $length
- * @property \EbaySdk\Inventory\Enums\LengthUnitOfMeasureEnum $unit
+ * @property \EbaySdk\Api\Inventory\Enums\LengthUnitOfMeasureEnum $unit
  * @property double $width
  */
 class Dimension extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

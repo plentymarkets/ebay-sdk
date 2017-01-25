@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\InquirySummaryType[] $members
- * @property \EbaySdk\PostOrder\Types\PaginationOutput $paginationOutput
+ * @property \EbaySdk\Api\PostOrder\Types\InquirySummaryType[] $members
+ * @property \EbaySdk\Api\PostOrder\Types\PaginationOutput $paginationOutput
  * @property integer $totalNumberOfInquiries
  */
 class InquirySearchResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -20,13 +20,13 @@ class InquirySearchResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'members' => [
-            'type' => 'EbaySdk\PostOrder\Types\InquirySummaryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\InquirySummaryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'members'
         ],
         'paginationOutput' => [
-            'type' => 'EbaySdk\PostOrder\Types\PaginationOutput',
+            'type' => 'EbaySdk\Api\PostOrder\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'

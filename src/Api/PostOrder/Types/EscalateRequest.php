@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Text $comments
+ * @property \EbaySdk\Api\PostOrder\Types\Text $comments
  * @property string $reason
  */
 class EscalateRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -19,7 +19,7 @@ class EscalateRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'comments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'comments'

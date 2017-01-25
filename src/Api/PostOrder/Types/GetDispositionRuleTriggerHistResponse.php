@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleTriggerHistDetailType[] $historyDetail
- * @property \EbaySdk\PostOrder\Types\PaginationOutput $paginationOutput
+ * @property \EbaySdk\Api\PostOrder\Types\RuleTriggerHistDetailType[] $historyDetail
+ * @property \EbaySdk\Api\PostOrder\Types\PaginationOutput $paginationOutput
  */
 class GetDispositionRuleTriggerHistResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class GetDispositionRuleTriggerHistResponse extends \Plenty\Modules\Market\Ebay\
      */
     private static $propertyTypes = [
         'historyDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleTriggerHistDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleTriggerHistDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'historyDetail'
         ],
         'paginationOutput' => [
-            'type' => 'EbaySdk\PostOrder\Types\PaginationOutput',
+            'type' => 'EbaySdk\Api\PostOrder\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'

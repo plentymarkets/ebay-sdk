@@ -9,10 +9,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ShipmentTrackingType[] $allShipmentTrackings
+ * @property \EbaySdk\Api\PostOrder\Types\ShipmentTrackingType[] $allShipmentTrackings
  * @property string $payee
- * @property \EbaySdk\PostOrder\Types\ShipmentTrackingType $shipmentTracking
- * @property \EbaySdk\PostOrder\Types\ReturnShippingCostDetailType $shippingLabelCost
+ * @property \EbaySdk\Api\PostOrder\Types\ShipmentTrackingType $shipmentTracking
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnShippingCostDetailType $shippingLabelCost
  */
 class ShipmentType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -21,7 +21,7 @@ class ShipmentType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'allShipmentTrackings' => [
-            'type' => 'EbaySdk\PostOrder\Types\ShipmentTrackingType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ShipmentTrackingType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'allShipmentTrackings'
@@ -33,13 +33,13 @@ class ShipmentType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'payee'
         ],
         'shipmentTracking' => [
-            'type' => 'EbaySdk\PostOrder\Types\ShipmentTrackingType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ShipmentTrackingType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipmentTracking'
         ],
         'shippingLabelCost' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnShippingCostDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnShippingCostDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingLabelCost'

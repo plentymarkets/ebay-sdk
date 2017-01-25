@@ -13,9 +13,9 @@ namespace EbaySdk\Api\Inventory\Types;
  * @property string $locationInstructions
  * @property string $locationWebUrl
  * @property string $name
- * @property \EbaySdk\Inventory\Types\OperatingHours[] $operatingHours
+ * @property \EbaySdk\Api\Inventory\Types\OperatingHours[] $operatingHours
  * @property string $phone
- * @property \EbaySdk\Inventory\Types\SpecialHours[] $specialHours
+ * @property \EbaySdk\Api\Inventory\Types\SpecialHours[] $specialHours
  */
 class InventoryLocation extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -48,7 +48,7 @@ class InventoryLocation extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'name'
         ],
         'operatingHours' => [
-            'type' => 'EbaySdk\Inventory\Types\OperatingHours',
+            'type' => 'EbaySdk\Api\Inventory\Types\OperatingHours',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'operatingHours'
@@ -60,7 +60,7 @@ class InventoryLocation extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'phone'
         ],
         'specialHours' => [
-            'type' => 'EbaySdk\Inventory\Types\SpecialHours',
+            'type' => 'EbaySdk\Api\Inventory\Types\SpecialHours',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'specialHours'

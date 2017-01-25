@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Text $comments
- * @property \EbaySdk\PostOrder\Types\RefundDetailType $refundDetail
+ * @property \EbaySdk\Api\PostOrder\Types\Text $comments
+ * @property \EbaySdk\Api\PostOrder\Types\RefundDetailType $refundDetail
  */
 class IssueRefundRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class IssueRefundRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'comments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'comments'
         ],
         'refundDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RefundDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RefundDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundDetail'

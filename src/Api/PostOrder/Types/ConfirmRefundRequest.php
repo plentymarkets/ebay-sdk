@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\DateTime $refundDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $refundDate
  * @property boolean $unpaidOrder
  */
 class ConfirmRefundRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -19,7 +19,7 @@ class ConfirmRefundRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'refundDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundDate'

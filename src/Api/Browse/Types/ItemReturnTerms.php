@@ -10,13 +10,13 @@ namespace EbaySdk\Api\Browse\Types;
 /**
  *
  * @property boolean $extendedHolidayReturnsOffered
- * @property \EbaySdk\Browse\Enums\RefundMethodEnum $refundMethod
+ * @property \EbaySdk\Api\Browse\Enums\RefundMethodEnum $refundMethod
  * @property string $restockingFeePercentage
  * @property string $returnInstructions
- * @property \EbaySdk\Browse\Enums\ReturnMethodEnum $returnMethod
- * @property \EbaySdk\Browse\Types\TimeDuration $returnPeriod
+ * @property \EbaySdk\Api\Browse\Enums\ReturnMethodEnum $returnMethod
+ * @property \EbaySdk\Api\Browse\Types\TimeDuration $returnPeriod
  * @property boolean $returnsAccepted
- * @property \EbaySdk\Browse\Enums\ReturnShippingCostPayerEnum $returnShippingCostPayer
+ * @property \EbaySdk\Api\Browse\Enums\ReturnShippingCostPayerEnum $returnShippingCostPayer
  */
 class ItemReturnTerms extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -55,7 +55,7 @@ class ItemReturnTerms extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'returnMethod'
         ],
         'returnPeriod' => [
-            'type' => 'EbaySdk\Browse\Types\TimeDuration',
+            'type' => 'EbaySdk\Api\Browse\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPeriod'

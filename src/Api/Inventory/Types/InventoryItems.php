@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Inventory\Types;
 /**
  *
  * @property string $href
- * @property \EbaySdk\Inventory\Types\InventoryItem[] $inventoryItems
+ * @property \EbaySdk\Api\Inventory\Types\InventoryItem[] $inventoryItems
  * @property integer $limit
  * @property string $next
  * @property string $prev
@@ -30,7 +30,7 @@ class InventoryItems extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'href'
         ],
         'inventoryItems' => [
-            'type' => 'EbaySdk\Inventory\Types\InventoryItem',
+            'type' => 'EbaySdk\Api\Inventory\Types\InventoryItem',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'inventoryItems'

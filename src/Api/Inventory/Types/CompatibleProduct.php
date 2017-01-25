@@ -10,8 +10,8 @@ namespace EbaySdk\Api\Inventory\Types;
 /**
  *
  * @property string $notes
- * @property \EbaySdk\Inventory\Types\ProductFamilyProperties $productFamilyProperties
- * @property \EbaySdk\Inventory\Types\ProductIdentifier $productIdentifier
+ * @property \EbaySdk\Api\Inventory\Types\ProductFamilyProperties $productFamilyProperties
+ * @property \EbaySdk\Api\Inventory\Types\ProductIdentifier $productIdentifier
  */
 class CompatibleProduct extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -26,13 +26,13 @@ class CompatibleProduct extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'notes'
         ],
         'productFamilyProperties' => [
-            'type' => 'EbaySdk\Inventory\Types\ProductFamilyProperties',
+            'type' => 'EbaySdk\Api\Inventory\Types\ProductFamilyProperties',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productFamilyProperties'
         ],
         'productIdentifier' => [
-            'type' => 'EbaySdk\Inventory\Types\ProductIdentifier',
+            'type' => 'EbaySdk\Api\Inventory\Types\ProductIdentifier',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productIdentifier'

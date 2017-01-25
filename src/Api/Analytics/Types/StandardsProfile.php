@@ -9,12 +9,12 @@ namespace EbaySdk\Api\Analytics\Types;
 
 /**
  *
- * @property \EbaySdk\Analytics\Types\Cycle $cycle
+ * @property \EbaySdk\Api\Analytics\Types\Cycle $cycle
  * @property boolean $defaultProgram
  * @property string $evaluationReason
- * @property \EbaySdk\Analytics\Types\Metric[] $metrics
- * @property \EbaySdk\Analytics\Enums\ProgramEnum $program
- * @property \EbaySdk\Analytics\Enums\StandardsLevelEnum $standardsLevel
+ * @property \EbaySdk\Api\Analytics\Types\Metric[] $metrics
+ * @property \EbaySdk\Api\Analytics\Enums\ProgramEnum $program
+ * @property \EbaySdk\Api\Analytics\Enums\StandardsLevelEnum $standardsLevel
  */
 class StandardsProfile extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -23,7 +23,7 @@ class StandardsProfile extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'cycle' => [
-            'type' => 'EbaySdk\Analytics\Types\Cycle',
+            'type' => 'EbaySdk\Api\Analytics\Types\Cycle',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cycle'
@@ -41,7 +41,7 @@ class StandardsProfile extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'evaluationReason'
         ],
         'metrics' => [
-            'type' => 'EbaySdk\Analytics\Types\Metric',
+            'type' => 'EbaySdk\Api\Analytics\Types\Metric',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'metrics'

@@ -9,19 +9,19 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\Buyer $buyer
+ * @property \EbaySdk\Api\Fulfillment\Types\Buyer $buyer
  * @property string $buyerCheckoutNotes
- * @property \EbaySdk\Fulfillment\Types\CancelStatus $cancelStatus
+ * @property \EbaySdk\Api\Fulfillment\Types\CancelStatus $cancelStatus
  * @property string $creationDate
  * @property string[] $fulfillmentHrefs
- * @property \EbaySdk\Fulfillment\Types\FulfillmentStartInstruction[] $fulfillmentStartInstructions
+ * @property \EbaySdk\Api\Fulfillment\Types\FulfillmentStartInstruction[] $fulfillmentStartInstructions
  * @property string $lastModifiedDate
- * @property \EbaySdk\Fulfillment\Types\LineItem[] $lineItems
- * @property \EbaySdk\Fulfillment\Types\OrderFulfillmentStatus $orderFulfillmentStatus
+ * @property \EbaySdk\Api\Fulfillment\Types\LineItem[] $lineItems
+ * @property \EbaySdk\Api\Fulfillment\Types\OrderFulfillmentStatus $orderFulfillmentStatus
  * @property string $orderId
- * @property \EbaySdk\Fulfillment\Enums\OrderPaymentStatusEnum $orderPaymentStatus
- * @property \EbaySdk\Fulfillment\Types\PaymentSummary $paymentSummary
- * @property \EbaySdk\Fulfillment\Types\PricingSummary $pricingSummary
+ * @property \EbaySdk\Api\Fulfillment\Enums\OrderPaymentStatusEnum $orderPaymentStatus
+ * @property \EbaySdk\Api\Fulfillment\Types\PaymentSummary $paymentSummary
+ * @property \EbaySdk\Api\Fulfillment\Types\PricingSummary $pricingSummary
  * @property string $sellerId
  */
 class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -31,7 +31,7 @@ class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'buyer' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Buyer',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Buyer',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyer'
@@ -43,7 +43,7 @@ class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyerCheckoutNotes'
         ],
         'cancelStatus' => [
-            'type' => 'EbaySdk\Fulfillment\Types\CancelStatus',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\CancelStatus',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cancelStatus'
@@ -61,7 +61,7 @@ class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'fulfillmentHrefs'
         ],
         'fulfillmentStartInstructions' => [
-            'type' => 'EbaySdk\Fulfillment\Types\FulfillmentStartInstruction',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\FulfillmentStartInstruction',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'fulfillmentStartInstructions'
@@ -73,13 +73,13 @@ class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'lastModifiedDate'
         ],
         'lineItems' => [
-            'type' => 'EbaySdk\Fulfillment\Types\LineItem',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\LineItem',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItems'
         ],
         'orderFulfillmentStatus' => [
-            'type' => 'EbaySdk\Fulfillment\Types\OrderFulfillmentStatus',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\OrderFulfillmentStatus',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'orderFulfillmentStatus'
@@ -97,13 +97,13 @@ class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'orderPaymentStatus'
         ],
         'paymentSummary' => [
-            'type' => 'EbaySdk\Fulfillment\Types\PaymentSummary',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\PaymentSummary',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paymentSummary'
         ],
         'pricingSummary' => [
-            'type' => 'EbaySdk\Fulfillment\Types\PricingSummary',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\PricingSummary',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'pricingSummary'

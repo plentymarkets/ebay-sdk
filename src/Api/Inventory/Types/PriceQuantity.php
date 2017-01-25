@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\OfferPriceQuantity[] $offers
- * @property \EbaySdk\Inventory\Types\ShipToLocationAvailability $shipToLocationAvailability
+ * @property \EbaySdk\Api\Inventory\Types\OfferPriceQuantity[] $offers
+ * @property \EbaySdk\Api\Inventory\Types\ShipToLocationAvailability $shipToLocationAvailability
  * @property string $sku
  */
 class PriceQuantity extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -20,13 +20,13 @@ class PriceQuantity extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'offers' => [
-            'type' => 'EbaySdk\Inventory\Types\OfferPriceQuantity',
+            'type' => 'EbaySdk\Api\Inventory\Types\OfferPriceQuantity',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'offers'
         ],
         'shipToLocationAvailability' => [
-            'type' => 'EbaySdk\Inventory\Types\ShipToLocationAvailability',
+            'type' => 'EbaySdk\Api\Inventory\Types\ShipToLocationAvailability',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipToLocationAvailability'

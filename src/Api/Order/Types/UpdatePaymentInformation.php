@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\CreditCard $creditCard
+ * @property \EbaySdk\Api\Order\Types\CreditCard $creditCard
  */
 class UpdatePaymentInformation extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class UpdatePaymentInformation extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
      */
     private static $propertyTypes = [
         'creditCard' => [
-            'type' => 'EbaySdk\Order\Types\CreditCard',
+            'type' => 'EbaySdk\Api\Order\Types\CreditCard',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creditCard'

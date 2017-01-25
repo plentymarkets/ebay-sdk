@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $itemId
- * @property \EbaySdk\PostOrder\Enums\ReturnReasonEnum $reason
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnReasonEnum $reason
  * @property integer $returnQuantity
  * @property string $transactionId
  */

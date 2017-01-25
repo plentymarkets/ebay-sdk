@@ -16,7 +16,7 @@ namespace EbaySdk\Api\Metadata\Types;
  * @property string $longMessage
  * @property string $message
  * @property string $outputRefIds
- * @property \EbaySdk\Metadata\Types\ErrorParameterV3[] $parameters
+ * @property \EbaySdk\Api\Metadata\Types\ErrorParameterV3[] $parameters
  * @property string $subDomain
  */
 class ErrorDetailV3 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -68,7 +68,7 @@ class ErrorDetailV3 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'outputRefIds'
         ],
         'parameters' => [
-            'type' => 'EbaySdk\Metadata\Types\ErrorParameterV3',
+            'type' => 'EbaySdk\Api\Metadata\Types\ErrorParameterV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'parameters'

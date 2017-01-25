@@ -11,10 +11,10 @@ namespace EbaySdk\Api\Marketing\Types;
  *
  * @property string[] $brands
  * @property string[] $categoryIds
- * @property \EbaySdk\Marketing\Enums\CategoryScopeEnum $categoryScope
+ * @property \EbaySdk\Api\Marketing\Enums\CategoryScopeEnum $categoryScope
  * @property string[] $listingConditionIds
- * @property \EbaySdk\Marketing\Types\Amount $maxPrice
- * @property \EbaySdk\Marketing\Types\Amount $minPrice
+ * @property \EbaySdk\Api\Marketing\Types\Amount $maxPrice
+ * @property \EbaySdk\Api\Marketing\Types\Amount $minPrice
  */
 class SelectionRule extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -47,13 +47,13 @@ class SelectionRule extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'listingConditionIds'
         ],
         'maxPrice' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxPrice'
         ],
         'minPrice' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minPrice'

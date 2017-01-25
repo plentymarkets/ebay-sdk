@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ReturnMetadataType[] $metadata
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnMetadataType[] $metadata
  */
 class GetMetadataResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class GetMetadataResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'metadata' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnMetadataType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnMetadataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'metadata'

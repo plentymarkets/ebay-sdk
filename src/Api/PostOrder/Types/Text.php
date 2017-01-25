@@ -10,9 +10,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $content
- * @property \EbaySdk\PostOrder\Enums\LanguageEnum $language
+ * @property \EbaySdk\Api\PostOrder\Enums\LanguageEnum $language
  * @property string $translatedFromContent
- * @property \EbaySdk\PostOrder\Enums\LanguageEnum $translatedFromLanguage
+ * @property \EbaySdk\Api\PostOrder\Enums\LanguageEnum $translatedFromLanguage
  */
 class Text extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

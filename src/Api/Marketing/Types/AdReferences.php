@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\AdReference[] $ads
+ * @property \EbaySdk\Api\Marketing\Types\AdReference[] $ads
  */
 class AdReferences extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class AdReferences extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'ads' => [
-            'type' => 'EbaySdk\Marketing\Types\AdReference',
+            'type' => 'EbaySdk\Api\Marketing\Types\AdReference',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ads'

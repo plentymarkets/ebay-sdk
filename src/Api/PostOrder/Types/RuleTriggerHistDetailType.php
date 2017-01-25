@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property integer $itemId
- * @property \EbaySdk\PostOrder\Types\Java:XMLGregorianCalendar $returnDate
+ * @property \EbaySdk\Api\PostOrder\Types\Java:XMLGregorianCalendar $returnDate
  * @property integer $returnId
  */
 class RuleTriggerHistDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -26,7 +26,7 @@ class RuleTriggerHistDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
             'elementName' => 'itemId'
         ],
         'returnDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\Java:XMLGregorianCalendar',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Java:XMLGregorianCalendar',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnDate'

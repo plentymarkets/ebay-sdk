@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\Amount $amountOffItem
- * @property \EbaySdk\Marketing\Types\Amount $amountOffOrder
+ * @property \EbaySdk\Api\Marketing\Types\Amount $amountOffItem
+ * @property \EbaySdk\Api\Marketing\Types\Amount $amountOffOrder
  * @property string $percentageOffItem
  * @property string $percentageOffOrder
  */
@@ -21,13 +21,13 @@ class DiscountBenefit extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'amountOffItem' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amountOffItem'
         ],
         'amountOffOrder' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amountOffOrder'

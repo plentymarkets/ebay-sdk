@@ -11,8 +11,8 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property boolean $eligible
  * @property string[] $eligibleCancelReason
- * @property \EbaySdk\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
- * @property \EbaySdk\PostOrder\Types\ItemEligibilityResult[] $itemEligibilityResult
+ * @property \EbaySdk\Api\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
+ * @property \EbaySdk\Api\PostOrder\Types\ItemEligibilityResult[] $itemEligibilityResult
  * @property string $legacyOrderId
  */
 class OrderEligibilityResult extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -40,7 +40,7 @@ class OrderEligibilityResult extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'failureReason'
         ],
         'itemEligibilityResult' => [
-            'type' => 'EbaySdk\PostOrder\Types\ItemEligibilityResult',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ItemEligibilityResult',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'itemEligibilityResult'

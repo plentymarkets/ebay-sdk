@@ -9,10 +9,10 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\SoldAggregatedMetrics $calendarWindowAggregatedMetrics
- * @property \EbaySdk\Account\Types\LookbackPeriod $lookbackPeriod
- * @property \EbaySdk\Account\Types\SoldAggregatedMetrics $rollingWindowAggregatedMetrics
- * @property \EbaySdk\Account\Types\Amount $soldInventoryValue
+ * @property \EbaySdk\Api\Account\Types\SoldAggregatedMetrics $calendarWindowAggregatedMetrics
+ * @property \EbaySdk\Api\Account\Types\LookbackPeriod $lookbackPeriod
+ * @property \EbaySdk\Api\Account\Types\SoldAggregatedMetrics $rollingWindowAggregatedMetrics
+ * @property \EbaySdk\Api\Account\Types\Amount $soldInventoryValue
  * @property integer $soldQuantity
  */
 class TransactionSnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -22,25 +22,25 @@ class TransactionSnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'calendarWindowAggregatedMetrics' => [
-            'type' => 'EbaySdk\Account\Types\SoldAggregatedMetrics',
+            'type' => 'EbaySdk\Api\Account\Types\SoldAggregatedMetrics',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'calendarWindowAggregatedMetrics'
         ],
         'lookbackPeriod' => [
-            'type' => 'EbaySdk\Account\Types\LookbackPeriod',
+            'type' => 'EbaySdk\Api\Account\Types\LookbackPeriod',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lookbackPeriod'
         ],
         'rollingWindowAggregatedMetrics' => [
-            'type' => 'EbaySdk\Account\Types\SoldAggregatedMetrics',
+            'type' => 'EbaySdk\Api\Account\Types\SoldAggregatedMetrics',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'rollingWindowAggregatedMetrics'
         ],
         'soldInventoryValue' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'soldInventoryValue'

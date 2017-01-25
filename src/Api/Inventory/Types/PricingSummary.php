@@ -9,11 +9,11 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\Amount $minimumAdvertisedPrice
- * @property \EbaySdk\Inventory\Enums\SoldOnEnum $originallySoldForRetailPriceOn
- * @property \EbaySdk\Inventory\Types\Amount $originalRetailPrice
- * @property \EbaySdk\Inventory\Types\Amount $price
- * @property \EbaySdk\Inventory\Enums\MinimumAdvertisedPriceHandlingEnum $pricingVisibility
+ * @property \EbaySdk\Api\Inventory\Types\Amount $minimumAdvertisedPrice
+ * @property \EbaySdk\Api\Inventory\Enums\SoldOnEnum $originallySoldForRetailPriceOn
+ * @property \EbaySdk\Api\Inventory\Types\Amount $originalRetailPrice
+ * @property \EbaySdk\Api\Inventory\Types\Amount $price
+ * @property \EbaySdk\Api\Inventory\Enums\MinimumAdvertisedPriceHandlingEnum $pricingVisibility
  */
 class PricingSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -22,7 +22,7 @@ class PricingSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'minimumAdvertisedPrice' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minimumAdvertisedPrice'
@@ -34,13 +34,13 @@ class PricingSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'originallySoldForRetailPriceOn'
         ],
         'originalRetailPrice' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'originalRetailPrice'
         ],
         'price' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'

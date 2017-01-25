@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\Amount $discount
+ * @property \EbaySdk\Api\Order\Types\Amount $discount
  * @property string $message
  * @property string $promotionCode
  * @property string $promotionType
@@ -21,7 +21,7 @@ class Promotion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'discount' => [
-            'type' => 'EbaySdk\Order\Types\Amount',
+            'type' => 'EbaySdk\Api\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discount'

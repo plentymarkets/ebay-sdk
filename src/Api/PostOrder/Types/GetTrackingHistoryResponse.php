@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $carrierUsed
- * @property \EbaySdk\PostOrder\Types\ScanDetailType[] $scanHistory
+ * @property \EbaySdk\Api\PostOrder\Types\ScanDetailType[] $scanHistory
  * @property string $trackingNumber
  * @property string $trackingStatus
  */
@@ -27,7 +27,7 @@ class GetTrackingHistoryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\B
             'elementName' => 'carrierUsed'
         ],
         'scanHistory' => [
-            'type' => 'EbaySdk\PostOrder\Types\ScanDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ScanDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'scanHistory'

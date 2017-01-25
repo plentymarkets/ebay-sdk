@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $carrier
- * @property \EbaySdk\PostOrder\Types\ReturnShippingCostDetailType $shippingCost
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnShippingCostDetailType $shippingCost
  */
 class CarrierShippingCostInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class CarrierShippingCostInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\
             'elementName' => 'carrier'
         ],
         'shippingCost' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnShippingCostDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnShippingCostDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'

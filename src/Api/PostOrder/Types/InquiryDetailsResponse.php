@@ -9,18 +9,18 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Amount $claimAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $claimAmount
  * @property string $extTransactionId
- * @property \EbaySdk\PostOrder\Enums\UserPartyEnum $initiator
- * @property \EbaySdk\PostOrder\Types\InquiryDetails $inquiryDetails
- * @property \EbaySdk\PostOrder\Types\ClaimHistoryResponse $inquiryHistoryDetails
+ * @property \EbaySdk\Api\PostOrder\Enums\UserPartyEnum $initiator
+ * @property \EbaySdk\Api\PostOrder\Types\InquiryDetails $inquiryDetails
+ * @property \EbaySdk\Api\PostOrder\Types\ClaimHistoryResponse $inquiryHistoryDetails
  * @property string $inquiryId
  * @property integer $inquiryQuantity
- * @property \EbaySdk\PostOrder\Types\ItemDetails $itemDetails
+ * @property \EbaySdk\Api\PostOrder\Types\ItemDetails $itemDetails
  * @property string $itemId
- * @property \EbaySdk\PostOrder\Types\ReturnAddress $returnDetails
- * @property \EbaySdk\PostOrder\Types\DateTime $sellerMakeItRightByDate
- * @property \EbaySdk\PostOrder\Types\Amount $shippingCost
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnAddress $returnDetails
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $sellerMakeItRightByDate
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $shippingCost
  * @property string $state
  * @property string $status
  * @property string $transactionId
@@ -33,7 +33,7 @@ class InquiryDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
      */
     private static $propertyTypes = [
         'claimAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'claimAmount'
@@ -51,13 +51,13 @@ class InquiryDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'initiator'
         ],
         'inquiryDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\InquiryDetails',
+            'type' => 'EbaySdk\Api\PostOrder\Types\InquiryDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'inquiryDetails'
         ],
         'inquiryHistoryDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\ClaimHistoryResponse',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ClaimHistoryResponse',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'inquiryHistoryDetails'
@@ -75,7 +75,7 @@ class InquiryDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'inquiryQuantity'
         ],
         'itemDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\ItemDetails',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ItemDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemDetails'
@@ -87,19 +87,19 @@ class InquiryDetailsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
             'elementName' => 'itemId'
         ],
         'returnDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnAddress',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnDetails'
         ],
         'sellerMakeItRightByDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerMakeItRightByDate'
         ],
         'shippingCost' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'

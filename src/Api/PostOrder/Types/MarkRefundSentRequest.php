@@ -10,8 +10,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $comments
- * @property \EbaySdk\PostOrder\Types\Amount $partialRefundAmount
- * @property \EbaySdk\PostOrder\Types\RefundDetailType $refundDetail
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $partialRefundAmount
+ * @property \EbaySdk\Api\PostOrder\Types\RefundDetailType $refundDetail
  */
 class MarkRefundSentRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -26,13 +26,13 @@ class MarkRefundSentRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'comments'
         ],
         'partialRefundAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'partialRefundAmount'
         ],
         'refundDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RefundDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RefundDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundDetail'

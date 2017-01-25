@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ReturnEligibilityPerItemType $eligibilityResultPerItem
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnEligibilityPerItemType $eligibilityResultPerItem
  */
 class CheckEligibilityResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class CheckEligibilityResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
      */
     private static $propertyTypes = [
         'eligibilityResultPerItem' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnEligibilityPerItemType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnEligibilityPerItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibilityResultPerItem'

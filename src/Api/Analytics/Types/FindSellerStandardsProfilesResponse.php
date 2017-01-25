@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Analytics\Types;
 
 /**
  *
- * @property \EbaySdk\Analytics\Types\StandardsProfile[] $standardsProfiles
+ * @property \EbaySdk\Api\Analytics\Types\StandardsProfile[] $standardsProfiles
  */
 class FindSellerStandardsProfilesResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class FindSellerStandardsProfilesResponse extends \Plenty\Modules\Market\Ebay\Ap
      */
     private static $propertyTypes = [
         'standardsProfiles' => [
-            'type' => 'EbaySdk\Analytics\Types\StandardsProfile',
+            'type' => 'EbaySdk\Api\Analytics\Types\StandardsProfile',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'standardsProfiles'

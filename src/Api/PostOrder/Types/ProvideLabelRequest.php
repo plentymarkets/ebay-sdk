@@ -11,14 +11,14 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $carrierEnum
  * @property string $carrierName
- * @property \EbaySdk\PostOrder\Types\Text $comments
+ * @property \EbaySdk\Api\PostOrder\Types\Text $comments
  * @property string $fileId
  * @property boolean $forwardShippingLabelProvided
- * @property \EbaySdk\PostOrder\Enums\LabelActionEnum $labelAction
+ * @property \EbaySdk\Api\PostOrder\Enums\LabelActionEnum $labelAction
  * @property string $labelId
- * @property \EbaySdk\PostOrder\Types\DateTime $labelSentDate
- * @property \EbaySdk\PostOrder\Enums\NoSellerUploadLabelReasonEnum $noLabelReason
- * @property \EbaySdk\PostOrder\Types\B:Amount $returnLabelCost
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $labelSentDate
+ * @property \EbaySdk\Api\PostOrder\Enums\NoSellerUploadLabelReasonEnum $noLabelReason
+ * @property \EbaySdk\Api\PostOrder\Types\B:Amount $returnLabelCost
  * @property string $trackingNumber
  */
 class ProvideLabelRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -40,7 +40,7 @@ class ProvideLabelRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'carrierName'
         ],
         'comments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'comments'
@@ -70,7 +70,7 @@ class ProvideLabelRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'labelId'
         ],
         'labelSentDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'labelSentDate'
@@ -82,7 +82,7 @@ class ProvideLabelRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'noLabelReason'
         ],
         'returnLabelCost' => [
-            'type' => 'EbaySdk\PostOrder\Types\B:Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\B:Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnLabelCost'

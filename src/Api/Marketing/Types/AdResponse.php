@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Marketing\Types;
 /**
  *
  * @property string $adId
- * @property \EbaySdk\Marketing\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Marketing\Types\ErrorDetailV3[] $errors
  * @property string $href
  * @property string $listingId
  * @property integer $statusCode
@@ -28,7 +28,7 @@ class AdResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'adId'
         ],
         'errors' => [
-            'type' => 'EbaySdk\Marketing\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'

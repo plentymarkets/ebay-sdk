@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleDetailType $ruleDetail
+ * @property \EbaySdk\Api\PostOrder\Types\RuleDetailType $ruleDetail
  * @property integer $versionId
  */
 class GetDispositionRuleDetailResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -19,7 +19,7 @@ class GetDispositionRuleDetailResponse extends \Plenty\Modules\Market\Ebay\Api\T
      */
     private static $propertyTypes = [
         'ruleDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ruleDetail'

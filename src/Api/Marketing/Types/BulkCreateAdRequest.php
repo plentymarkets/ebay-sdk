@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\CreateAdRequest[] $requests
+ * @property \EbaySdk\Api\Marketing\Types\CreateAdRequest[] $requests
  */
 class BulkCreateAdRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BulkCreateAdRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'requests' => [
-            'type' => 'EbaySdk\Marketing\Types\CreateAdRequest',
+            'type' => 'EbaySdk\Api\Marketing\Types\CreateAdRequest',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'requests'

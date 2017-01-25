@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $ascending
- * @property \EbaySdk\PostOrder\Enums\CancelSortTypeEnum $enumValue
+ * @property \EbaySdk\Api\PostOrder\Enums\CancelSortTypeEnum $enumValue
  */
 class CancelSortField extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

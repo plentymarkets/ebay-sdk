@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\Amount $amount
+ * @property \EbaySdk\Api\Inventory\Types\Amount $amount
  * @property string $feeType
- * @property \EbaySdk\Inventory\Types\Amount $promotionalDiscount
+ * @property \EbaySdk\Api\Inventory\Types\Amount $promotionalDiscount
  */
 class Fee extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,7 +20,7 @@ class Fee extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'amount' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'
@@ -32,7 +32,7 @@ class Fee extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'feeType'
         ],
         'promotionalDiscount' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'promotionalDiscount'

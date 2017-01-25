@@ -12,7 +12,7 @@ namespace EbaySdk\Api\Inventory\Types;
  * @property string $href
  * @property integer $limit
  * @property string $next
- * @property \EbaySdk\Inventory\Types\EbayOfferDetailsWithAll[] $offers
+ * @property \EbaySdk\Api\Inventory\Types\EbayOfferDetailsWithAll[] $offers
  * @property string $prev
  * @property integer $size
  * @property integer $total
@@ -42,7 +42,7 @@ class Offers extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'next'
         ],
         'offers' => [
-            'type' => 'EbaySdk\Inventory\Types\EbayOfferDetailsWithAll',
+            'type' => 'EbaySdk\Api\Inventory\Types\EbayOfferDetailsWithAll',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'offers'

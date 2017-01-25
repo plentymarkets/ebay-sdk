@@ -9,26 +9,26 @@ namespace EbaySdk\Api\Browse\Types;
 
 /**
  *
- * @property \EbaySdk\Browse\Types\Image[] $additionalImages
+ * @property \EbaySdk\Api\Browse\Types\Image[] $additionalImages
  * @property integer $bidCount
  * @property string[] $buyingOptions
- * @property \EbaySdk\Browse\Types\Category[] $categories
+ * @property \EbaySdk\Api\Browse\Types\Category[] $categories
  * @property string $condition
- * @property \EbaySdk\Browse\Types\Amount_0 $currentBidPrice
- * @property \EbaySdk\Browse\Types\TargetLocation $distanceFromPickupLocation
+ * @property \EbaySdk\Api\Browse\Types\Amount_0 $currentBidPrice
+ * @property \EbaySdk\Api\Browse\Types\TargetLocation $distanceFromPickupLocation
  * @property string $energyEfficiencyClass
- * @property \EbaySdk\Browse\Types\Image $image
+ * @property \EbaySdk\Api\Browse\Types\Image $image
  * @property string $itemAffiliateWebUrl
  * @property string $itemGroupHref
  * @property string $itemId
- * @property \EbaySdk\Browse\Types\ItemLocationImpl $itemLocation
+ * @property \EbaySdk\Api\Browse\Types\ItemLocationImpl $itemLocation
  * @property string $itemWebUrl
- * @property \EbaySdk\Browse\Types\MarketingPrice_0 $marketingPrice
- * @property \EbaySdk\Browse\Types\PickupOptionSummary[] $pickupOptions
- * @property \EbaySdk\Browse\Types\Amount_0 $price
- * @property \EbaySdk\Browse\Types\Seller $seller
- * @property \EbaySdk\Browse\Types\ShippingOptionSummary[] $shippingOptions
- * @property \EbaySdk\Browse\Types\Image[] $thumbnailImages
+ * @property \EbaySdk\Api\Browse\Types\MarketingPrice_0 $marketingPrice
+ * @property \EbaySdk\Api\Browse\Types\PickupOptionSummary[] $pickupOptions
+ * @property \EbaySdk\Api\Browse\Types\Amount_0 $price
+ * @property \EbaySdk\Api\Browse\Types\Seller $seller
+ * @property \EbaySdk\Api\Browse\Types\ShippingOptionSummary[] $shippingOptions
+ * @property \EbaySdk\Api\Browse\Types\Image[] $thumbnailImages
  * @property string $title
  * @property boolean $topRatedBuyingExperience
  */
@@ -39,7 +39,7 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'additionalImages' => [
-            'type' => 'EbaySdk\Browse\Types\Image',
+            'type' => 'EbaySdk\Api\Browse\Types\Image',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'additionalImages'
@@ -57,7 +57,7 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyingOptions'
         ],
         'categories' => [
-            'type' => 'EbaySdk\Browse\Types\Category',
+            'type' => 'EbaySdk\Api\Browse\Types\Category',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'categories'
@@ -69,13 +69,13 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'condition'
         ],
         'currentBidPrice' => [
-            'type' => 'EbaySdk\Browse\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'currentBidPrice'
         ],
         'distanceFromPickupLocation' => [
-            'type' => 'EbaySdk\Browse\Types\TargetLocation',
+            'type' => 'EbaySdk\Api\Browse\Types\TargetLocation',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'distanceFromPickupLocation'
@@ -87,7 +87,7 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'energyEfficiencyClass'
         ],
         'image' => [
-            'type' => 'EbaySdk\Browse\Types\Image',
+            'type' => 'EbaySdk\Api\Browse\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'image'
@@ -111,7 +111,7 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemId'
         ],
         'itemLocation' => [
-            'type' => 'EbaySdk\Browse\Types\ItemLocationImpl',
+            'type' => 'EbaySdk\Api\Browse\Types\ItemLocationImpl',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemLocation'
@@ -123,37 +123,37 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemWebUrl'
         ],
         'marketingPrice' => [
-            'type' => 'EbaySdk\Browse\Types\MarketingPrice_0',
+            'type' => 'EbaySdk\Api\Browse\Types\MarketingPrice_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'marketingPrice'
         ],
         'pickupOptions' => [
-            'type' => 'EbaySdk\Browse\Types\PickupOptionSummary',
+            'type' => 'EbaySdk\Api\Browse\Types\PickupOptionSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'pickupOptions'
         ],
         'price' => [
-            'type' => 'EbaySdk\Browse\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'
         ],
         'seller' => [
-            'type' => 'EbaySdk\Browse\Types\Seller',
+            'type' => 'EbaySdk\Api\Browse\Types\Seller',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'seller'
         ],
         'shippingOptions' => [
-            'type' => 'EbaySdk\Browse\Types\ShippingOptionSummary',
+            'type' => 'EbaySdk\Api\Browse\Types\ShippingOptionSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingOptions'
         ],
         'thumbnailImages' => [
-            'type' => 'EbaySdk\Browse\Types\Image',
+            'type' => 'EbaySdk\Api\Browse\Types\Image',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'thumbnailImages'

@@ -11,7 +11,7 @@ namespace EbaySdk\Api\Analytics\Types;
  *
  * @property string $field
  * @property boolean $negated
- * @property \EbaySdk\Analytics\Types\RangeValue $range
+ * @property \EbaySdk\Api\Analytics\Types\RangeValue $range
  * @property string[] $set
  * @property string $value
  */
@@ -34,7 +34,7 @@ class FilterField extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'negated'
         ],
         'range' => [
-            'type' => 'EbaySdk\Analytics\Types\RangeValue',
+            'type' => 'EbaySdk\Api\Analytics\Types\RangeValue',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'range'

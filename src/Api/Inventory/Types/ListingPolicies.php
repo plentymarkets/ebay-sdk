@@ -12,7 +12,7 @@ namespace EbaySdk\Api\Inventory\Types;
  * @property string $fulfillmentPolicyId
  * @property string $paymentPolicyId
  * @property string $returnPolicyId
- * @property \EbaySdk\Inventory\Types\ShippingCostOverride[] $shippingCostOverrides
+ * @property \EbaySdk\Api\Inventory\Types\ShippingCostOverride[] $shippingCostOverrides
  */
 class ListingPolicies extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -39,7 +39,7 @@ class ListingPolicies extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'returnPolicyId'
         ],
         'shippingCostOverrides' => [
-            'type' => 'EbaySdk\Inventory\Types\ShippingCostOverride',
+            'type' => 'EbaySdk\Api\Inventory\Types\ShippingCostOverride',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingCostOverrides'

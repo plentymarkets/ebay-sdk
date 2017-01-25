@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CaseSummaryType[] $members
- * @property \EbaySdk\PostOrder\Types\PaginationOutput $paginationOutput
+ * @property \EbaySdk\Api\PostOrder\Types\CaseSummaryType[] $members
+ * @property \EbaySdk\Api\PostOrder\Types\PaginationOutput $paginationOutput
  * @property integer $totalNumberOfCases
  */
 class CaseSearchResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -20,13 +20,13 @@ class CaseSearchResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'members' => [
-            'type' => 'EbaySdk\PostOrder\Types\CaseSummaryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CaseSummaryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'members'
         ],
         'paginationOutput' => [
-            'type' => 'EbaySdk\PostOrder\Types\PaginationOutput',
+            'type' => 'EbaySdk\Api\PostOrder\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'

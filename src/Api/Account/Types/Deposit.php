@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\Amount $amount
- * @property \EbaySdk\Account\Types\TimeDuration $dueIn
- * @property \EbaySdk\Account\Types\PaymentMethod[] $paymentMethods
+ * @property \EbaySdk\Api\Account\Types\Amount $amount
+ * @property \EbaySdk\Api\Account\Types\TimeDuration $dueIn
+ * @property \EbaySdk\Api\Account\Types\PaymentMethod[] $paymentMethods
  */
 class Deposit extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,19 +20,19 @@ class Deposit extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'amount' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'
         ],
         'dueIn' => [
-            'type' => 'EbaySdk\Account\Types\TimeDuration',
+            'type' => 'EbaySdk\Api\Account\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'dueIn'
         ],
         'paymentMethods' => [
-            'type' => 'EbaySdk\Account\Types\PaymentMethod',
+            'type' => 'EbaySdk\Api\Account\Types\PaymentMethod',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'paymentMethods'

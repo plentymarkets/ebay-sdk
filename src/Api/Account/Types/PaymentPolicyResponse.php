@@ -13,7 +13,7 @@ namespace EbaySdk\Api\Account\Types;
  * @property integer $limit
  * @property string $next
  * @property integer $offset
- * @property \EbaySdk\Account\Types\PaymentPolicy[] $paymentPolicies
+ * @property \EbaySdk\Api\Account\Types\PaymentPolicy[] $paymentPolicies
  * @property string $prev
  * @property integer $total
  */
@@ -48,7 +48,7 @@ class PaymentPolicyResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'offset'
         ],
         'paymentPolicies' => [
-            'type' => 'EbaySdk\Account\Types\PaymentPolicy',
+            'type' => 'EbaySdk\Api\Account\Types\PaymentPolicy',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'paymentPolicies'

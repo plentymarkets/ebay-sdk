@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Account\Types;
 /**
  *
  * @property string $paymentMethodName
- * @property \EbaySdk\Account\Enums\ExternalPaymentMethodTypeEnum $paymentMethodType
+ * @property \EbaySdk\Api\Account\Enums\ExternalPaymentMethodTypeEnum $paymentMethodType
  * @property boolean $primary
  * @property boolean $verified
  */

@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $warnings
  */
 class BaseResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BaseResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'warnings' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

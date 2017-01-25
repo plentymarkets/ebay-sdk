@@ -9,41 +9,41 @@ namespace EbaySdk\Api\Browse\Types;
 
 /**
  *
- * @property \EbaySdk\Browse\Types\Image[] $additionalImages
+ * @property \EbaySdk\Api\Browse\Types\Image[] $additionalImages
  * @property string $ageGroup
- * @property \EbaySdk\Browse\Enums\AvailabilityStatusEnum $availabilityStatusForShipToHome
+ * @property \EbaySdk\Api\Browse\Enums\AvailabilityStatusEnum $availabilityStatusForShipToHome
  * @property integer $bidCount
  * @property string $brand
  * @property string[] $buyingOptions
  * @property string $categoryPath
  * @property string $color
  * @property string $condition
- * @property \EbaySdk\Browse\Types\Amount $currentBidPrice
+ * @property \EbaySdk\Api\Browse\Types\Amount $currentBidPrice
  * @property string $description
  * @property string $energyEfficiencyClass
  * @property string $gender
  * @property string $gtin
- * @property \EbaySdk\Browse\Types\Image $image
+ * @property \EbaySdk\Api\Browse\Types\Image $image
  * @property string $itemAffiliateWebUrl
  * @property string $itemEndDate
  * @property string $itemId
- * @property \EbaySdk\Browse\Types\Address $itemLocation
+ * @property \EbaySdk\Api\Browse\Types\Address $itemLocation
  * @property string $itemWebUrl
- * @property \EbaySdk\Browse\Types\TypedNameValue[] $localizedAspects
- * @property \EbaySdk\Browse\Types\MarketingPrice $marketingPrice
+ * @property \EbaySdk\Api\Browse\Types\TypedNameValue[] $localizedAspects
+ * @property \EbaySdk\Api\Browse\Types\MarketingPrice $marketingPrice
  * @property string $material
  * @property string $mpn
  * @property string $pattern
- * @property \EbaySdk\Browse\Types\Amount $price
- * @property \EbaySdk\Browse\Enums\PriceDisplayConditionEnum $priceDisplayCondition
+ * @property \EbaySdk\Api\Browse\Types\Amount $price
+ * @property \EbaySdk\Api\Browse\Enums\PriceDisplayConditionEnum $priceDisplayCondition
  * @property string $primaryItemGroupHref
  * @property string $primaryItemGroupId
- * @property \EbaySdk\Browse\Types\ReviewRating $primaryProductReviewRating
+ * @property \EbaySdk\Api\Browse\Types\ReviewRating $primaryProductReviewRating
  * @property integer $quantityLimitPerBuyer
  * @property integer $quantitySold
- * @property \EbaySdk\Browse\Types\ItemReturnTerms $returnTerms
- * @property \EbaySdk\Browse\Types\Seller $seller
- * @property \EbaySdk\Browse\Types\ShippingOption[] $shippingOptions
+ * @property \EbaySdk\Api\Browse\Types\ItemReturnTerms $returnTerms
+ * @property \EbaySdk\Api\Browse\Types\Seller $seller
+ * @property \EbaySdk\Api\Browse\Types\ShippingOption[] $shippingOptions
  * @property string $shortDescription
  * @property string $size
  * @property string $sizeSystem
@@ -52,7 +52,7 @@ namespace EbaySdk\Api\Browse\Types;
  * @property string $title
  * @property boolean $topRatedBuyingExperience
  * @property integer $uniqueBidderCount
- * @property \EbaySdk\Browse\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Browse\Types\ErrorDetailV3[] $warnings
  */
 class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -61,7 +61,7 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'additionalImages' => [
-            'type' => 'EbaySdk\Browse\Types\Image',
+            'type' => 'EbaySdk\Api\Browse\Types\Image',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'additionalImages'
@@ -115,7 +115,7 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'condition'
         ],
         'currentBidPrice' => [
-            'type' => 'EbaySdk\Browse\Types\Amount',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'currentBidPrice'
@@ -145,7 +145,7 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'gtin'
         ],
         'image' => [
-            'type' => 'EbaySdk\Browse\Types\Image',
+            'type' => 'EbaySdk\Api\Browse\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'image'
@@ -169,7 +169,7 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemId'
         ],
         'itemLocation' => [
-            'type' => 'EbaySdk\Browse\Types\Address',
+            'type' => 'EbaySdk\Api\Browse\Types\Address',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemLocation'
@@ -181,13 +181,13 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemWebUrl'
         ],
         'localizedAspects' => [
-            'type' => 'EbaySdk\Browse\Types\TypedNameValue',
+            'type' => 'EbaySdk\Api\Browse\Types\TypedNameValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'localizedAspects'
         ],
         'marketingPrice' => [
-            'type' => 'EbaySdk\Browse\Types\MarketingPrice',
+            'type' => 'EbaySdk\Api\Browse\Types\MarketingPrice',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'marketingPrice'
@@ -211,7 +211,7 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'pattern'
         ],
         'price' => [
-            'type' => 'EbaySdk\Browse\Types\Amount',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'
@@ -235,7 +235,7 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'primaryItemGroupId'
         ],
         'primaryProductReviewRating' => [
-            'type' => 'EbaySdk\Browse\Types\ReviewRating',
+            'type' => 'EbaySdk\Api\Browse\Types\ReviewRating',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'primaryProductReviewRating'
@@ -253,19 +253,19 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'quantitySold'
         ],
         'returnTerms' => [
-            'type' => 'EbaySdk\Browse\Types\ItemReturnTerms',
+            'type' => 'EbaySdk\Api\Browse\Types\ItemReturnTerms',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnTerms'
         ],
         'seller' => [
-            'type' => 'EbaySdk\Browse\Types\Seller',
+            'type' => 'EbaySdk\Api\Browse\Types\Seller',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'seller'
         ],
         'shippingOptions' => [
-            'type' => 'EbaySdk\Browse\Types\ShippingOption',
+            'type' => 'EbaySdk\Api\Browse\Types\ShippingOption',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingOptions'
@@ -319,7 +319,7 @@ class Item extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'uniqueBidderCount'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Browse\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Browse\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

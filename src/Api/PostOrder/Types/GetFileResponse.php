@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ReturnFileType[] $files
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnFileType[] $files
  */
 class GetFileResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class GetFileResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'files' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnFileType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnFileType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'files'

@@ -10,9 +10,9 @@ namespace EbaySdk\Api\Fulfillment\Types;
 /**
  *
  * @property string $companyName
- * @property \EbaySdk\Fulfillment\Types\Address $contactAddress
+ * @property \EbaySdk\Api\Fulfillment\Types\Address $contactAddress
  * @property string $fullName
- * @property \EbaySdk\Fulfillment\Types\PhoneNumber $primaryPhone
+ * @property \EbaySdk\Api\Fulfillment\Types\PhoneNumber $primaryPhone
  */
 class Contact extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -27,7 +27,7 @@ class Contact extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'companyName'
         ],
         'contactAddress' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Address',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Address',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'contactAddress'
@@ -39,7 +39,7 @@ class Contact extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'fullName'
         ],
         'primaryPhone' => [
-            'type' => 'EbaySdk\Fulfillment\Types\PhoneNumber',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\PhoneNumber',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'primaryPhone'

@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $creationDisabled
- * @property \EbaySdk\PostOrder\Types\RuleDetailType[] $rule
+ * @property \EbaySdk\Api\PostOrder\Types\RuleDetailType[] $rule
  * @property integer $totalNumRules
  * @property integer $versionId
  */
@@ -27,7 +27,7 @@ class GetDispositionRulesResponse extends \Plenty\Modules\Market\Ebay\Api\Types\
             'elementName' => 'creationDisabled'
         ],
         'rule' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'rule'

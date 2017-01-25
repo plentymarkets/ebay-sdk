@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ReturnEligibilityItemPerCheckTypeResult[] $eligibilityResultsPerCheckType
- * @property \EbaySdk\PostOrder\Types\ReturnEligibilityItemType $returnItem
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnEligibilityItemPerCheckTypeResult[] $eligibilityResultsPerCheckType
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnEligibilityItemType $returnItem
  */
 class ReturnEligibilityPerItemType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class ReturnEligibilityPerItemType extends \Plenty\Modules\Market\Ebay\Api\Types
      */
     private static $propertyTypes = [
         'eligibilityResultsPerCheckType' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnEligibilityItemPerCheckTypeResult',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnEligibilityItemPerCheckTypeResult',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'eligibilityResultsPerCheckType'
         ],
         'returnItem' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnEligibilityItemType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnEligibilityItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnItem'

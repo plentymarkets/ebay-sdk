@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CancelSummary[] $cancellations
- * @property \EbaySdk\PostOrder\Types\PaginationOutput $paginationOutput
+ * @property \EbaySdk\Api\PostOrder\Types\CancelSummary[] $cancellations
+ * @property \EbaySdk\Api\PostOrder\Types\PaginationOutput $paginationOutput
  * @property integer $total
  */
 class FindCancelResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -20,13 +20,13 @@ class FindCancelResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'cancellations' => [
-            'type' => 'EbaySdk\PostOrder\Types\CancelSummary',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CancelSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'cancellations'
         ],
         'paginationOutput' => [
-            'type' => 'EbaySdk\PostOrder\Types\PaginationOutput',
+            'type' => 'EbaySdk\Api\PostOrder\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'

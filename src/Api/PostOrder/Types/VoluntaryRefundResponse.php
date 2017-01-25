@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\VoluntaryRefundResult $refundResult
+ * @property \EbaySdk\Api\PostOrder\Types\VoluntaryRefundResult $refundResult
  */
 class VoluntaryRefundResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class VoluntaryRefundResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'refundResult' => [
-            'type' => 'EbaySdk\PostOrder\Types\VoluntaryRefundResult',
+            'type' => 'EbaySdk\Api\PostOrder\Types\VoluntaryRefundResult',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundResult'

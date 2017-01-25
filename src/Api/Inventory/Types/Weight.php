@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Enums\WeightUnitOfMeasureEnum $unit
+ * @property \EbaySdk\Api\Inventory\Enums\WeightUnitOfMeasureEnum $unit
  * @property double $value
  */
 class Weight extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

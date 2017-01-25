@@ -10,13 +10,13 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $carrier
- * @property \EbaySdk\PostOrder\Types\Text $comments
+ * @property \EbaySdk\Api\PostOrder\Types\Text $comments
  * @property string $itemId
- * @property \EbaySdk\PostOrder\Enums\ReturnReasonEnum $reason
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnReasonEnum $reason
  * @property string $requestType
  * @property integer $returnQuantity
  * @property string $transactionId
- * @property \EbaySdk\PostOrder\Enums\ReturnTypeEnum $type
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnTypeEnum $type
  */
 class ReturnRequestType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -31,7 +31,7 @@ class ReturnRequestType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'carrier'
         ],
         'comments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'comments'

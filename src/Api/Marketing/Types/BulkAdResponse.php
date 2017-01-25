@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\AdResponse[] $responses
+ * @property \EbaySdk\Api\Marketing\Types\AdResponse[] $responses
  */
 class BulkAdResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BulkAdResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'responses' => [
-            'type' => 'EbaySdk\Marketing\Types\AdResponse',
+            'type' => 'EbaySdk\Api\Marketing\Types\AdResponse',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'responses'

@@ -9,14 +9,14 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\Adjustment_0 $adjustment
- * @property \EbaySdk\Order\Types\Amount_0 $deliveryCost
- * @property \EbaySdk\Order\Types\Amount_0 $deliveryDiscount
- * @property \EbaySdk\Order\Types\Amount_0 $fee
- * @property \EbaySdk\Order\Types\Amount_0 $priceDiscount
- * @property \EbaySdk\Order\Types\Amount_0 $priceSubtotal
- * @property \EbaySdk\Order\Types\Amount_0 $tax
- * @property \EbaySdk\Order\Types\Amount_0 $total
+ * @property \EbaySdk\Api\Order\Types\Adjustment_0 $adjustment
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $deliveryCost
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $deliveryDiscount
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $fee
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $priceDiscount
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $priceSubtotal
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $tax
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $total
  */
 class PricingSummary_0 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,49 +25,49 @@ class PricingSummary_0 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'adjustment' => [
-            'type' => 'EbaySdk\Order\Types\Adjustment_0',
+            'type' => 'EbaySdk\Api\Order\Types\Adjustment_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'adjustment'
         ],
         'deliveryCost' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deliveryCost'
         ],
         'deliveryDiscount' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deliveryDiscount'
         ],
         'fee' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fee'
         ],
         'priceDiscount' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'priceDiscount'
         ],
         'priceSubtotal' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'priceSubtotal'
         ],
         'tax' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'tax'
         ],
         'total' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'total'

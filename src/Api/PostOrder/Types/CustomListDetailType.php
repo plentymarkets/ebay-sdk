@@ -9,10 +9,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CustomListDataType[] $listData
+ * @property \EbaySdk\Api\PostOrder\Types\CustomListDataType[] $listData
  * @property integer $listId
  * @property string $listName
- * @property \EbaySdk\PostOrder\Types\CustomListType $listType
+ * @property \EbaySdk\Api\PostOrder\Types\CustomListType $listType
  */
 class CustomListDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -21,7 +21,7 @@ class CustomListDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'listData' => [
-            'type' => 'EbaySdk\PostOrder\Types\CustomListDataType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CustomListDataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'listData'
@@ -39,7 +39,7 @@ class CustomListDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'listName'
         ],
         'listType' => [
-            'type' => 'EbaySdk\PostOrder\Types\CustomListType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CustomListType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'listType'

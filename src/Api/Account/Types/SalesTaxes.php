@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\SalesTax[] $salesTaxes
+ * @property \EbaySdk\Api\Account\Types\SalesTax[] $salesTaxes
  */
 class SalesTaxes extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class SalesTaxes extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'salesTaxes' => [
-            'type' => 'EbaySdk\Account\Types\SalesTax',
+            'type' => 'EbaySdk\Api\Account\Types\SalesTax',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'salesTaxes'

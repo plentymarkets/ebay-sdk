@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $buyerPaid
- * @property \EbaySdk\PostOrder\Types\DateTime $buyerPaidDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $buyerPaidDate
  * @property string $cancelReason
  * @property string $legacyOrderId
  */
@@ -27,7 +27,7 @@ class CreateCancelRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyerPaid'
         ],
         'buyerPaidDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerPaidDate'

@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Address $address
+ * @property \EbaySdk\Api\PostOrder\Types\Address $address
  * @property string $name
  */
 class ReturnAddressType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -19,7 +19,7 @@ class ReturnAddressType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'address' => [
-            'type' => 'EbaySdk\PostOrder\Types\Address',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Address',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'address'

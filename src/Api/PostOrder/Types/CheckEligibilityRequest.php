@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Enums\EligibilityCheckTypeEnum[] $checkTypes
+ * @property \EbaySdk\Api\PostOrder\Enums\EligibilityCheckTypeEnum[] $checkTypes
  * @property string $itemId
- * @property \EbaySdk\PostOrder\Enums\ReturnReasonEnum $reason
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnReasonEnum $reason
  * @property integer $returnQuantity
  * @property string $transactionId
  */

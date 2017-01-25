@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\PaymentInstrumentReference $paymentInstrumentReference
- * @property \EbaySdk\Order\Types\PaymentMethodBrand $paymentMethodBrand
- * @property \EbaySdk\Order\Enums\PaymentMethodTypeEnum $paymentMethodType
+ * @property \EbaySdk\Api\Order\Types\PaymentInstrumentReference $paymentInstrumentReference
+ * @property \EbaySdk\Api\Order\Types\PaymentMethodBrand $paymentMethodBrand
+ * @property \EbaySdk\Api\Order\Enums\PaymentMethodTypeEnum $paymentMethodType
  */
 class ProvidedPaymentInstrument extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,13 +20,13 @@ class ProvidedPaymentInstrument extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
      */
     private static $propertyTypes = [
         'paymentInstrumentReference' => [
-            'type' => 'EbaySdk\Order\Types\PaymentInstrumentReference',
+            'type' => 'EbaySdk\Api\Order\Types\PaymentInstrumentReference',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paymentInstrumentReference'
         ],
         'paymentMethodBrand' => [
-            'type' => 'EbaySdk\Order\Types\PaymentMethodBrand',
+            'type' => 'EbaySdk\Api\Order\Types\PaymentMethodBrand',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paymentMethodBrand'

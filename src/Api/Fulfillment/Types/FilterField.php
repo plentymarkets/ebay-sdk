@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
 /**
  *
  * @property string $field
- * @property \EbaySdk\Fulfillment\Types\RangeValue $range
+ * @property \EbaySdk\Api\Fulfillment\Types\RangeValue $range
  * @property string[] $set
  * @property string $value
  */
@@ -27,7 +27,7 @@ class FilterField extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'field'
         ],
         'range' => [
-            'type' => 'EbaySdk\Fulfillment\Types\RangeValue',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\RangeValue',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'range'

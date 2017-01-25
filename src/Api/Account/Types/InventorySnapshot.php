@@ -9,13 +9,13 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\Amount $cumulativeInventoryValue
+ * @property \EbaySdk\Api\Account\Types\Amount $cumulativeInventoryValue
  * @property integer $cumulativeQuantity
- * @property \EbaySdk\Account\Types\LookbackPeriod $lookbackPeriod
+ * @property \EbaySdk\Api\Account\Types\LookbackPeriod $lookbackPeriod
  * @property integer $maxAvailableQuantity
- * @property \EbaySdk\Account\Types\Amount $maxInventoryValue
+ * @property \EbaySdk\Api\Account\Types\Amount $maxInventoryValue
  * @property integer $minAvailableQuantity
- * @property \EbaySdk\Account\Types\Amount $minInventoryValue
+ * @property \EbaySdk\Api\Account\Types\Amount $minInventoryValue
  */
 class InventorySnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -24,7 +24,7 @@ class InventorySnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'cumulativeInventoryValue' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cumulativeInventoryValue'
@@ -36,7 +36,7 @@ class InventorySnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'cumulativeQuantity'
         ],
         'lookbackPeriod' => [
-            'type' => 'EbaySdk\Account\Types\LookbackPeriod',
+            'type' => 'EbaySdk\Api\Account\Types\LookbackPeriod',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lookbackPeriod'
@@ -48,7 +48,7 @@ class InventorySnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'maxAvailableQuantity'
         ],
         'maxInventoryValue' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxInventoryValue'
@@ -60,7 +60,7 @@ class InventorySnapshot extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'minAvailableQuantity'
         ],
         'minInventoryValue' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minInventoryValue'

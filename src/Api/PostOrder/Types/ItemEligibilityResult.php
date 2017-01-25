@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $eligible
- * @property \EbaySdk\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
+ * @property \EbaySdk\Api\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
  * @property integer $itemId
  * @property integer $transactionId
  */

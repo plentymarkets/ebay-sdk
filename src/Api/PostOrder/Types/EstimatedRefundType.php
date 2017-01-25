@@ -9,10 +9,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Amount $estimatedAmount
- * @property \EbaySdk\PostOrder\Types\Amount $maxAmount
- * @property \EbaySdk\PostOrder\Types\Amount $minAmount
- * @property \EbaySdk\PostOrder\Enums\RefundFeeTypeEnum $refundFeeType
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $estimatedAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $maxAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $minAmount
+ * @property \EbaySdk\Api\PostOrder\Enums\RefundFeeTypeEnum $refundFeeType
  * @property string $restockingFeePercentage
  */
 class EstimatedRefundType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -22,19 +22,19 @@ class EstimatedRefundType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'estimatedAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimatedAmount'
         ],
         'maxAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxAmount'
         ],
         'minAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minAmount'

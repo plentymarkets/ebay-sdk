@@ -9,15 +9,15 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\Image $image
+ * @property \EbaySdk\Api\Order\Types\Image $image
  * @property string $itemId
  * @property string $lineItemId
- * @property \EbaySdk\Order\Enums\LineItemPaymentStatusEnum $lineItemPaymentStatus
- * @property \EbaySdk\Order\Enums\LineItemStatusEnum $lineItemStatus
- * @property \EbaySdk\Order\Types\Amount_0 $netPrice
+ * @property \EbaySdk\Api\Order\Enums\LineItemPaymentStatusEnum $lineItemPaymentStatus
+ * @property \EbaySdk\Api\Order\Enums\LineItemStatusEnum $lineItemStatus
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $netPrice
  * @property integer $quantity
- * @property \EbaySdk\Order\Types\Seller $seller
- * @property \EbaySdk\Order\Types\ShippingDetail $shippingDetail
+ * @property \EbaySdk\Api\Order\Types\Seller $seller
+ * @property \EbaySdk\Api\Order\Types\ShippingDetail $shippingDetail
  * @property string $title
  */
 class LineItem_0 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -27,7 +27,7 @@ class LineItem_0 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'image' => [
-            'type' => 'EbaySdk\Order\Types\Image',
+            'type' => 'EbaySdk\Api\Order\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'image'
@@ -57,7 +57,7 @@ class LineItem_0 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'lineItemStatus'
         ],
         'netPrice' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'netPrice'
@@ -69,13 +69,13 @@ class LineItem_0 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'quantity'
         ],
         'seller' => [
-            'type' => 'EbaySdk\Order\Types\Seller',
+            'type' => 'EbaySdk\Api\Order\Types\Seller',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'seller'
         ],
         'shippingDetail' => [
-            'type' => 'EbaySdk\Order\Types\ShippingDetail',
+            'type' => 'EbaySdk\Api\Order\Types\ShippingDetail',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingDetail'

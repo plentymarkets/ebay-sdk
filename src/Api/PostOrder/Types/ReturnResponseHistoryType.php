@@ -10,9 +10,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $activity
- * @property \EbaySdk\PostOrder\Types\ResponseHistoryAttributesType $attributes
+ * @property \EbaySdk\Api\PostOrder\Types\ResponseHistoryAttributesType $attributes
  * @property string $author
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
  * @property string $fromState
  * @property string $notes
  * @property string $toState
@@ -30,7 +30,7 @@ class ReturnResponseHistoryType extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
             'elementName' => 'activity'
         ],
         'attributes' => [
-            'type' => 'EbaySdk\PostOrder\Types\ResponseHistoryAttributesType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ResponseHistoryAttributesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'attributes'
@@ -42,7 +42,7 @@ class ReturnResponseHistoryType extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
             'elementName' => 'author'
         ],
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'

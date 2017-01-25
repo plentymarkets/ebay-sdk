@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleTemplateDetailType[] $ruleTemplates
+ * @property \EbaySdk\Api\PostOrder\Types\RuleTemplateDetailType[] $ruleTemplates
  */
 class GetDispositionRuleTemplatesResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class GetDispositionRuleTemplatesResponse extends \Plenty\Modules\Market\Ebay\Ap
      */
     private static $propertyTypes = [
         'ruleTemplates' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleTemplateDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleTemplateDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ruleTemplates'

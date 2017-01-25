@@ -12,8 +12,8 @@ namespace EbaySdk\Api\PostOrder\Types;
  * @property string $carrierEnum
  * @property string $carrierName
  * @property string $carrierUsed
- * @property \EbaySdk\PostOrder\Types\Text $comments
- * @property \EbaySdk\PostOrder\Types\DateTime $shippedDate
+ * @property \EbaySdk\Api\PostOrder\Types\Text $comments
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $shippedDate
  * @property string $trackingNumber
  */
 class MarkAsShippedRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -41,13 +41,13 @@ class MarkAsShippedRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'carrierUsed'
         ],
         'comments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'comments'
         ],
         'shippedDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippedDate'

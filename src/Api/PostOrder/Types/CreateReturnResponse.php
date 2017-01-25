@@ -9,10 +9,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\GetDetailResponse $detail
- * @property \EbaySdk\PostOrder\Types\ReturnEligibilityPerItemType $eligibilityResult
+ * @property \EbaySdk\Api\PostOrder\Types\GetDetailResponse $detail
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnEligibilityPerItemType $eligibilityResult
  * @property string $returnId
- * @property \EbaySdk\PostOrder\Types\ReturnSummaryType $summary
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnSummaryType $summary
  */
 class CreateReturnResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -21,13 +21,13 @@ class CreateReturnResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'detail' => [
-            'type' => 'EbaySdk\PostOrder\Types\GetDetailResponse',
+            'type' => 'EbaySdk\Api\PostOrder\Types\GetDetailResponse',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'detail'
         ],
         'eligibilityResult' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnEligibilityPerItemType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnEligibilityPerItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibilityResult'
@@ -39,7 +39,7 @@ class CreateReturnResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'returnId'
         ],
         'summary' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnSummaryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnSummaryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'summary'

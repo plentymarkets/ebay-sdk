@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleActionInputType $actionDetail
- * @property \EbaySdk\PostOrder\Types\RuleConditionInputType[] $condition
+ * @property \EbaySdk\Api\PostOrder\Types\RuleActionInputType $actionDetail
+ * @property \EbaySdk\Api\PostOrder\Types\RuleConditionInputType[] $condition
  * @property integer $priority
  */
 class RuleDetailInputType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -20,13 +20,13 @@ class RuleDetailInputType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'actionDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleActionInputType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleActionInputType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actionDetail'
         ],
         'condition' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleConditionInputType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleConditionInputType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'condition'

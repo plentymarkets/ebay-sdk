@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ClaimHistoryEventModel[] $history
- * @property \EbaySdk\PostOrder\Types\ShipmentTrackingDetailType $shipmentTrackingDetails
+ * @property \EbaySdk\Api\PostOrder\Types\ClaimHistoryEventModel[] $history
+ * @property \EbaySdk\Api\PostOrder\Types\ShipmentTrackingDetailType $shipmentTrackingDetails
  */
 class ClaimHistoryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class ClaimHistoryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'history' => [
-            'type' => 'EbaySdk\PostOrder\Types\ClaimHistoryEventModel',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ClaimHistoryEventModel',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'history'
         ],
         'shipmentTrackingDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\ShipmentTrackingDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ShipmentTrackingDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipmentTrackingDetails'

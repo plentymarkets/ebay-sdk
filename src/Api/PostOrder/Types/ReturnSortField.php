@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $ascending
- * @property \EbaySdk\PostOrder\Enums\ReturnSortEnum $enumValue
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnSortEnum $enumValue
  * @property string $field
  */
 class ReturnSortField extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

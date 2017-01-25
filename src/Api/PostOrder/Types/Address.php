@@ -11,17 +11,17 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $addressLine1
  * @property string $addressLine2
- * @property \EbaySdk\PostOrder\Enums\AddressTypeEnum $addressType
+ * @property \EbaySdk\Api\PostOrder\Enums\AddressTypeEnum $addressType
  * @property string $city
- * @property \EbaySdk\PostOrder\Enums\CountryCodeEnum $country
+ * @property \EbaySdk\Api\PostOrder\Enums\CountryCodeEnum $country
  * @property string $county
  * @property boolean $isTransliterated
  * @property string $nationalRegion
  * @property string $postalCode
- * @property \EbaySdk\PostOrder\Enums\LanguageScriptEnum $script
+ * @property \EbaySdk\Api\PostOrder\Enums\LanguageScriptEnum $script
  * @property string $stateOrProvince
- * @property \EbaySdk\PostOrder\Enums\LanguageScriptEnum $transliteratedFromScript
- * @property \EbaySdk\PostOrder\Enums\WorldRegionEnum $worldRegion
+ * @property \EbaySdk\Api\PostOrder\Enums\LanguageScriptEnum $transliteratedFromScript
+ * @property \EbaySdk\Api\PostOrder\Enums\WorldRegionEnum $worldRegion
  */
 class Address extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

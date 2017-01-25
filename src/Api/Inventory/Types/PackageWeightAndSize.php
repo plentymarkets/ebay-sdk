@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\Dimension $dimensions
- * @property \EbaySdk\Inventory\Enums\PackageTypeEnum $packageType
- * @property \EbaySdk\Inventory\Types\Weight $weight
+ * @property \EbaySdk\Api\Inventory\Types\Dimension $dimensions
+ * @property \EbaySdk\Api\Inventory\Enums\PackageTypeEnum $packageType
+ * @property \EbaySdk\Api\Inventory\Types\Weight $weight
  */
 class PackageWeightAndSize extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,7 +20,7 @@ class PackageWeightAndSize extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'dimensions' => [
-            'type' => 'EbaySdk\Inventory\Types\Dimension',
+            'type' => 'EbaySdk\Api\Inventory\Types\Dimension',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'dimensions'
@@ -32,7 +32,7 @@ class PackageWeightAndSize extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'packageType'
         ],
         'weight' => [
-            'type' => 'EbaySdk\Inventory\Types\Weight',
+            'type' => 'EbaySdk\Api\Inventory\Types\Weight',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'weight'

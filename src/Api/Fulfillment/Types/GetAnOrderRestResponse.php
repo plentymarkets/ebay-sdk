@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Fulfillment\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Fulfillment\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Fulfillment\Types\ErrorDetailV3[] $warnings
  */
 class GetAnOrderRestResponse extends \EbaySdk\Api\Fulfillment\Types\Order
 {
@@ -25,13 +25,13 @@ class GetAnOrderRestResponse extends \EbaySdk\Api\Fulfillment\Types\Order
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Fulfillment\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Fulfillment\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

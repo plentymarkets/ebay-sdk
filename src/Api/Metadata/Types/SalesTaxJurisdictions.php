@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Metadata\Types;
 
 /**
  *
- * @property \EbaySdk\Metadata\Types\SalesTaxJurisdiction[] $salesTaxJurisdictions
+ * @property \EbaySdk\Api\Metadata\Types\SalesTaxJurisdiction[] $salesTaxJurisdictions
  */
 class SalesTaxJurisdictions extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class SalesTaxJurisdictions extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'salesTaxJurisdictions' => [
-            'type' => 'EbaySdk\Metadata\Types\SalesTaxJurisdiction',
+            'type' => 'EbaySdk\Api\Metadata\Types\SalesTaxJurisdiction',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'salesTaxJurisdictions'

@@ -9,18 +9,18 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\CategoryType[] $categoryTypes
+ * @property \EbaySdk\Api\Account\Types\CategoryType[] $categoryTypes
  * @property string $description
  * @property boolean $freightShipping
  * @property string $fulfillmentPolicyId
  * @property boolean $globalShipping
- * @property \EbaySdk\Account\Types\TimeDuration $handlingTime
+ * @property \EbaySdk\Api\Account\Types\TimeDuration $handlingTime
  * @property boolean $localPickup
- * @property \EbaySdk\Account\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\Account\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $name
  * @property boolean $pickupDropOff
- * @property \EbaySdk\Account\Types\ShippingOption[] $shippingOptions
- * @property \EbaySdk\Account\Types\RegionSet $shipToLocations
+ * @property \EbaySdk\Api\Account\Types\ShippingOption[] $shippingOptions
+ * @property \EbaySdk\Api\Account\Types\RegionSet $shipToLocations
  */
 class FulfillmentPolicy extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -29,7 +29,7 @@ class FulfillmentPolicy extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'categoryTypes' => [
-            'type' => 'EbaySdk\Account\Types\CategoryType',
+            'type' => 'EbaySdk\Api\Account\Types\CategoryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'categoryTypes'
@@ -59,7 +59,7 @@ class FulfillmentPolicy extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'globalShipping'
         ],
         'handlingTime' => [
-            'type' => 'EbaySdk\Account\Types\TimeDuration',
+            'type' => 'EbaySdk\Api\Account\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'handlingTime'
@@ -89,13 +89,13 @@ class FulfillmentPolicy extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'pickupDropOff'
         ],
         'shippingOptions' => [
-            'type' => 'EbaySdk\Account\Types\ShippingOption',
+            'type' => 'EbaySdk\Api\Account\Types\ShippingOption',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingOptions'
         ],
         'shipToLocations' => [
-            'type' => 'EbaySdk\Account\Types\RegionSet',
+            'type' => 'EbaySdk\Api\Account\Types\RegionSet',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipToLocations'

@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\Amount $importCharges
- * @property \EbaySdk\Fulfillment\Types\Amount $shippingCost
- * @property \EbaySdk\Fulfillment\Types\Amount $shippingIntermediationFee
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $importCharges
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $shippingCost
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $shippingIntermediationFee
  */
 class DeliveryCost extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,19 +20,19 @@ class DeliveryCost extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'importCharges' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'importCharges'
         ],
         'shippingCost' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'
         ],
         'shippingIntermediationFee' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingIntermediationFee'

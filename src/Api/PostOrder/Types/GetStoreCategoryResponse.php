@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\StoreCategoryType[] $categories
+ * @property \EbaySdk\Api\PostOrder\Types\StoreCategoryType[] $categories
  */
 class GetStoreCategoryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class GetStoreCategoryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
      */
     private static $propertyTypes = [
         'categories' => [
-            'type' => 'EbaySdk\PostOrder\Types\StoreCategoryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\StoreCategoryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'categories'

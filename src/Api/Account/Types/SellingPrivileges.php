@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Account\Types;
 /**
  *
  * @property boolean $sellerRegistrationCompleted
- * @property \EbaySdk\Account\Types\SellingLimit $sellingLimit
+ * @property \EbaySdk\Api\Account\Types\SellingLimit $sellingLimit
  */
 class SellingPrivileges extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class SellingPrivileges extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'sellerRegistrationCompleted'
         ],
         'sellingLimit' => [
-            'type' => 'EbaySdk\Account\Types\SellingLimit',
+            'type' => 'EbaySdk\Api\Account\Types\SellingLimit',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellingLimit'

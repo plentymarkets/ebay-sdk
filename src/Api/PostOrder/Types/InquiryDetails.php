@@ -9,14 +9,14 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\AppealDetails $appealDetails
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
- * @property \EbaySdk\PostOrder\Types\DateTime $escalationDate
- * @property \EbaySdk\PostOrder\Types\DateTime $expirationDate
- * @property \EbaySdk\PostOrder\Types\DateTime $lastBuyerRespDate
- * @property \EbaySdk\PostOrder\Types\RefundAmounts $refundAmounts
- * @property \EbaySdk\PostOrder\Types\DateTime $refundDeadlineDate
- * @property \EbaySdk\PostOrder\Types\Amount $totalAmount
+ * @property \EbaySdk\Api\PostOrder\Types\AppealDetails $appealDetails
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $escalationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $expirationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $lastBuyerRespDate
+ * @property \EbaySdk\Api\PostOrder\Types\RefundAmounts $refundAmounts
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $refundDeadlineDate
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $totalAmount
  */
 class InquiryDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,49 +25,49 @@ class InquiryDetails extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'appealDetails' => [
-            'type' => 'EbaySdk\PostOrder\Types\AppealDetails',
+            'type' => 'EbaySdk\Api\PostOrder\Types\AppealDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'appealDetails'
         ],
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
         ],
         'escalationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'escalationDate'
         ],
         'expirationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'expirationDate'
         ],
         'lastBuyerRespDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lastBuyerRespDate'
         ],
         'refundAmounts' => [
-            'type' => 'EbaySdk\PostOrder\Types\RefundAmounts',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RefundAmounts',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundAmounts'
         ],
         'refundDeadlineDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundDeadlineDate'
         ],
         'totalAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'totalAmount'

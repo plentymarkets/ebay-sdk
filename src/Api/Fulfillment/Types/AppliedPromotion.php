@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
 /**
  *
  * @property string $description
- * @property \EbaySdk\Fulfillment\Types\Amount $discountAmount
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $discountAmount
  * @property string $promotionId
  */
 class AppliedPromotion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -26,7 +26,7 @@ class AppliedPromotion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'description'
         ],
         'discountAmount' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountAmount'

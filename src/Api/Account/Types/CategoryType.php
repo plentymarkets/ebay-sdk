@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Account\Types;
 /**
  *
  * @property boolean $default
- * @property \EbaySdk\Account\Enums\CategoryTypeEnum $name
+ * @property \EbaySdk\Api\Account\Enums\CategoryTypeEnum $name
  */
 class CategoryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

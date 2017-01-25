@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\DeleteAdResponse[] $responses
+ * @property \EbaySdk\Api\Marketing\Types\DeleteAdResponse[] $responses
  */
 class BulkDeleteAdResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BulkDeleteAdResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'responses' => [
-            'type' => 'EbaySdk\Marketing\Types\DeleteAdResponse',
+            'type' => 'EbaySdk\Api\Marketing\Types\DeleteAdResponse',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'responses'

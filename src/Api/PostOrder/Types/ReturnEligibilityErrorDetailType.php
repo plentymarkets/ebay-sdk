@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\EligibilityErrorType $eligibilityError
+ * @property \EbaySdk\Api\PostOrder\Types\EligibilityErrorType $eligibilityError
  */
 class ReturnEligibilityErrorDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class ReturnEligibilityErrorDetailType extends \Plenty\Modules\Market\Ebay\Api\T
      */
     private static $propertyTypes = [
         'eligibilityError' => [
-            'type' => 'EbaySdk\PostOrder\Types\EligibilityErrorType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EligibilityErrorType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibilityError'

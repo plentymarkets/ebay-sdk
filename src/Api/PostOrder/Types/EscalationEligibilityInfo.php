@@ -10,8 +10,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $eligible
- * @property \EbaySdk\PostOrder\Types\DateTime $endTime
- * @property \EbaySdk\PostOrder\Types\DateTime $startTime
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $endTime
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $startTime
  */
 class EscalationEligibilityInfo extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -26,13 +26,13 @@ class EscalationEligibilityInfo extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
             'elementName' => 'eligible'
         ],
         'endTime' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'endTime'
         ],
         'startTime' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'startTime'

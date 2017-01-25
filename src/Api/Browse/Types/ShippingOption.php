@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Browse\Types;
 /**
  *
  * @property string $shippingCarrierName
- * @property \EbaySdk\Browse\Types\Amount $shippingCost
+ * @property \EbaySdk\Api\Browse\Types\Amount $shippingCost
  * @property string $shippingServiceName
  * @property string $trademarkSymbol
  * @property string $type
@@ -28,7 +28,7 @@ class ShippingOption extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'shippingCarrierName'
         ],
         'shippingCost' => [
-            'type' => 'EbaySdk\Browse\Types\Amount',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'

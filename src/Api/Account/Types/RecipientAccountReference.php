@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Account\Types;
 /**
  *
  * @property string $referenceId
- * @property \EbaySdk\Account\Enums\RecipientAccountReferenceTypeEnum $referenceType
+ * @property \EbaySdk\Api\Account\Enums\RecipientAccountReferenceTypeEnum $referenceType
  */
 class RecipientAccountReference extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

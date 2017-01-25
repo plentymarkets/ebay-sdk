@@ -9,12 +9,12 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Amount $actualAmount
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $actualAmount
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
  * @property string $externalPaymentId
  * @property string $moneyMovementType
  * @property string $paymentProvider
- * @property \EbaySdk\PostOrder\Types\Amount $requestedAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $requestedAmount
  * @property string $status
  */
 class MoneyMovementDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -24,13 +24,13 @@ class MoneyMovementDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'actualAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualAmount'
         ],
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
@@ -54,7 +54,7 @@ class MoneyMovementDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'paymentProvider'
         ],
         'requestedAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'requestedAmount'

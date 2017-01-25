@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $warnings
  */
 class GetListingFeesRestResponse extends \EbaySdk\Api\Inventory\Types\FeesSummaryResponse
 {
@@ -25,13 +25,13 @@ class GetListingFeesRestResponse extends \EbaySdk\Api\Inventory\Types\FeesSummar
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

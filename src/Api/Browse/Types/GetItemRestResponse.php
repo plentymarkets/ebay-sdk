@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Browse\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Browse\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Browse\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Browse\Types\ErrorDetailV3[] $warnings
  */
 class GetItemRestResponse extends \EbaySdk\Api\Browse\Types\Item
 {
@@ -25,13 +25,13 @@ class GetItemRestResponse extends \EbaySdk\Api\Browse\Types\Item
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Browse\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Browse\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Browse\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Browse\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

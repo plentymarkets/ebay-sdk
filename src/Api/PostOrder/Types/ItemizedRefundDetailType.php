@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Amount $refundAmount
- * @property \EbaySdk\PostOrder\Enums\RefundFeeTypeEnum $refundFeeType
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $refundAmount
+ * @property \EbaySdk\Api\PostOrder\Enums\RefundFeeTypeEnum $refundFeeType
  * @property string $restockingFeePercentage
  */
 class ItemizedRefundDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -20,7 +20,7 @@ class ItemizedRefundDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
      */
     private static $propertyTypes = [
         'refundAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundAmount'

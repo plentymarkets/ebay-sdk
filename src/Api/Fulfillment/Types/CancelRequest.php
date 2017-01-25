@@ -14,7 +14,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property string $cancelReason
  * @property string $cancelRequestedDate
  * @property string $cancelRequestId
- * @property \EbaySdk\Fulfillment\Enums\CancelRequestStateEnum $cancelRequestState
+ * @property \EbaySdk\Api\Fulfillment\Enums\CancelRequestStateEnum $cancelRequestState
  */
 class CancelRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

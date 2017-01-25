@@ -9,14 +9,14 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\PaymentMethod[] $acceptedPaymentMethods
+ * @property \EbaySdk\Api\Order\Types\PaymentMethod[] $acceptedPaymentMethods
  * @property string $checkoutSessionId
  * @property string $expirationDate
- * @property \EbaySdk\Order\Types\LineItem[] $lineItems
- * @property \EbaySdk\Order\Types\PricingSummary $pricingSummary
- * @property \EbaySdk\Order\Types\ProvidedPaymentInstrument $providedPaymentInstrument
- * @property \EbaySdk\Order\Types\ShippingAddress $shippingAddress
- * @property \EbaySdk\Order\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Order\Types\LineItem[] $lineItems
+ * @property \EbaySdk\Api\Order\Types\PricingSummary $pricingSummary
+ * @property \EbaySdk\Api\Order\Types\ProvidedPaymentInstrument $providedPaymentInstrument
+ * @property \EbaySdk\Api\Order\Types\ShippingAddress $shippingAddress
+ * @property \EbaySdk\Api\Order\Types\ErrorDetailV3[] $warnings
  */
 class CheckoutSessionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class CheckoutSessionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'acceptedPaymentMethods' => [
-            'type' => 'EbaySdk\Order\Types\PaymentMethod',
+            'type' => 'EbaySdk\Api\Order\Types\PaymentMethod',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'acceptedPaymentMethods'
@@ -43,31 +43,31 @@ class CheckoutSessionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'expirationDate'
         ],
         'lineItems' => [
-            'type' => 'EbaySdk\Order\Types\LineItem',
+            'type' => 'EbaySdk\Api\Order\Types\LineItem',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItems'
         ],
         'pricingSummary' => [
-            'type' => 'EbaySdk\Order\Types\PricingSummary',
+            'type' => 'EbaySdk\Api\Order\Types\PricingSummary',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'pricingSummary'
         ],
         'providedPaymentInstrument' => [
-            'type' => 'EbaySdk\Order\Types\ProvidedPaymentInstrument',
+            'type' => 'EbaySdk\Api\Order\Types\ProvidedPaymentInstrument',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'providedPaymentInstrument'
         ],
         'shippingAddress' => [
-            'type' => 'EbaySdk\Order\Types\ShippingAddress',
+            'type' => 'EbaySdk\Api\Order\Types\ShippingAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingAddress'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Order\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Order\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

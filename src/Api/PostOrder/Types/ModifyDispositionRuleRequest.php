@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleModificationType $operation
- * @property \EbaySdk\PostOrder\Types\PriorityListType $priorityList
- * @property \EbaySdk\PostOrder\Types\RuleDetailInputType $ruleDetail
+ * @property \EbaySdk\Api\PostOrder\Types\RuleModificationType $operation
+ * @property \EbaySdk\Api\PostOrder\Types\PriorityListType $priorityList
+ * @property \EbaySdk\Api\PostOrder\Types\RuleDetailInputType $ruleDetail
  * @property integer $versionId
  */
 class ModifyDispositionRuleRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -21,19 +21,19 @@ class ModifyDispositionRuleRequest extends \Plenty\Modules\Market\Ebay\Api\Types
      */
     private static $propertyTypes = [
         'operation' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleModificationType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleModificationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'operation'
         ],
         'priorityList' => [
-            'type' => 'EbaySdk\PostOrder\Types\PriorityListType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\PriorityListType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'priorityList'
         ],
         'ruleDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleDetailInputType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleDetailInputType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ruleDetail'

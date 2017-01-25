@@ -10,29 +10,29 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $active
- * @property \EbaySdk\PostOrder\Types\DateTime $actualDeliveryDate
- * @property \EbaySdk\PostOrder\Types\DateTime $actualShipDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $actualDeliveryDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $actualShipDate
  * @property string $carrierEnum
  * @property integer $carrierId
  * @property string $carrierName
  * @property string $carrierUsed
- * @property \EbaySdk\PostOrder\Types\DateTime $deliveryDate
- * @property \EbaySdk\PostOrder\Enums\TrackingStatusEnum $deliveryStatus
- * @property \EbaySdk\PostOrder\Types\ReturnAddressType $destinationAddress
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $deliveryDate
+ * @property \EbaySdk\Api\PostOrder\Enums\TrackingStatusEnum $deliveryStatus
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnAddressType $destinationAddress
  * @property string $errorCode
  * @property string $labelAvailableUntilDate
- * @property \EbaySdk\PostOrder\Types\DateTime $labelDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $labelDate
  * @property string $labelId
  * @property boolean $labelPrintExpired
  * @property boolean $labelVoidExpired
  * @property boolean $markAsReceived
- * @property \EbaySdk\PostOrder\Types\DateTime $maxDeliveryEstimate
- * @property \EbaySdk\PostOrder\Types\DateTime $minDeliveryEstimate
- * @property \EbaySdk\PostOrder\Types\ReturnAddressType $originAddress
- * @property \EbaySdk\PostOrder\Types\DateTime $shipDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $maxDeliveryEstimate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $minDeliveryEstimate
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnAddressType $originAddress
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $shipDate
  * @property string $shipmentId
  * @property string $shippedBy
- * @property \EbaySdk\PostOrder\Enums\ShippingMethodEnum $shippingMethod
+ * @property \EbaySdk\Api\PostOrder\Enums\ShippingMethodEnum $shippingMethod
  * @property string $trackingNumber
  */
 class ShipmentTrackingType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -48,13 +48,13 @@ class ShipmentTrackingType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'active'
         ],
         'actualDeliveryDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualDeliveryDate'
         ],
         'actualShipDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualShipDate'
@@ -84,7 +84,7 @@ class ShipmentTrackingType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'carrierUsed'
         ],
         'deliveryDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deliveryDate'
@@ -96,7 +96,7 @@ class ShipmentTrackingType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'deliveryStatus'
         ],
         'destinationAddress' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnAddressType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnAddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'destinationAddress'
@@ -114,7 +114,7 @@ class ShipmentTrackingType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'labelAvailableUntilDate'
         ],
         'labelDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'labelDate'
@@ -144,25 +144,25 @@ class ShipmentTrackingType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'markAsReceived'
         ],
         'maxDeliveryEstimate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxDeliveryEstimate'
         ],
         'minDeliveryEstimate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minDeliveryEstimate'
         ],
         'originAddress' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnAddressType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnAddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'originAddress'
         ],
         'shipDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipDate'

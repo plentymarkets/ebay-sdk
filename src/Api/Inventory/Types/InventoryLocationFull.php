@@ -9,16 +9,16 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\Location $location
+ * @property \EbaySdk\Api\Inventory\Types\Location $location
  * @property string $locationAdditionalInformation
  * @property string $locationInstructions
- * @property \EbaySdk\Inventory\Enums\StoreTypeEnum[] $locationTypes
+ * @property \EbaySdk\Api\Inventory\Enums\StoreTypeEnum[] $locationTypes
  * @property string $locationWebUrl
- * @property \EbaySdk\Inventory\Enums\StatusEnum $merchantLocationStatus
+ * @property \EbaySdk\Api\Inventory\Enums\StatusEnum $merchantLocationStatus
  * @property string $name
- * @property \EbaySdk\Inventory\Types\OperatingHours[] $operatingHours
+ * @property \EbaySdk\Api\Inventory\Types\OperatingHours[] $operatingHours
  * @property string $phone
- * @property \EbaySdk\Inventory\Types\SpecialHours[] $specialHours
+ * @property \EbaySdk\Api\Inventory\Types\SpecialHours[] $specialHours
  */
 class InventoryLocationFull extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -27,7 +27,7 @@ class InventoryLocationFull extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'location' => [
-            'type' => 'EbaySdk\Inventory\Types\Location',
+            'type' => 'EbaySdk\Api\Inventory\Types\Location',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'location'
@@ -69,7 +69,7 @@ class InventoryLocationFull extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'name'
         ],
         'operatingHours' => [
-            'type' => 'EbaySdk\Inventory\Types\OperatingHours',
+            'type' => 'EbaySdk\Api\Inventory\Types\OperatingHours',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'operatingHours'
@@ -81,7 +81,7 @@ class InventoryLocationFull extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'phone'
         ],
         'specialHours' => [
-            'type' => 'EbaySdk\Inventory\Types\SpecialHours',
+            'type' => 'EbaySdk\Api\Inventory\Types\SpecialHours',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'specialHours'

@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\Fee[] $fees
- * @property \EbaySdk\Inventory\Enums\MarketplaceEnum $marketplaceId
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Inventory\Types\Fee[] $fees
+ * @property \EbaySdk\Api\Inventory\Enums\MarketplaceEnum $marketplaceId
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $warnings
  */
 class FeeSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,7 +20,7 @@ class FeeSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'fees' => [
-            'type' => 'EbaySdk\Inventory\Types\Fee',
+            'type' => 'EbaySdk\Api\Inventory\Types\Fee',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'fees'
@@ -32,7 +32,7 @@ class FeeSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'marketplaceId'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

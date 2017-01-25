@@ -10,11 +10,11 @@ namespace EbaySdk\Api\Fulfillment\Types;
 /**
  *
  * @property string $expectedReleaseDate
- * @property \EbaySdk\Fulfillment\Types\Amount $holdAmount
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $holdAmount
  * @property string $holdReason
  * @property string $holdState
  * @property string $releaseDate
- * @property \EbaySdk\Fulfillment\Types\SellerActionsToRelease[] $sellerActionsToRelease
+ * @property \EbaySdk\Api\Fulfillment\Types\SellerActionsToRelease[] $sellerActionsToRelease
  */
 class PaymentHold extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -29,7 +29,7 @@ class PaymentHold extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'expectedReleaseDate'
         ],
         'holdAmount' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'holdAmount'
@@ -53,7 +53,7 @@ class PaymentHold extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'releaseDate'
         ],
         'sellerActionsToRelease' => [
-            'type' => 'EbaySdk\Fulfillment\Types\SellerActionsToRelease',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\SellerActionsToRelease',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'sellerActionsToRelease'

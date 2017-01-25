@@ -12,9 +12,9 @@ namespace EbaySdk\Api\Order\Types;
  * @property string $contactEmail
  * @property string $contactFirstName
  * @property string $contactLastName
- * @property \EbaySdk\Order\Types\CreditCard $creditCard
- * @property \EbaySdk\Order\Types\LineItemInput[] $lineItemInputs
- * @property \EbaySdk\Order\Types\ShippingAddress $shippingAddress
+ * @property \EbaySdk\Api\Order\Types\CreditCard $creditCard
+ * @property \EbaySdk\Api\Order\Types\LineItemInput[] $lineItemInputs
+ * @property \EbaySdk\Api\Order\Types\ShippingAddress $shippingAddress
  */
 class CreateGuestCheckoutSessionRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -41,19 +41,19 @@ class CreateGuestCheckoutSessionRequest extends \Plenty\Modules\Market\Ebay\Api\
             'elementName' => 'contactLastName'
         ],
         'creditCard' => [
-            'type' => 'EbaySdk\Order\Types\CreditCard',
+            'type' => 'EbaySdk\Api\Order\Types\CreditCard',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creditCard'
         ],
         'lineItemInputs' => [
-            'type' => 'EbaySdk\Order\Types\LineItemInput',
+            'type' => 'EbaySdk\Api\Order\Types\LineItemInput',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItemInputs'
         ],
         'shippingAddress' => [
-            'type' => 'EbaySdk\Order\Types\ShippingAddress',
+            'type' => 'EbaySdk\Api\Order\Types\ShippingAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingAddress'

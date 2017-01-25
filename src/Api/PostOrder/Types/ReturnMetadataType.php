@@ -11,7 +11,7 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $dataType
  * @property boolean $isArray
- * @property \EbaySdk\PostOrder\Enums\ReturnMetadataKeyEnum $siteMetadataKey
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnMetadataKeyEnum $siteMetadataKey
  * @property string[] $values
  */
 class ReturnMetadataType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

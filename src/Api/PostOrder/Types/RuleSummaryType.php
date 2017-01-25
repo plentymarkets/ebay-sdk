@@ -11,8 +11,8 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property integer $count
  * @property integer $countInTestMode
- * @property \EbaySdk\PostOrder\Types\RuleActionDetailType $invalidAction
- * @property \EbaySdk\PostOrder\Types\RuleConditionDetailType[] $invalidConditions
+ * @property \EbaySdk\Api\PostOrder\Types\RuleActionDetailType $invalidAction
+ * @property \EbaySdk\Api\PostOrder\Types\RuleConditionDetailType[] $invalidConditions
  * @property \DateTime $lastModifiedDate
  * @property integer $priority
  */
@@ -35,13 +35,13 @@ class RuleSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'countInTestMode'
         ],
         'invalidAction' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleActionDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleActionDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'invalidAction'
         ],
         'invalidConditions' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleConditionDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleConditionDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'invalidConditions'

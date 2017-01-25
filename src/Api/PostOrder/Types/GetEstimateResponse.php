@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\EstimatedRefundInfoType $refundInfo
- * @property \EbaySdk\PostOrder\Types\EstimatedShippingInfoType $returnShippingCostInfo
+ * @property \EbaySdk\Api\PostOrder\Types\EstimatedRefundInfoType $refundInfo
+ * @property \EbaySdk\Api\PostOrder\Types\EstimatedShippingInfoType $returnShippingCostInfo
  */
 class GetEstimateResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class GetEstimateResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'refundInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\EstimatedRefundInfoType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EstimatedRefundInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundInfo'
         ],
         'returnShippingCostInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\EstimatedShippingInfoType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EstimatedShippingInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnShippingCostInfo'

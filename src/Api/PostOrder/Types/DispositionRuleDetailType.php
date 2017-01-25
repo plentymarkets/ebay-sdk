@@ -11,7 +11,7 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $ruleId
  * @property string $ruleName
- * @property \EbaySdk\PostOrder\Enums\DispositionRuleTemplateTypeEnum $ruleTemplate
+ * @property \EbaySdk\Api\PostOrder\Enums\DispositionRuleTemplateTypeEnum $ruleTemplate
  */
 class DispositionRuleDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

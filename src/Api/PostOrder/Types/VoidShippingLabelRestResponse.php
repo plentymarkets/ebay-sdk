@@ -12,9 +12,9 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Error[] $error
- * @property \EbaySdk\PostOrder\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\PostOrder\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\PostOrder\Types\Error[] $error
+ * @property \EbaySdk\Api\PostOrder\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\PostOrder\Types\ErrorDetailV3[] $warnings
  */
 class VoidShippingLabelRestResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -26,19 +26,19 @@ class VoidShippingLabelRestResponse extends \Plenty\Modules\Market\Ebay\Api\Type
      */
     private static $propertyTypes = [
         'error' => [
-            'type' => 'EbaySdk\PostOrder\Types\Error',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Error',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'error'
         ],
         'errors' => [
-            'type' => 'EbaySdk\PostOrder\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\PostOrder\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

@@ -13,10 +13,10 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property integer $limit
  * @property string $next
  * @property integer $offset
- * @property \EbaySdk\Fulfillment\Types\Order[] $orders
+ * @property \EbaySdk\Api\Fulfillment\Types\Order[] $orders
  * @property string $prev
  * @property integer $total
- * @property \EbaySdk\Fulfillment\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Fulfillment\Types\ErrorDetailV3[] $warnings
  */
 class OrderSearchPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -49,7 +49,7 @@ class OrderSearchPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\B
             'elementName' => 'offset'
         ],
         'orders' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Order',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Order',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'orders'
@@ -67,7 +67,7 @@ class OrderSearchPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\B
             'elementName' => 'total'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Fulfillment\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

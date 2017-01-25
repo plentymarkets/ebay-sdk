@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Order\Types;
 /**
  *
  * @property string $actualDeliveryDate
- * @property \EbaySdk\Order\Types\LineItemReference[] $lineItemReferences
+ * @property \EbaySdk\Api\Order\Types\LineItemReference[] $lineItemReferences
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
  * @property string $shipmentTrackingNumber
@@ -32,7 +32,7 @@ class ShippingFulfillment extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'actualDeliveryDate'
         ],
         'lineItemReferences' => [
-            'type' => 'EbaySdk\Order\Types\LineItemReference',
+            'type' => 'EbaySdk\Api\Order\Types\LineItemReference',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItemReferences'

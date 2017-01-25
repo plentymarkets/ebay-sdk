@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Analytics\Types;
 
 /**
  *
- * @property \EbaySdk\Analytics\Enums\StandardsLevelEnum $level
+ * @property \EbaySdk\Api\Analytics\Enums\StandardsLevelEnum $level
  * @property string $lookbackEndDate
  * @property string $lookbackStartDate
  * @property string $metricKey
@@ -17,7 +17,7 @@ namespace EbaySdk\Api\Analytics\Types;
  * @property mixed $thresholdLowerBound
  * @property string $thresholdMetaData
  * @property mixed $thresholdUpperBound
- * @property \EbaySdk\Analytics\Enums\DataTypeEnum $type
+ * @property \EbaySdk\Api\Analytics\Enums\DataTypeEnum $type
  * @property mixed $value
  */
 class Metric extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

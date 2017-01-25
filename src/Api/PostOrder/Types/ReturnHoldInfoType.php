@@ -9,10 +9,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\DateTime $holdCreationDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $holdCreationDate
  * @property string $holdReferenceId
- * @property \EbaySdk\PostOrder\Types\DateTime $holdReleaseDate
- * @property \EbaySdk\PostOrder\Enums\ReturnHoldStatusEnum $holdStatus
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $holdReleaseDate
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnHoldStatusEnum $holdStatus
  * @property string $holdTransactionId
  */
 class ReturnHoldInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -22,7 +22,7 @@ class ReturnHoldInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'holdCreationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'holdCreationDate'
@@ -34,7 +34,7 @@ class ReturnHoldInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'holdReferenceId'
         ],
         'holdReleaseDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'holdReleaseDate'

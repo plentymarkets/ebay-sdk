@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\DeleteAdRequest[] $requests
+ * @property \EbaySdk\Api\Marketing\Types\DeleteAdRequest[] $requests
  */
 class BulkDeleteAdRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BulkDeleteAdRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'requests' => [
-            'type' => 'EbaySdk\Marketing\Types\DeleteAdRequest',
+            'type' => 'EbaySdk\Api\Marketing\Types\DeleteAdRequest',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'requests'

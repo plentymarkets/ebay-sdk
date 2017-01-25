@@ -16,7 +16,7 @@ namespace EbaySdk\Api\PostOrder\Types;
  * @property string $longMessage
  * @property string $message
  * @property string $outputRefIds
- * @property \EbaySdk\PostOrder\Types\ErrorParameterV3[] $parameters
+ * @property \EbaySdk\Api\PostOrder\Types\ErrorParameterV3[] $parameters
  * @property string $subDomain
  */
 class ErrorDetailV3 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -68,7 +68,7 @@ class ErrorDetailV3 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'outputRefIds'
         ],
         'parameters' => [
-            'type' => 'EbaySdk\PostOrder\Types\ErrorParameterV3',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ErrorParameterV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'parameters'

@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Enums\EligibilityCheckTypeEnum $checkType
- * @property \EbaySdk\PostOrder\Types\EligibilityResultType $eligibilityInfo
+ * @property \EbaySdk\Api\PostOrder\Enums\EligibilityCheckTypeEnum $checkType
+ * @property \EbaySdk\Api\PostOrder\Types\EligibilityResultType $eligibilityInfo
  */
 class ReturnEligibilityItemPerCheckTypeResult extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class ReturnEligibilityItemPerCheckTypeResult extends \Plenty\Modules\Market\Eba
             'elementName' => 'checkType'
         ],
         'eligibilityInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\EligibilityResultType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EligibilityResultType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibilityInfo'

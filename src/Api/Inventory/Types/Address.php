@@ -12,7 +12,7 @@ namespace EbaySdk\Api\Inventory\Types;
  * @property string $addressLine1
  * @property string $addressLine2
  * @property string $city
- * @property \EbaySdk\Inventory\Enums\CountryCodeEnum $country
+ * @property \EbaySdk\Api\Inventory\Enums\CountryCodeEnum $country
  * @property string $county
  * @property string $postalCode
  * @property string $stateOrProvince

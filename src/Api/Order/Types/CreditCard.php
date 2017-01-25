@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Order\Types;
 /**
  *
  * @property string $accountHolderName
- * @property \EbaySdk\Order\Types\BillingAddress $billingAddress
+ * @property \EbaySdk\Api\Order\Types\BillingAddress $billingAddress
  * @property string $brand
  * @property string $cardNumber
  * @property string $cvvNumber
@@ -30,7 +30,7 @@ class CreditCard extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'accountHolderName'
         ],
         'billingAddress' => [
-            'type' => 'EbaySdk\Order\Types\BillingAddress',
+            'type' => 'EbaySdk\Api\Order\Types\BillingAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'billingAddress'

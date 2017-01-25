@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\LineItemReference[] $lineItems
+ * @property \EbaySdk\Api\Fulfillment\Types\LineItemReference[] $lineItems
  * @property string $shippedDate
  * @property string $shippingCarrierCode
  * @property string $trackingNumber
@@ -21,7 +21,7 @@ class ShippingFulfillmentDetails extends \Plenty\Modules\Market\Ebay\Api\Types\B
      */
     private static $propertyTypes = [
         'lineItems' => [
-            'type' => 'EbaySdk\Fulfillment\Types\LineItemReference',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\LineItemReference',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItems'

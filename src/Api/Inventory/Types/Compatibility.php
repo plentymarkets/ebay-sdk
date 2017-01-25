@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\CompatibleProduct[] $compatibleProducts
+ * @property \EbaySdk\Api\Inventory\Types\CompatibleProduct[] $compatibleProducts
  * @property string $sku
  */
 class Compatibility extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -19,7 +19,7 @@ class Compatibility extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'compatibleProducts' => [
-            'type' => 'EbaySdk\Inventory\Types\CompatibleProduct',
+            'type' => 'EbaySdk\Api\Inventory\Types\CompatibleProduct',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'compatibleProducts'

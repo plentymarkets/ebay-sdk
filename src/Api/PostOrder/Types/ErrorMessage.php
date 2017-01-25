@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Error[] $error
+ * @property \EbaySdk\Api\PostOrder\Types\Error[] $error
  */
 class ErrorMessage extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class ErrorMessage extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'error' => [
-            'type' => 'EbaySdk\PostOrder\Types\Error',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Error',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'error'

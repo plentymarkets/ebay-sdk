@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Enums\TimeDurationUnitEnum $unit
+ * @property \EbaySdk\Api\Inventory\Enums\TimeDurationUnitEnum $unit
  * @property integer $value
  */
 class TimeDuration extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

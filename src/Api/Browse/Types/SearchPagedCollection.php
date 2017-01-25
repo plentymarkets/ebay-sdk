@@ -10,13 +10,13 @@ namespace EbaySdk\Api\Browse\Types;
 /**
  *
  * @property string $href
- * @property \EbaySdk\Browse\Types\ItemSummary[] $itemSummaries
+ * @property \EbaySdk\Api\Browse\Types\ItemSummary[] $itemSummaries
  * @property integer $limit
  * @property string $next
  * @property integer $offset
  * @property string $prev
  * @property integer $total
- * @property \EbaySdk\Browse\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Browse\Types\ErrorDetailV3[] $warnings
  */
 class SearchPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -31,7 +31,7 @@ class SearchPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'href'
         ],
         'itemSummaries' => [
-            'type' => 'EbaySdk\Browse\Types\ItemSummary',
+            'type' => 'EbaySdk\Api\Browse\Types\ItemSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'itemSummaries'
@@ -67,7 +67,7 @@ class SearchPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'total'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Browse\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Browse\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

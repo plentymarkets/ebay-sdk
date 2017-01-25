@@ -11,7 +11,7 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $firstName
  * @property string $lastName
- * @property \EbaySdk\PostOrder\Types\Address $returnAddress
+ * @property \EbaySdk\Api\PostOrder\Types\Address $returnAddress
  * @property string $RMA
  */
 class ReturnAddressRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -33,7 +33,7 @@ class ReturnAddressRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'lastName'
         ],
         'returnAddress' => [
-            'type' => 'EbaySdk\PostOrder\Types\Address',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Address',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnAddress'

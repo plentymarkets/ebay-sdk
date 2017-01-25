@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\PickupAtLocationAvailability[] $pickupAtLocationAvailability
- * @property \EbaySdk\Inventory\Types\ShipToLocationAvailability $shipToLocationAvailability
+ * @property \EbaySdk\Api\Inventory\Types\PickupAtLocationAvailability[] $pickupAtLocationAvailability
+ * @property \EbaySdk\Api\Inventory\Types\ShipToLocationAvailability $shipToLocationAvailability
  */
 class Availability extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class Availability extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'pickupAtLocationAvailability' => [
-            'type' => 'EbaySdk\Inventory\Types\PickupAtLocationAvailability',
+            'type' => 'EbaySdk\Api\Inventory\Types\PickupAtLocationAvailability',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'pickupAtLocationAvailability'
         ],
         'shipToLocationAvailability' => [
-            'type' => 'EbaySdk\Inventory\Types\ShipToLocationAvailability',
+            'type' => 'EbaySdk\Api\Inventory\Types\ShipToLocationAvailability',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipToLocationAvailability'

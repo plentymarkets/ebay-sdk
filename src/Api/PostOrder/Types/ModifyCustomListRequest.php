@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CustomListDetailType $customListDetail
+ * @property \EbaySdk\Api\PostOrder\Types\CustomListDetailType $customListDetail
  * @property boolean $forceDelete
- * @property \EbaySdk\PostOrder\Types\CustomListModificationType $operation
+ * @property \EbaySdk\Api\PostOrder\Types\CustomListModificationType $operation
  */
 class ModifyCustomListRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,7 +20,7 @@ class ModifyCustomListRequest extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'customListDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\CustomListDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CustomListDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'customListDetail'
@@ -32,7 +32,7 @@ class ModifyCustomListRequest extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'forceDelete'
         ],
         'operation' => [
-            'type' => 'EbaySdk\PostOrder\Types\CustomListModificationType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CustomListModificationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'operation'

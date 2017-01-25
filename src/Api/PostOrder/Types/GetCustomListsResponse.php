@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CustomListDetailType[] $listDetail
+ * @property \EbaySdk\Api\PostOrder\Types\CustomListDetailType[] $listDetail
  */
 class GetCustomListsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class GetCustomListsResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
      */
     private static $propertyTypes = [
         'listDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\CustomListDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CustomListDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'listDetail'

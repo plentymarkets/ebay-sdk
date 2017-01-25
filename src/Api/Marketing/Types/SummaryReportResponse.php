@@ -9,11 +9,11 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\Amount $baseSale
+ * @property \EbaySdk\Api\Marketing\Types\Amount $baseSale
  * @property string $lastUpdated
  * @property string $percentageSalesLift
- * @property \EbaySdk\Marketing\Types\Amount $promotionSale
- * @property \EbaySdk\Marketing\Types\Amount $totalSale
+ * @property \EbaySdk\Api\Marketing\Types\Amount $promotionSale
+ * @property \EbaySdk\Api\Marketing\Types\Amount $totalSale
  */
 class SummaryReportResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -22,7 +22,7 @@ class SummaryReportResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'baseSale' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'baseSale'
@@ -40,13 +40,13 @@ class SummaryReportResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'percentageSalesLift'
         ],
         'promotionSale' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'promotionSale'
         ],
         'totalSale' => [
-            'type' => 'EbaySdk\Marketing\Types\Amount',
+            'type' => 'EbaySdk\Api\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'totalSale'

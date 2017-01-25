@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Marketing\Types;
 /**
  *
  * @property string $inventoryReferenceId
- * @property \EbaySdk\Marketing\Enums\InventoryReferenceTypeEnum $inventoryReferenceType
+ * @property \EbaySdk\Api\Marketing\Enums\InventoryReferenceTypeEnum $inventoryReferenceType
  */
 class InventoryItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

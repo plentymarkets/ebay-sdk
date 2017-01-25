@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ItemizedReturnShippingCostType[] $itemizedReturnShippingCost
- * @property \EbaySdk\PostOrder\Types\Amount $totalAmount
+ * @property \EbaySdk\Api\PostOrder\Types\ItemizedReturnShippingCostType[] $itemizedReturnShippingCost
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $totalAmount
  */
 class ReturnShippingCostDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class ReturnShippingCostDetailType extends \Plenty\Modules\Market\Ebay\Api\Types
      */
     private static $propertyTypes = [
         'itemizedReturnShippingCost' => [
-            'type' => 'EbaySdk\PostOrder\Types\ItemizedReturnShippingCostType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ItemizedReturnShippingCostType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'itemizedReturnShippingCost'
         ],
         'totalAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'totalAmount'

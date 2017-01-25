@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\Ad[] $ads
+ * @property \EbaySdk\Api\Marketing\Types\Ad[] $ads
  */
 class Ads extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class Ads extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'ads' => [
-            'type' => 'EbaySdk\Marketing\Types\Ad',
+            'type' => 'EbaySdk\Api\Marketing\Types\Ad',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ads'

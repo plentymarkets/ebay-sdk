@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Marketing\Types;
 /**
  *
  * @property string $bidPercentage
- * @property \EbaySdk\Marketing\Enums\FundingModelEnum $fundingModel
+ * @property \EbaySdk\Api\Marketing\Enums\FundingModelEnum $fundingModel
  */
 class FundingStrategy extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

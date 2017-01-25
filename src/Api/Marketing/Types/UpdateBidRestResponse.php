@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Marketing\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Marketing\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Marketing\Types\ErrorDetailV3[] $warnings
  */
 class UpdateBidRestResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,13 +25,13 @@ class UpdateBidRestResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Marketing\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Marketing\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

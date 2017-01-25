@@ -10,8 +10,8 @@ namespace EbaySdk\Api\Marketing\Types;
 /**
  *
  * @property boolean $autoSelectFutureInventory
- * @property \EbaySdk\Marketing\Enums\CriterionTypeEnum $criterionType
- * @property \EbaySdk\Marketing\Types\SelectionRule[] $selectionRules
+ * @property \EbaySdk\Api\Marketing\Enums\CriterionTypeEnum $criterionType
+ * @property \EbaySdk\Api\Marketing\Types\SelectionRule[] $selectionRules
  */
 class CampaignCriterion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -32,7 +32,7 @@ class CampaignCriterion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'criterionType'
         ],
         'selectionRules' => [
-            'type' => 'EbaySdk\Marketing\Types\SelectionRule',
+            'type' => 'EbaySdk\Api\Marketing\Types\SelectionRule',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'selectionRules'

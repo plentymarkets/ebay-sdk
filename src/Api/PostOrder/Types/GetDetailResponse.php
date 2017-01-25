@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\ReturnDetailType $detail
- * @property \EbaySdk\PostOrder\Types\ReturnSummaryType $summary
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnDetailType $detail
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnSummaryType $summary
  */
 class GetDetailResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class GetDetailResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'detail' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'detail'
         ],
         'summary' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnSummaryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnSummaryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'summary'

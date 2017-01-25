@@ -9,15 +9,15 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\CategoryType[] $categoryTypes
- * @property \EbaySdk\Account\Types\Deposit $deposit
+ * @property \EbaySdk\Api\Account\Types\CategoryType[] $categoryTypes
+ * @property \EbaySdk\Api\Account\Types\Deposit $deposit
  * @property string $description
- * @property \EbaySdk\Account\Types\TimeDuration $fullPaymentDueIn
+ * @property \EbaySdk\Api\Account\Types\TimeDuration $fullPaymentDueIn
  * @property boolean $immediatePay
- * @property \EbaySdk\Account\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\Account\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $name
  * @property string $paymentInstructions
- * @property \EbaySdk\Account\Types\PaymentMethod[] $paymentMethods
+ * @property \EbaySdk\Api\Account\Types\PaymentMethod[] $paymentMethods
  */
 class PaymentPolicyRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -26,13 +26,13 @@ class PaymentPolicyRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'categoryTypes' => [
-            'type' => 'EbaySdk\Account\Types\CategoryType',
+            'type' => 'EbaySdk\Api\Account\Types\CategoryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'categoryTypes'
         ],
         'deposit' => [
-            'type' => 'EbaySdk\Account\Types\Deposit',
+            'type' => 'EbaySdk\Api\Account\Types\Deposit',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deposit'
@@ -44,7 +44,7 @@ class PaymentPolicyRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'description'
         ],
         'fullPaymentDueIn' => [
-            'type' => 'EbaySdk\Account\Types\TimeDuration',
+            'type' => 'EbaySdk\Api\Account\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fullPaymentDueIn'
@@ -74,7 +74,7 @@ class PaymentPolicyRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'paymentInstructions'
         ],
         'paymentMethods' => [
-            'type' => 'EbaySdk\Account\Types\PaymentMethod',
+            'type' => 'EbaySdk\Api\Account\Types\PaymentMethod',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'paymentMethods'

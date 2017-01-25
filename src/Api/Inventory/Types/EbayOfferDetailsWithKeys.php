@@ -11,16 +11,16 @@ namespace EbaySdk\Api\Inventory\Types;
  *
  * @property integer $availableQuantity
  * @property string $categoryId
- * @property \EbaySdk\Inventory\Enums\FormatTypeEnum $format
+ * @property \EbaySdk\Api\Inventory\Enums\FormatTypeEnum $format
  * @property string $listingDescription
- * @property \EbaySdk\Inventory\Types\ListingPolicies $listingPolicies
- * @property \EbaySdk\Inventory\Enums\MarketplaceEnum $marketplaceId
+ * @property \EbaySdk\Api\Inventory\Types\ListingPolicies $listingPolicies
+ * @property \EbaySdk\Api\Inventory\Enums\MarketplaceEnum $marketplaceId
  * @property string $merchantLocationKey
- * @property \EbaySdk\Inventory\Types\PricingSummary $pricingSummary
+ * @property \EbaySdk\Api\Inventory\Types\PricingSummary $pricingSummary
  * @property integer $quantityLimitPerBuyer
  * @property string $sku
  * @property string[] $storeCategoryNames
- * @property \EbaySdk\Inventory\Types\Tax $tax
+ * @property \EbaySdk\Api\Inventory\Types\Tax $tax
  */
 class EbayOfferDetailsWithKeys extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -53,7 +53,7 @@ class EbayOfferDetailsWithKeys extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
             'elementName' => 'listingDescription'
         ],
         'listingPolicies' => [
-            'type' => 'EbaySdk\Inventory\Types\ListingPolicies',
+            'type' => 'EbaySdk\Api\Inventory\Types\ListingPolicies',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'listingPolicies'
@@ -71,7 +71,7 @@ class EbayOfferDetailsWithKeys extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
             'elementName' => 'merchantLocationKey'
         ],
         'pricingSummary' => [
-            'type' => 'EbaySdk\Inventory\Types\PricingSummary',
+            'type' => 'EbaySdk\Api\Inventory\Types\PricingSummary',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'pricingSummary'
@@ -95,7 +95,7 @@ class EbayOfferDetailsWithKeys extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
             'elementName' => 'storeCategoryNames'
         ],
         'tax' => [
-            'type' => 'EbaySdk\Inventory\Types\Tax',
+            'type' => 'EbaySdk\Api\Inventory\Types\Tax',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'tax'

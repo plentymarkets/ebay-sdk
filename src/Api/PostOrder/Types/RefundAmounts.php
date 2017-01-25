@@ -9,10 +9,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Amount $buyerFinalAcceptRefundAmt
- * @property \EbaySdk\PostOrder\Types\Amount $buyerInitExpectRefundAmt
- * @property \EbaySdk\PostOrder\Types\Amount $internationalRefundAmount
- * @property \EbaySdk\PostOrder\Types\Amount $refundAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $buyerFinalAcceptRefundAmt
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $buyerInitExpectRefundAmt
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $internationalRefundAmount
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $refundAmount
  */
 class RefundAmounts extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -21,25 +21,25 @@ class RefundAmounts extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'buyerFinalAcceptRefundAmt' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerFinalAcceptRefundAmt'
         ],
         'buyerInitExpectRefundAmt' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerInitExpectRefundAmt'
         ],
         'internationalRefundAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'internationalRefundAmount'
         ],
         'refundAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundAmount'

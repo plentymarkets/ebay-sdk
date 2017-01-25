@@ -10,8 +10,8 @@ namespace EbaySdk\Api\Account\Types;
 /**
  *
  * @property integer $currentAvailableQuantity
- * @property \EbaySdk\Account\Types\Amount $currentInventoryValue
- * @property \EbaySdk\Account\Types\InventorySnapshot $inventorySnapshots
+ * @property \EbaySdk\Api\Account\Types\Amount $currentInventoryValue
+ * @property \EbaySdk\Api\Account\Types\InventorySnapshot $inventorySnapshots
  * @property string $primarySalesCategory
  */
 class InventorySizing extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -27,13 +27,13 @@ class InventorySizing extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'currentAvailableQuantity'
         ],
         'currentInventoryValue' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'currentInventoryValue'
         ],
         'inventorySnapshots' => [
-            'type' => 'EbaySdk\Account\Types\InventorySnapshot',
+            'type' => 'EbaySdk\Api\Account\Types\InventorySnapshot',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'inventorySnapshots'

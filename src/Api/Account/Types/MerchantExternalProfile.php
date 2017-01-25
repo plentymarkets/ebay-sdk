@@ -9,15 +9,15 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\ExternalPaymentMethod $acceptedPaymentMethods
+ * @property \EbaySdk\Api\Account\Types\ExternalPaymentMethod $acceptedPaymentMethods
  * @property string $accountCreationDate
- * @property \EbaySdk\Account\Types\ExternalPaymentMethod $billingPaymentMethods
- * @property \EbaySdk\Account\Types\InventorySizing $inventorySizing
+ * @property \EbaySdk\Api\Account\Types\ExternalPaymentMethod $billingPaymentMethods
+ * @property \EbaySdk\Api\Account\Types\InventorySizing $inventorySizing
  * @property string $merchantCategoryCode
- * @property \EbaySdk\Account\Enums\CurrencyCodeEnum $primaryCurrency
- * @property \EbaySdk\Account\Types\ReturnSnapshot $returnSnapshots
+ * @property \EbaySdk\Api\Account\Enums\CurrencyCodeEnum $primaryCurrency
+ * @property \EbaySdk\Api\Account\Types\ReturnSnapshot $returnSnapshots
  * @property string $sicCode
- * @property \EbaySdk\Account\Types\TransactionVolume $transactionVolume
+ * @property \EbaySdk\Api\Account\Types\TransactionVolume $transactionVolume
  */
 class MerchantExternalProfile extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -26,7 +26,7 @@ class MerchantExternalProfile extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'acceptedPaymentMethods' => [
-            'type' => 'EbaySdk\Account\Types\ExternalPaymentMethod',
+            'type' => 'EbaySdk\Api\Account\Types\ExternalPaymentMethod',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'acceptedPaymentMethods'
@@ -38,13 +38,13 @@ class MerchantExternalProfile extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'accountCreationDate'
         ],
         'billingPaymentMethods' => [
-            'type' => 'EbaySdk\Account\Types\ExternalPaymentMethod',
+            'type' => 'EbaySdk\Api\Account\Types\ExternalPaymentMethod',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'billingPaymentMethods'
         ],
         'inventorySizing' => [
-            'type' => 'EbaySdk\Account\Types\InventorySizing',
+            'type' => 'EbaySdk\Api\Account\Types\InventorySizing',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'inventorySizing'
@@ -62,7 +62,7 @@ class MerchantExternalProfile extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'primaryCurrency'
         ],
         'returnSnapshots' => [
-            'type' => 'EbaySdk\Account\Types\ReturnSnapshot',
+            'type' => 'EbaySdk\Api\Account\Types\ReturnSnapshot',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnSnapshots'
@@ -74,7 +74,7 @@ class MerchantExternalProfile extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'sicCode'
         ],
         'transactionVolume' => [
-            'type' => 'EbaySdk\Account\Types\TransactionVolume',
+            'type' => 'EbaySdk\Api\Account\Types\TransactionVolume',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'transactionVolume'

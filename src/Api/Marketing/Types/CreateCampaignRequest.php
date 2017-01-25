@@ -9,11 +9,11 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\CampaignCriterion $campaignCriterion
+ * @property \EbaySdk\Api\Marketing\Types\CampaignCriterion $campaignCriterion
  * @property string $campaignName
  * @property string $endDate
- * @property \EbaySdk\Marketing\Types\FundingStrategy $fundingStrategy
- * @property \EbaySdk\Marketing\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\Marketing\Types\FundingStrategy $fundingStrategy
+ * @property \EbaySdk\Api\Marketing\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $startDate
  */
 class CreateCampaignRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -23,7 +23,7 @@ class CreateCampaignRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'campaignCriterion' => [
-            'type' => 'EbaySdk\Marketing\Types\CampaignCriterion',
+            'type' => 'EbaySdk\Api\Marketing\Types\CampaignCriterion',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'campaignCriterion'
@@ -41,7 +41,7 @@ class CreateCampaignRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'endDate'
         ],
         'fundingStrategy' => [
-            'type' => 'EbaySdk\Marketing\Types\FundingStrategy',
+            'type' => 'EbaySdk\Api\Marketing\Types\FundingStrategy',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fundingStrategy'

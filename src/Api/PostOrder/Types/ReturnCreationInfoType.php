@@ -9,11 +9,11 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Text $comments
- * @property \EbaySdk\PostOrder\Types\DateTime $creationDate
- * @property \EbaySdk\PostOrder\Types\ReturnItemType $item
- * @property \EbaySdk\PostOrder\Enums\ReturnReasonEnum $reason
- * @property \EbaySdk\PostOrder\Enums\ReturnTypeEnum $type
+ * @property \EbaySdk\Api\PostOrder\Types\Text $comments
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnItemType $item
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnReasonEnum $reason
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnTypeEnum $type
  */
 class ReturnCreationInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -22,19 +22,19 @@ class ReturnCreationInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
      */
     private static $propertyTypes = [
         'comments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'comments'
         ],
         'creationDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
         ],
         'item' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnItemType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'item'

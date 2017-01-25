@@ -16,7 +16,7 @@ namespace EbaySdk\Api\Inventory\Types;
  * @property string $subtitle
  * @property string $title
  * @property string[] $variantSKUs
- * @property \EbaySdk\Inventory\Types\VariesBy $variesBy
+ * @property \EbaySdk\Api\Inventory\Types\VariesBy $variesBy
  */
 class InventoryItemGroup extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -67,7 +67,7 @@ class InventoryItemGroup extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'variantSKUs'
         ],
         'variesBy' => [
-            'type' => 'EbaySdk\Inventory\Types\VariesBy',
+            'type' => 'EbaySdk\Api\Inventory\Types\VariesBy',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'variesBy'

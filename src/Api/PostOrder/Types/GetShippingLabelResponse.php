@@ -11,7 +11,7 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $carrier
  * @property string $labelContent
- * @property \EbaySdk\PostOrder\Types\Amount $labelCost
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $labelCost
  * @property string $labelPrintStatus
  * @property string $labelURL
  * @property string $trackingNumber
@@ -35,7 +35,7 @@ class GetShippingLabelResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Bas
             'elementName' => 'labelContent'
         ],
         'labelCost' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'labelCost'

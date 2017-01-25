@@ -9,8 +9,8 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Enums\InventoryCriterionEnum $inventoryCriterionType
- * @property \EbaySdk\Marketing\Types\InventoryItem[] $inventoryItems
+ * @property \EbaySdk\Api\Marketing\Enums\InventoryCriterionEnum $inventoryCriterionType
+ * @property \EbaySdk\Api\Marketing\Types\InventoryItem[] $inventoryItems
  * @property string[] $listingIds
  */
 class InventoryCriterion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -26,7 +26,7 @@ class InventoryCriterion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'inventoryCriterionType'
         ],
         'inventoryItems' => [
-            'type' => 'EbaySdk\Marketing\Types\InventoryItem',
+            'type' => 'EbaySdk\Api\Marketing\Types\InventoryItem',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'inventoryItems'

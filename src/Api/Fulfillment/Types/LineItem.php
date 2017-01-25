@@ -9,24 +9,24 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\AppliedPromotion[] $appliedPromotions
- * @property \EbaySdk\Fulfillment\Types\DeliveryCost $deliveryCost
- * @property \EbaySdk\Fulfillment\Types\Amount $discountedLineItemCost
- * @property \EbaySdk\Fulfillment\Types\GiftDetails $giftDetails
+ * @property \EbaySdk\Api\Fulfillment\Types\AppliedPromotion[] $appliedPromotions
+ * @property \EbaySdk\Api\Fulfillment\Types\DeliveryCost $deliveryCost
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $discountedLineItemCost
+ * @property \EbaySdk\Api\Fulfillment\Types\GiftDetails $giftDetails
  * @property string $legacyItemId
  * @property string $legacyVariationId
- * @property \EbaySdk\Fulfillment\Types\Amount $lineItemCost
- * @property \EbaySdk\Fulfillment\Enums\LineItemFulfillmentStatusEnum $lineItemFulfillmentStatus
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $lineItemCost
+ * @property \EbaySdk\Api\Fulfillment\Enums\LineItemFulfillmentStatusEnum $lineItemFulfillmentStatus
  * @property string $lineItemId
- * @property \EbaySdk\Fulfillment\Enums\MarketplaceIdEnum $listingMarketplaceId
- * @property \EbaySdk\Fulfillment\Types\LineItemProperties $properties
- * @property \EbaySdk\Fulfillment\Enums\MarketplaceIdEnum $purchaseMarketplaceId
+ * @property \EbaySdk\Api\Fulfillment\Enums\MarketplaceIdEnum $listingMarketplaceId
+ * @property \EbaySdk\Api\Fulfillment\Types\LineItemProperties $properties
+ * @property \EbaySdk\Api\Fulfillment\Enums\MarketplaceIdEnum $purchaseMarketplaceId
  * @property integer $quantity
  * @property string $sku
- * @property \EbaySdk\Fulfillment\Enums\SoldFormatEnum $soldFormat
- * @property \EbaySdk\Fulfillment\Types\Tax[] $taxes
+ * @property \EbaySdk\Api\Fulfillment\Enums\SoldFormatEnum $soldFormat
+ * @property \EbaySdk\Api\Fulfillment\Types\Tax[] $taxes
  * @property string $title
- * @property \EbaySdk\Fulfillment\Types\Amount $total
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $total
  */
 class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -35,25 +35,25 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'appliedPromotions' => [
-            'type' => 'EbaySdk\Fulfillment\Types\AppliedPromotion',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\AppliedPromotion',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'appliedPromotions'
         ],
         'deliveryCost' => [
-            'type' => 'EbaySdk\Fulfillment\Types\DeliveryCost',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\DeliveryCost',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deliveryCost'
         ],
         'discountedLineItemCost' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountedLineItemCost'
         ],
         'giftDetails' => [
-            'type' => 'EbaySdk\Fulfillment\Types\GiftDetails',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\GiftDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'giftDetails'
@@ -71,7 +71,7 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'legacyVariationId'
         ],
         'lineItemCost' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lineItemCost'
@@ -95,7 +95,7 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'listingMarketplaceId'
         ],
         'properties' => [
-            'type' => 'EbaySdk\Fulfillment\Types\LineItemProperties',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\LineItemProperties',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'properties'
@@ -125,7 +125,7 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'soldFormat'
         ],
         'taxes' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Tax',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Tax',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'taxes'
@@ -137,7 +137,7 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'title'
         ],
         'total' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'total'

@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\EscalationEligibilityInfo $buyerEscalationEligibilityInfo
+ * @property \EbaySdk\Api\PostOrder\Types\EscalationEligibilityInfo $buyerEscalationEligibilityInfo
  * @property string $caseId
- * @property \EbaySdk\PostOrder\Types\EscalationEligibilityInfo $sellerEscalationEligibilityInfo
+ * @property \EbaySdk\Api\PostOrder\Types\EscalationEligibilityInfo $sellerEscalationEligibilityInfo
  */
 class EscalationInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,7 +20,7 @@ class EscalationInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'buyerEscalationEligibilityInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\EscalationEligibilityInfo',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EscalationEligibilityInfo',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerEscalationEligibilityInfo'
@@ -32,7 +32,7 @@ class EscalationInfoType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'caseId'
         ],
         'sellerEscalationEligibilityInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\EscalationEligibilityInfo',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EscalationEligibilityInfo',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerEscalationEligibilityInfo'

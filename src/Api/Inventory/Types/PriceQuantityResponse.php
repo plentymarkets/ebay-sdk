@@ -9,11 +9,11 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $errors
  * @property string $offerId
  * @property string $sku
  * @property integer $statusCode
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $warnings
  */
 class PriceQuantityResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -22,7 +22,7 @@ class PriceQuantityResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
@@ -46,7 +46,7 @@ class PriceQuantityResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'statusCode'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

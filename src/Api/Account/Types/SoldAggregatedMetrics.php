@@ -9,11 +9,11 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Types\Amount $maxSoldInventoryValue
+ * @property \EbaySdk\Api\Account\Types\Amount $maxSoldInventoryValue
  * @property integer $maxSoldQuantity
- * @property \EbaySdk\Account\Types\Amount $minSoldInventoryValue
+ * @property \EbaySdk\Api\Account\Types\Amount $minSoldInventoryValue
  * @property integer $minSoldQuantity
- * @property \EbaySdk\Account\Types\TimeDuration $period
+ * @property \EbaySdk\Api\Account\Types\TimeDuration $period
  */
 class SoldAggregatedMetrics extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -22,7 +22,7 @@ class SoldAggregatedMetrics extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'maxSoldInventoryValue' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxSoldInventoryValue'
@@ -34,7 +34,7 @@ class SoldAggregatedMetrics extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'maxSoldQuantity'
         ],
         'minSoldInventoryValue' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minSoldInventoryValue'
@@ -46,7 +46,7 @@ class SoldAggregatedMetrics extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'minSoldQuantity'
         ],
         'period' => [
-            'type' => 'EbaySdk\Account\Types\TimeDuration',
+            'type' => 'EbaySdk\Api\Account\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'period'

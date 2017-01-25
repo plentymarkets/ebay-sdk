@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Inventory\Types;
 /**
  *
  * @property string $listingId
- * @property \EbaySdk\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Inventory\Types\ErrorDetailV3[] $warnings
  */
 class PublishResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class PublishResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'listingId'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Inventory\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

@@ -10,10 +10,10 @@ namespace EbaySdk\Api\Order\Types;
 /**
  *
  * @property string $label
- * @property \EbaySdk\Order\Types\Image $logoImage
- * @property \EbaySdk\Order\Types\PaymentMethodBrand[] $paymentMethodBrands
- * @property \EbaySdk\Order\Types\PaymentMethodMessage[] $paymentMethodMessages
- * @property \EbaySdk\Order\Enums\PaymentMethodTypeEnum $paymentMethodType
+ * @property \EbaySdk\Api\Order\Types\Image $logoImage
+ * @property \EbaySdk\Api\Order\Types\PaymentMethodBrand[] $paymentMethodBrands
+ * @property \EbaySdk\Api\Order\Types\PaymentMethodMessage[] $paymentMethodMessages
+ * @property \EbaySdk\Api\Order\Enums\PaymentMethodTypeEnum $paymentMethodType
  */
 class PaymentMethod extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -28,19 +28,19 @@ class PaymentMethod extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'label'
         ],
         'logoImage' => [
-            'type' => 'EbaySdk\Order\Types\Image',
+            'type' => 'EbaySdk\Api\Order\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'logoImage'
         ],
         'paymentMethodBrands' => [
-            'type' => 'EbaySdk\Order\Types\PaymentMethodBrand',
+            'type' => 'EbaySdk\Api\Order\Types\PaymentMethodBrand',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'paymentMethodBrands'
         ],
         'paymentMethodMessages' => [
-            'type' => 'EbaySdk\Order\Types\PaymentMethodMessage',
+            'type' => 'EbaySdk\Api\Order\Types\PaymentMethodMessage',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'paymentMethodMessages'

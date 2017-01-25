@@ -9,20 +9,20 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\AvailableOptionType[] $buyerAvailableOptions
+ * @property \EbaySdk\Api\PostOrder\Types\AvailableOptionType[] $buyerAvailableOptions
  * @property string $buyerLoginName
- * @property \EbaySdk\PostOrder\Types\ReturnResponseDueType $buyerResponseDue
- * @property \EbaySdk\PostOrder\Types\TotalRefundAmountType $buyerTotalRefund
- * @property \EbaySdk\PostOrder\Types\ReturnCreationInfoType $creationInfo
- * @property \EbaySdk\PostOrder\Enums\ReturnTypeEnum $currentType
- * @property \EbaySdk\PostOrder\Enums\DispositionRuleTemplateTypeEnum[] $dispositionRuleTriggered
- * @property \EbaySdk\PostOrder\Types\EscalationInfoType $escalationInfo
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnResponseDueType $buyerResponseDue
+ * @property \EbaySdk\Api\PostOrder\Types\TotalRefundAmountType $buyerTotalRefund
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnCreationInfoType $creationInfo
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnTypeEnum $currentType
+ * @property \EbaySdk\Api\PostOrder\Enums\DispositionRuleTemplateTypeEnum[] $dispositionRuleTriggered
+ * @property \EbaySdk\Api\PostOrder\Types\EscalationInfoType $escalationInfo
  * @property string $returnId
- * @property \EbaySdk\PostOrder\Types\ReturnPolicyType $returnPolicy
- * @property \EbaySdk\PostOrder\Types\AvailableOptionType[] $sellerAvailableOptions
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnPolicyType $returnPolicy
+ * @property \EbaySdk\Api\PostOrder\Types\AvailableOptionType[] $sellerAvailableOptions
  * @property string $sellerLoginName
- * @property \EbaySdk\PostOrder\Types\ReturnResponseDueType $sellerResponseDue
- * @property \EbaySdk\PostOrder\Types\TotalRefundAmountType $sellerTotalRefund
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnResponseDueType $sellerResponseDue
+ * @property \EbaySdk\Api\PostOrder\Types\TotalRefundAmountType $sellerTotalRefund
  * @property string $state
  * @property string $status
  */
@@ -33,7 +33,7 @@ class ReturnSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'buyerAvailableOptions' => [
-            'type' => 'EbaySdk\PostOrder\Types\AvailableOptionType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\AvailableOptionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'buyerAvailableOptions'
@@ -45,19 +45,19 @@ class ReturnSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'buyerLoginName'
         ],
         'buyerResponseDue' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnResponseDueType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnResponseDueType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerResponseDue'
         ],
         'buyerTotalRefund' => [
-            'type' => 'EbaySdk\PostOrder\Types\TotalRefundAmountType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\TotalRefundAmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerTotalRefund'
         ],
         'creationInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnCreationInfoType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnCreationInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationInfo'
@@ -75,7 +75,7 @@ class ReturnSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'dispositionRuleTriggered'
         ],
         'escalationInfo' => [
-            'type' => 'EbaySdk\PostOrder\Types\EscalationInfoType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\EscalationInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'escalationInfo'
@@ -87,13 +87,13 @@ class ReturnSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'returnId'
         ],
         'returnPolicy' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnPolicyType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnPolicyType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPolicy'
         ],
         'sellerAvailableOptions' => [
-            'type' => 'EbaySdk\PostOrder\Types\AvailableOptionType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\AvailableOptionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'sellerAvailableOptions'
@@ -105,13 +105,13 @@ class ReturnSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'sellerLoginName'
         ],
         'sellerResponseDue' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnResponseDueType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnResponseDueType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerResponseDue'
         ],
         'sellerTotalRefund' => [
-            'type' => 'EbaySdk\PostOrder\Types\TotalRefundAmountType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\TotalRefundAmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerTotalRefund'

@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $advanceRulesEnabled
- * @property \EbaySdk\PostOrder\Types\RuleDetailType[] $basicRules
+ * @property \EbaySdk\Api\PostOrder\Types\RuleDetailType[] $basicRules
  * @property boolean $RMARequired
  * @property integer $versionId
  */
@@ -27,7 +27,7 @@ class GetSellerReturnPreferenceResponse extends \Plenty\Modules\Market\Ebay\Api\
             'elementName' => 'advanceRulesEnabled'
         ],
         'basicRules' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'basicRules'

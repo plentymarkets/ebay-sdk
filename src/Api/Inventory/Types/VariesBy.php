@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Inventory\Types;
 /**
  *
  * @property string[] $aspectsImageVariesBy
- * @property \EbaySdk\Inventory\Types\Specification[] $specifications
+ * @property \EbaySdk\Api\Inventory\Types\Specification[] $specifications
  */
 class VariesBy extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class VariesBy extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'aspectsImageVariesBy'
         ],
         'specifications' => [
-            'type' => 'EbaySdk\Inventory\Types\Specification',
+            'type' => 'EbaySdk\Api\Inventory\Types\Specification',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'specifications'

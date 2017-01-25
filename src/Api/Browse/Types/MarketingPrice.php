@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Browse\Types;
 
 /**
  *
- * @property \EbaySdk\Browse\Types\Amount $discountAmount
+ * @property \EbaySdk\Api\Browse\Types\Amount $discountAmount
  * @property string $discountPercentage
- * @property \EbaySdk\Browse\Types\Amount $originalPrice
+ * @property \EbaySdk\Api\Browse\Types\Amount $originalPrice
  */
 class MarketingPrice extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,7 +20,7 @@ class MarketingPrice extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'discountAmount' => [
-            'type' => 'EbaySdk\Browse\Types\Amount',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountAmount'
@@ -32,7 +32,7 @@ class MarketingPrice extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'discountPercentage'
         ],
         'originalPrice' => [
-            'type' => 'EbaySdk\Browse\Types\Amount',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'originalPrice'

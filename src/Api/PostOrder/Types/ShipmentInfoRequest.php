@@ -10,10 +10,10 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property boolean $proofOfShipmentUploaded
- * @property \EbaySdk\PostOrder\Types\Text $sellerComments
+ * @property \EbaySdk\Api\PostOrder\Types\Text $sellerComments
  * @property boolean $shippedWithTracking
  * @property string $shippingCarrierName
- * @property \EbaySdk\PostOrder\Types\DateTime $shippingDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $shippingDate
  * @property string $trackingNumber
  */
 class ShipmentInfoRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -29,7 +29,7 @@ class ShipmentInfoRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'proofOfShipmentUploaded'
         ],
         'sellerComments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerComments'
@@ -47,7 +47,7 @@ class ShipmentInfoRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'shippingCarrierName'
         ],
         'shippingDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingDate'

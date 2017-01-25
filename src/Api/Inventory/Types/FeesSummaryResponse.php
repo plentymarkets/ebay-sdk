@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\FeeSummary[] $feeSummaries
+ * @property \EbaySdk\Api\Inventory\Types\FeeSummary[] $feeSummaries
  */
 class FeesSummaryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class FeesSummaryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'feeSummaries' => [
-            'type' => 'EbaySdk\Inventory\Types\FeeSummary',
+            'type' => 'EbaySdk\Api\Inventory\Types\FeeSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'feeSummaries'

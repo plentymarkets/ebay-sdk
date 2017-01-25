@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property integer $count
- * @property \EbaySdk\PostOrder\Enums\ReturnCountFilterEnum $type
+ * @property \EbaySdk\Api\PostOrder\Enums\ReturnCountFilterEnum $type
  */
 class CountSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {

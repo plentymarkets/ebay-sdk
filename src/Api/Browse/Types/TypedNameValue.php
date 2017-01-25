@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Browse\Types;
 /**
  *
  * @property string $name
- * @property \EbaySdk\Browse\Enums\ValueTypeEnum $type
+ * @property \EbaySdk\Api\Browse\Enums\ValueTypeEnum $type
  * @property mixed $value
  */
 class TypedNameValue extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

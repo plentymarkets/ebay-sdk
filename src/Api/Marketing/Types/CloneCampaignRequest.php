@@ -11,7 +11,7 @@ namespace EbaySdk\Api\Marketing\Types;
  *
  * @property string $campaignName
  * @property string $endDate
- * @property \EbaySdk\Marketing\Types\FundingStrategy $fundingStrategy
+ * @property \EbaySdk\Api\Marketing\Types\FundingStrategy $fundingStrategy
  * @property string $startDate
  */
 class CloneCampaignRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -33,7 +33,7 @@ class CloneCampaignRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'endDate'
         ],
         'fundingStrategy' => [
-            'type' => 'EbaySdk\Marketing\Types\FundingStrategy',
+            'type' => 'EbaySdk\Api\Marketing\Types\FundingStrategy',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fundingStrategy'

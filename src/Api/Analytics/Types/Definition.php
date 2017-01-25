@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Analytics\Types;
 
 /**
  *
- * @property \EbaySdk\Analytics\Enums\DataTypeEnum $dataType
+ * @property \EbaySdk\Api\Analytics\Enums\DataTypeEnum $dataType
  * @property string $key
  * @property string $localizedName
  */

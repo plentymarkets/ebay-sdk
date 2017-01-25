@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property string $activityDue
- * @property \EbaySdk\PostOrder\Types\DateTime $respondByDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $respondByDate
  */
 class ReturnResponseDueType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,7 +25,7 @@ class ReturnResponseDueType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'activityDue'
         ],
         'respondByDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'respondByDate'

@@ -9,22 +9,22 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CancelActivityHistory[] $activityHistories
- * @property \EbaySdk\PostOrder\Types\DateTime $buyerResponseDueDate
- * @property \EbaySdk\PostOrder\Types\DateTime $cancelCloseDate
+ * @property \EbaySdk\Api\PostOrder\Types\CancelActivityHistory[] $activityHistories
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $buyerResponseDueDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $cancelCloseDate
  * @property string $cancelCloseReason
  * @property string $cancelId
  * @property string $cancelReason
- * @property \EbaySdk\PostOrder\Types\DateTime $cancelRequestDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $cancelRequestDate
  * @property string $itemId
  * @property string $legacyOrderId
- * @property \EbaySdk\PostOrder\Types\OrderCancelLineItem[] $lineItems
- * @property \EbaySdk\PostOrder\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\PostOrder\Types\OrderCancelLineItem[] $lineItems
+ * @property \EbaySdk\Api\PostOrder\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $paymentStatus
  * @property string $requestorType
- * @property \EbaySdk\PostOrder\Types\Amount $requestRefundAmount
- * @property \EbaySdk\PostOrder\Types\DateTime $sellerResponseDueDate
- * @property \EbaySdk\PostOrder\Types\DateTime $shipmentDate
+ * @property \EbaySdk\Api\PostOrder\Types\Amount $requestRefundAmount
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $sellerResponseDueDate
+ * @property \EbaySdk\Api\PostOrder\Types\DateTime $shipmentDate
  * @property string $state
  * @property string $status
  * @property string $transactionId
@@ -36,19 +36,19 @@ class CancelDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'activityHistories' => [
-            'type' => 'EbaySdk\PostOrder\Types\CancelActivityHistory',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CancelActivityHistory',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'activityHistories'
         ],
         'buyerResponseDueDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerResponseDueDate'
         ],
         'cancelCloseDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cancelCloseDate'
@@ -72,7 +72,7 @@ class CancelDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'cancelReason'
         ],
         'cancelRequestDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cancelRequestDate'
@@ -90,7 +90,7 @@ class CancelDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'legacyOrderId'
         ],
         'lineItems' => [
-            'type' => 'EbaySdk\PostOrder\Types\OrderCancelLineItem',
+            'type' => 'EbaySdk\Api\PostOrder\Types\OrderCancelLineItem',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItems'
@@ -114,19 +114,19 @@ class CancelDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'requestorType'
         ],
         'requestRefundAmount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'requestRefundAmount'
         ],
         'sellerResponseDueDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerResponseDueDate'
         ],
         'shipmentDate' => [
-            'type' => 'EbaySdk\PostOrder\Types\DateTime',
+            'type' => 'EbaySdk\Api\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipmentDate'

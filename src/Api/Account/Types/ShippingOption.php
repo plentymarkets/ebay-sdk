@@ -9,12 +9,12 @@ namespace EbaySdk\Api\Account\Types;
 
 /**
  *
- * @property \EbaySdk\Account\Enums\ShippingCostTypeEnum $costType
- * @property \EbaySdk\Account\Types\Amount $insuranceFee
+ * @property \EbaySdk\Api\Account\Enums\ShippingCostTypeEnum $costType
+ * @property \EbaySdk\Api\Account\Types\Amount $insuranceFee
  * @property boolean $insuranceOffered
- * @property \EbaySdk\Account\Enums\ShippingOptionTypeEnum $optionType
- * @property \EbaySdk\Account\Types\Amount $packageHandlingCost
- * @property \EbaySdk\Account\Types\ShippingService[] $shippingServices
+ * @property \EbaySdk\Api\Account\Enums\ShippingOptionTypeEnum $optionType
+ * @property \EbaySdk\Api\Account\Types\Amount $packageHandlingCost
+ * @property \EbaySdk\Api\Account\Types\ShippingService[] $shippingServices
  */
 class ShippingOption extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -29,7 +29,7 @@ class ShippingOption extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'costType'
         ],
         'insuranceFee' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'insuranceFee'
@@ -47,13 +47,13 @@ class ShippingOption extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'optionType'
         ],
         'packageHandlingCost' => [
-            'type' => 'EbaySdk\Account\Types\Amount',
+            'type' => 'EbaySdk\Api\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'packageHandlingCost'
         ],
         'shippingServices' => [
-            'type' => 'EbaySdk\Account\Types\ShippingService',
+            'type' => 'EbaySdk\Api\Account\Types\ShippingService',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingServices'

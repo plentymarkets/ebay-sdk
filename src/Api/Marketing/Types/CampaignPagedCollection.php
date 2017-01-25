@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\Campaign[] $campaigns
+ * @property \EbaySdk\Api\Marketing\Types\Campaign[] $campaigns
  * @property string $href
  * @property integer $limit
  * @property string $next
@@ -24,7 +24,7 @@ class CampaignPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\Base
      */
     private static $propertyTypes = [
         'campaigns' => [
-            'type' => 'EbaySdk\Marketing\Types\Campaign',
+            'type' => 'EbaySdk\Api\Marketing\Types\Campaign',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'campaigns'

@@ -11,19 +11,19 @@ namespace EbaySdk\Api\Inventory\Types;
  *
  * @property integer $availableQuantity
  * @property string $categoryId
- * @property \EbaySdk\Inventory\Enums\FormatTypeEnum $format
- * @property \EbaySdk\Inventory\Types\ListingDetails $listing
+ * @property \EbaySdk\Api\Inventory\Enums\FormatTypeEnum $format
+ * @property \EbaySdk\Api\Inventory\Types\ListingDetails $listing
  * @property string $listingDescription
- * @property \EbaySdk\Inventory\Types\ListingPolicies $listingPolicies
- * @property \EbaySdk\Inventory\Enums\MarketplaceEnum $marketplaceId
+ * @property \EbaySdk\Api\Inventory\Types\ListingPolicies $listingPolicies
+ * @property \EbaySdk\Api\Inventory\Enums\MarketplaceEnum $marketplaceId
  * @property string $merchantLocationKey
  * @property string $offerId
- * @property \EbaySdk\Inventory\Types\PricingSummary $pricingSummary
+ * @property \EbaySdk\Api\Inventory\Types\PricingSummary $pricingSummary
  * @property integer $quantityLimitPerBuyer
  * @property string $sku
- * @property \EbaySdk\Inventory\Enums\OfferStatusEnum $status
+ * @property \EbaySdk\Api\Inventory\Enums\OfferStatusEnum $status
  * @property string[] $storeCategoryNames
- * @property \EbaySdk\Inventory\Types\Tax $tax
+ * @property \EbaySdk\Api\Inventory\Types\Tax $tax
  */
 class EbayOfferDetailsWithAll extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -50,7 +50,7 @@ class EbayOfferDetailsWithAll extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'format'
         ],
         'listing' => [
-            'type' => 'EbaySdk\Inventory\Types\ListingDetails',
+            'type' => 'EbaySdk\Api\Inventory\Types\ListingDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'listing'
@@ -62,7 +62,7 @@ class EbayOfferDetailsWithAll extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'listingDescription'
         ],
         'listingPolicies' => [
-            'type' => 'EbaySdk\Inventory\Types\ListingPolicies',
+            'type' => 'EbaySdk\Api\Inventory\Types\ListingPolicies',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'listingPolicies'
@@ -86,7 +86,7 @@ class EbayOfferDetailsWithAll extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'offerId'
         ],
         'pricingSummary' => [
-            'type' => 'EbaySdk\Inventory\Types\PricingSummary',
+            'type' => 'EbaySdk\Api\Inventory\Types\PricingSummary',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'pricingSummary'
@@ -116,7 +116,7 @@ class EbayOfferDetailsWithAll extends \Plenty\Modules\Market\Ebay\Api\Types\Base
             'elementName' => 'storeCategoryNames'
         ],
         'tax' => [
-            'type' => 'EbaySdk\Inventory\Types\Tax',
+            'type' => 'EbaySdk\Api\Inventory\Types\Tax',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'tax'

@@ -10,7 +10,7 @@ namespace EbaySdk\Api\Browse\Types;
 /**
  *
  * @property string $averageRating
- * @property \EbaySdk\Browse\Types\RatingHistogram[] $ratingHistograms
+ * @property \EbaySdk\Api\Browse\Types\RatingHistogram[] $ratingHistograms
  * @property integer $reviewCount
  */
 class ReviewRating extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -26,7 +26,7 @@ class ReviewRating extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'averageRating'
         ],
         'ratingHistograms' => [
-            'type' => 'EbaySdk\Browse\Types\RatingHistogram',
+            'type' => 'EbaySdk\Api\Browse\Types\RatingHistogram',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ratingHistograms'

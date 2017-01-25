@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Types\CreateAdsByInventoryReferenceRequest[] $requests
+ * @property \EbaySdk\Api\Marketing\Types\CreateAdsByInventoryReferenceRequest[] $requests
  */
 class BulkCreateAdsByInventoryReferenceRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BulkCreateAdsByInventoryReferenceRequest extends \Plenty\Modules\Market\Eb
      */
     private static $propertyTypes = [
         'requests' => [
-            'type' => 'EbaySdk\Marketing\Types\CreateAdsByInventoryReferenceRequest',
+            'type' => 'EbaySdk\Api\Marketing\Types\CreateAdsByInventoryReferenceRequest',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'requests'

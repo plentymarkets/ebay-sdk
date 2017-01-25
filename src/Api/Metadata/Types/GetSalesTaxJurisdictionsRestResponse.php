@@ -12,8 +12,8 @@ use EbaySdk\Traits\HttpHeadersTrait;
 
 /**
  *
- * @property \EbaySdk\Metadata\Types\ErrorDetailV3[] $errors
- * @property \EbaySdk\Metadata\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Metadata\Types\ErrorDetailV3[] $errors
+ * @property \EbaySdk\Api\Metadata\Types\ErrorDetailV3[] $warnings
  */
 class GetSalesTaxJurisdictionsRestResponse extends \EbaySdk\Api\Metadata\Types\SalesTaxJurisdictions
 {
@@ -25,13 +25,13 @@ class GetSalesTaxJurisdictionsRestResponse extends \EbaySdk\Api\Metadata\Types\S
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'EbaySdk\Metadata\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Metadata\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Metadata\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Metadata\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

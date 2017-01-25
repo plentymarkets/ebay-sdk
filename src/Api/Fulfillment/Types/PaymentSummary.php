@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\Payment[] $payments
- * @property \EbaySdk\Fulfillment\Types\OrderRefund[] $refunds
- * @property \EbaySdk\Fulfillment\Types\Amount $totalDueSeller
+ * @property \EbaySdk\Api\Fulfillment\Types\Payment[] $payments
+ * @property \EbaySdk\Api\Fulfillment\Types\OrderRefund[] $refunds
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $totalDueSeller
  */
 class PaymentSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,19 +20,19 @@ class PaymentSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'payments' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Payment',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Payment',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'payments'
         ],
         'refunds' => [
-            'type' => 'EbaySdk\Fulfillment\Types\OrderRefund',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\OrderRefund',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'refunds'
         ],
         'totalDueSeller' => [
-            'type' => 'EbaySdk\Fulfillment\Types\Amount',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'totalDueSeller'

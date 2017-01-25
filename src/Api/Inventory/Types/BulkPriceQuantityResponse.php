@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\PriceQuantityResponse[] $responses
+ * @property \EbaySdk\Api\Inventory\Types\PriceQuantityResponse[] $responses
  */
 class BulkPriceQuantityResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class BulkPriceQuantityResponse extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
      */
     private static $propertyTypes = [
         'responses' => [
-            'type' => 'EbaySdk\Inventory\Types\PriceQuantityResponse',
+            'type' => 'EbaySdk\Api\Inventory\Types\PriceQuantityResponse',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'responses'

@@ -9,14 +9,14 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\LineItem_0[] $lineItems
- * @property \EbaySdk\Order\Types\PricingSummary_0 $pricingSummary
+ * @property \EbaySdk\Api\Order\Types\LineItem_0[] $lineItems
+ * @property \EbaySdk\Api\Order\Types\PricingSummary_0 $pricingSummary
  * @property string $purchaseOrderCreationDate
  * @property string $purchaseOrderId
- * @property \EbaySdk\Order\Enums\PurchaseOrderPaymentStatusEnum $purchaseOrderPaymentStatus
- * @property \EbaySdk\Order\Enums\PurchaseOrderStatusEnum $purchaseOrderStatus
- * @property \EbaySdk\Order\Types\Amount_0 $refundedAmount
- * @property \EbaySdk\Order\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Order\Enums\PurchaseOrderPaymentStatusEnum $purchaseOrderPaymentStatus
+ * @property \EbaySdk\Api\Order\Enums\PurchaseOrderStatusEnum $purchaseOrderStatus
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $refundedAmount
+ * @property \EbaySdk\Api\Order\Types\ErrorDetailV3[] $warnings
  */
 class GuestPurchaseOrder extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -25,13 +25,13 @@ class GuestPurchaseOrder extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'lineItems' => [
-            'type' => 'EbaySdk\Order\Types\LineItem_0',
+            'type' => 'EbaySdk\Api\Order\Types\LineItem_0',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItems'
         ],
         'pricingSummary' => [
-            'type' => 'EbaySdk\Order\Types\PricingSummary_0',
+            'type' => 'EbaySdk\Api\Order\Types\PricingSummary_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'pricingSummary'
@@ -61,13 +61,13 @@ class GuestPurchaseOrder extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'purchaseOrderStatus'
         ],
         'refundedAmount' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundedAmount'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Order\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Order\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

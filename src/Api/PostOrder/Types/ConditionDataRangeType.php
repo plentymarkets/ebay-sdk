@@ -9,7 +9,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\Mrk:Amount $amount
+ * @property \EbaySdk\Api\PostOrder\Types\Mrk:Amount $amount
  */
 class ConditionDataRangeType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -18,7 +18,7 @@ class ConditionDataRangeType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
      */
     private static $propertyTypes = [
         'amount' => [
-            'type' => 'EbaySdk\PostOrder\Types\Mrk:Amount',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Mrk:Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'

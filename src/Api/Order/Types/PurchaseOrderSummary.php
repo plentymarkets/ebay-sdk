@@ -11,8 +11,8 @@ namespace EbaySdk\Api\Order\Types;
  *
  * @property string $purchaseOrderHref
  * @property string $purchaseOrderId
- * @property \EbaySdk\Order\Enums\PurchaseOrderPaymentStatusEnum $purchaseOrderPaymentStatus
- * @property \EbaySdk\Order\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Order\Enums\PurchaseOrderPaymentStatusEnum $purchaseOrderPaymentStatus
+ * @property \EbaySdk\Api\Order\Types\ErrorDetailV3[] $warnings
  */
 class PurchaseOrderSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -39,7 +39,7 @@ class PurchaseOrderSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'purchaseOrderPaymentStatus'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Order\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Order\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

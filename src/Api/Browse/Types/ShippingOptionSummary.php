@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Browse\Types;
 
 /**
  *
- * @property \EbaySdk\Browse\Types\Amount_0 $shippingCost
+ * @property \EbaySdk\Api\Browse\Types\Amount_0 $shippingCost
  * @property string $shippingCostType
  */
 class ShippingOptionSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -19,7 +19,7 @@ class ShippingOptionSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
      */
     private static $propertyTypes = [
         'shippingCost' => [
-            'type' => 'EbaySdk\Browse\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Browse\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'

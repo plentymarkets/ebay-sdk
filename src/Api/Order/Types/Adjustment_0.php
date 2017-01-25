@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Order\Types\Amount_0 $amount
+ * @property \EbaySdk\Api\Order\Types\Amount_0 $amount
  * @property string $label
  */
 class Adjustment_0 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -19,7 +19,7 @@ class Adjustment_0 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'amount' => [
-            'type' => 'EbaySdk\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'

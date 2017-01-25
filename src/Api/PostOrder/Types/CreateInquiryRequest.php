@@ -10,7 +10,7 @@ namespace EbaySdk\Api\PostOrder\Types;
 /**
  *
  * @property integer $claimQuantity
- * @property \EbaySdk\PostOrder\Types\Text $comments
+ * @property \EbaySdk\Api\PostOrder\Types\Text $comments
  * @property string $desiredOutcome
  * @property string $itemId
  * @property string $transactionId
@@ -28,7 +28,7 @@ class CreateInquiryRequest extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'claimQuantity'
         ],
         'comments' => [
-            'type' => 'EbaySdk\PostOrder\Types\Text',
+            'type' => 'EbaySdk\Api\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'comments'

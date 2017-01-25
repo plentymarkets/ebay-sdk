@@ -9,9 +9,9 @@ namespace EbaySdk\Api\Fulfillment\Types;
 
 /**
  *
- * @property \EbaySdk\Fulfillment\Types\ShippingFulfillment[] $fulfillments
+ * @property \EbaySdk\Api\Fulfillment\Types\ShippingFulfillment[] $fulfillments
  * @property integer $total
- * @property \EbaySdk\Fulfillment\Types\ErrorDetailV3[] $warnings
+ * @property \EbaySdk\Api\Fulfillment\Types\ErrorDetailV3[] $warnings
  */
 class ShippingFulfillmentPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -20,7 +20,7 @@ class ShippingFulfillmentPagedCollection extends \Plenty\Modules\Market\Ebay\Api
      */
     private static $propertyTypes = [
         'fulfillments' => [
-            'type' => 'EbaySdk\Fulfillment\Types\ShippingFulfillment',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\ShippingFulfillment',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'fulfillments'
@@ -32,7 +32,7 @@ class ShippingFulfillmentPagedCollection extends \Plenty\Modules\Market\Ebay\Api
             'elementName' => 'total'
         ],
         'warnings' => [
-            'type' => 'EbaySdk\Fulfillment\Types\ErrorDetailV3',
+            'type' => 'EbaySdk\Api\Fulfillment\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

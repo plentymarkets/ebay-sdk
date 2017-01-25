@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\CountSummaryType[] $countSummary
- * @property \EbaySdk\PostOrder\Types\ReturnSummaryType[] $members
- * @property \EbaySdk\PostOrder\Types\PaginationOutput $paginationOutput
+ * @property \EbaySdk\Api\PostOrder\Types\CountSummaryType[] $countSummary
+ * @property \EbaySdk\Api\PostOrder\Types\ReturnSummaryType[] $members
+ * @property \EbaySdk\Api\PostOrder\Types\PaginationOutput $paginationOutput
  * @property integer $total
  */
 class GetSummaryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -21,19 +21,19 @@ class GetSummaryResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'countSummary' => [
-            'type' => 'EbaySdk\PostOrder\Types\CountSummaryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\CountSummaryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'countSummary'
         ],
         'members' => [
-            'type' => 'EbaySdk\PostOrder\Types\ReturnSummaryType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\ReturnSummaryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'members'
         ],
         'paginationOutput' => [
-            'type' => 'EbaySdk\PostOrder\Types\PaginationOutput',
+            'type' => 'EbaySdk\Api\PostOrder\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'

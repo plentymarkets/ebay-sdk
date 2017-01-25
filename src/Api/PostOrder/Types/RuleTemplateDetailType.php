@@ -9,8 +9,8 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Types\RuleActionDetailType $actionDetail
- * @property \EbaySdk\PostOrder\Types\RuleConditionDetailType[] $condition
+ * @property \EbaySdk\Api\PostOrder\Types\RuleActionDetailType $actionDetail
+ * @property \EbaySdk\Api\PostOrder\Types\RuleConditionDetailType[] $condition
  */
 class RuleTemplateDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -19,13 +19,13 @@ class RuleTemplateDetailType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseT
      */
     private static $propertyTypes = [
         'actionDetail' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleActionDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleActionDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actionDetail'
         ],
         'condition' => [
-            'type' => 'EbaySdk\PostOrder\Types\RuleConditionDetailType',
+            'type' => 'EbaySdk\Api\PostOrder\Types\RuleConditionDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'condition'

@@ -9,7 +9,7 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Marketing\Enums\CurrencyCodeEnum $currency
+ * @property \EbaySdk\Api\Marketing\Enums\CurrencyCodeEnum $currency
  * @property string $value
  */
 class Amount extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

@@ -9,9 +9,9 @@ namespace EbaySdk\Api\PostOrder\Types;
 
 /**
  *
- * @property \EbaySdk\PostOrder\Enums\CurrencyCodeEnum $convertedFromCurrency
+ * @property \EbaySdk\Api\PostOrder\Enums\CurrencyCodeEnum $convertedFromCurrency
  * @property double $convertedFromValue
- * @property \EbaySdk\PostOrder\Enums\CurrencyCodeEnum $currency
+ * @property \EbaySdk\Api\PostOrder\Enums\CurrencyCodeEnum $currency
  * @property double $value
  */
 class Amount extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType

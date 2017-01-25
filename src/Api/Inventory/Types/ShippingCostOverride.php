@@ -9,11 +9,11 @@ namespace EbaySdk\Api\Inventory\Types;
 
 /**
  *
- * @property \EbaySdk\Inventory\Types\Amount $additionalShippingCost
+ * @property \EbaySdk\Api\Inventory\Types\Amount $additionalShippingCost
  * @property integer $priority
- * @property \EbaySdk\Inventory\Types\Amount $shippingCost
- * @property \EbaySdk\Inventory\Enums\ShippingServiceTypeEnum $shippingServiceType
- * @property \EbaySdk\Inventory\Types\Amount $surcharge
+ * @property \EbaySdk\Api\Inventory\Types\Amount $shippingCost
+ * @property \EbaySdk\Api\Inventory\Enums\ShippingServiceTypeEnum $shippingServiceType
+ * @property \EbaySdk\Api\Inventory\Types\Amount $surcharge
  */
 class ShippingCostOverride extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -22,7 +22,7 @@ class ShippingCostOverride extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
      */
     private static $propertyTypes = [
         'additionalShippingCost' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'additionalShippingCost'
@@ -34,7 +34,7 @@ class ShippingCostOverride extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'priority'
         ],
         'shippingCost' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'
@@ -46,7 +46,7 @@ class ShippingCostOverride extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTyp
             'elementName' => 'shippingServiceType'
         ],
         'surcharge' => [
-            'type' => 'EbaySdk\Inventory\Types\Amount',
+            'type' => 'EbaySdk\Api\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'surcharge'

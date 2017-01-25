@@ -10,15 +10,15 @@ namespace EbaySdk\Api\Marketing\Types;
 /**
  *
  * @property string $description
- * @property \EbaySdk\Marketing\Types\DiscountRule[] $discountRules
+ * @property \EbaySdk\Api\Marketing\Types\DiscountRule[] $discountRules
  * @property string $endDate
- * @property \EbaySdk\Marketing\Types\InventoryCriterion $inventoryCriterion
- * @property \EbaySdk\Marketing\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\Marketing\Types\InventoryCriterion $inventoryCriterion
+ * @property \EbaySdk\Api\Marketing\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $name
- * @property \EbaySdk\Marketing\Enums\PromotionPriorityEnum $priority
+ * @property \EbaySdk\Api\Marketing\Enums\PromotionPriorityEnum $priority
  * @property string $promotionId
  * @property string $promotionImageUrl
- * @property \EbaySdk\Marketing\Enums\PromotionStatusEnum $promotionStatus
+ * @property \EbaySdk\Api\Marketing\Enums\PromotionStatusEnum $promotionStatus
  * @property string $startDate
  */
 class ItemPromotionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -34,7 +34,7 @@ class ItemPromotionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'description'
         ],
         'discountRules' => [
-            'type' => 'EbaySdk\Marketing\Types\DiscountRule',
+            'type' => 'EbaySdk\Api\Marketing\Types\DiscountRule',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'discountRules'
@@ -46,7 +46,7 @@ class ItemPromotionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'endDate'
         ],
         'inventoryCriterion' => [
-            'type' => 'EbaySdk\Marketing\Types\InventoryCriterion',
+            'type' => 'EbaySdk\Api\Marketing\Types\InventoryCriterion',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'inventoryCriterion'
