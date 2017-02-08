@@ -1,4 +1,62 @@
 
+## Usage
+
+Getting all fulfillment policies for a given marketplace using the credentials ID for a customer that has already authenticated
+via plentymarkets developer app. 
+ 
+```
+<?php 
+use EbaySdk\Api\Account\Services\AccountService;
+use EbaySdk\Api\Account\Types\GetFulfillmentPoliciesByMarketplaceRestRequest;
+use EbaySdk\Api\Account\Types\GetFulfillmentPoliciesByMarketplaceRestResponse;
+
+$service = pluginApp(AccountService::class, [
+    'config' => [
+        'credentialsId' => 8,
+    ]
+]);
+
+$request = pluginApp(GetFulfillmentPoliciesByMarketplaceRestRequest::class);
+
+$request->marketplace_id = 'EBAY_US';
+
+$response = $service->getFulfillmentPoliciesByMarketplace($request);
+
+$list = [];
+
+foreach($response->fulfillmentPolicies as $fulfillmentPolicy)
+{
+    $list[$fulfillmentPolicy->fulfillmentPolicyId] = $fulfillmentPolicy->name;
+}		
+```
+
+If we want to use our custom credentials and an custom user token we can simply provide them in the service configuration.
+
+```
+<?php 
+
+$accountService = pluginApp(AccountService::class, [
+    'config' => [
+        'accessToken' => 'secret_access_token'
+    ]
+]);		
+```
+
+Due to the fact that all eBay access tokens are available for only two hours you also have the possibility to pass an
+ refresh token that will be used in case the request fails because of the expired access token. 
+
+```
+<?php 
+
+$accountService = pluginApp(AccountService::class, [
+    'config' => [
+        'sandbox' => true,
+        'accessToken' => 'secret_access_token',
+        'refreshToken' => 'secret_refresh_token',
+    ]
+]);		
+```
+
 ## API Reference
 
 |  API            |  Overview                                                                                   |  API Reference                                                                            |

@@ -1,9 +1,16 @@
 {
-  "version": 0.1,
+  "version": "1.0.0",
   "name": "EbaySdk",
   "description": "Ebay SDK",
   "namespace": "EbaySdk",
+  "pluginIcon":"icon_plugin_xs.png",
   "author": "plentymarkets GmbH",
+  "email":"support@plentymarkets.eu",
+  "authorIcon":"icon_author_xs.png",
+  "shortDescription": "Ebay SDK",
+  "license":"AGPL-3.0",
+  "categories": ["Plugins/Backend"],
+  "price":0.00,
   "type": "general",
   "serviceProvider": "EbaySdk\\EbaySdkServiceProvider"
 }
