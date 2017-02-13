@@ -1,7 +1,17 @@
 
+## eBay SDK
+
+The eBay SDK plugin provides software library and enables plentymarkets customers to use various eBay API services as well as to build their own eBay plugins in plentymarkets.
+
+
+## Credentials
+
+Get credentials IDs Credentials-IDs using the credentials repository. The authetication for the communication between plentymarkets and eBay is carried out by plentymarkets.
+
+
 ## Usage
 
-Getting all fulfillment policies for a given marketplace using the credentials ID for a customer that has already authenticated
+Getting all business policies for a given marketplace using the credentials ID for a customer that has already authenticated
 via plentymarkets developer app. 
  
 ```
