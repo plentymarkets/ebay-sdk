@@ -1,6 +1,6 @@
 ![plentymarkets Logo](http://www.plentymarkets.eu/layout/pm/images/logo/plentymarkets-logo.jpg)
 
-# eBay SDK plugin for plentymarkets 7.x
+# eBay SDK plugin for plentymarkets 7
 
 This is the eBay SDK plugin developed by plentymarkets. 
 
