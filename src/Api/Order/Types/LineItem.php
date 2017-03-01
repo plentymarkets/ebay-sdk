@@ -9,16 +9,15 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Api\Order\Types\Amount $baseUnitPrice
  * @property \EbaySdk\Api\Order\Types\Image $image
  * @property string $itemId
  * @property string $lineItemId
+ * @property \EbaySdk\Api\Order\Enums\LineItemPaymentStatusEnum $lineItemPaymentStatus
+ * @property \EbaySdk\Api\Order\Enums\LineItemStatusEnum $lineItemStatus
  * @property \EbaySdk\Api\Order\Types\Amount $netPrice
- * @property \EbaySdk\Api\Order\Types\Promotion[] $promotions
  * @property integer $quantity
  * @property \EbaySdk\Api\Order\Types\Seller $seller
- * @property \EbaySdk\Api\Order\Types\ShippingOption[] $shippingOptions
- * @property string $shortDescription
+ * @property \EbaySdk\Api\Order\Types\ShippingDetail $shippingDetail
  * @property string $title
  */
 class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -27,12 +26,6 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'baseUnitPrice' => [
-            'type' => 'EbaySdk\Api\Order\Types\Amount',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'baseUnitPrice'
-        ],
         'image' => [
             'type' => 'EbaySdk\Api\Order\Types\Image',
             'repeatable' => false,
@@ -51,17 +44,23 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'lineItemId'
         ],
+        'lineItemPaymentStatus' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'lineItemPaymentStatus'
+        ],
+        'lineItemStatus' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'lineItemStatus'
+        ],
         'netPrice' => [
             'type' => 'EbaySdk\Api\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'netPrice'
-        ],
-        'promotions' => [
-            'type' => 'EbaySdk\Api\Order\Types\Promotion',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'promotions'
         ],
         'quantity' => [
             'type' => 'integer',
@@ -75,17 +74,11 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'seller'
         ],
-        'shippingOptions' => [
-            'type' => 'EbaySdk\Api\Order\Types\ShippingOption',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'shippingOptions'
-        ],
-        'shortDescription' => [
-            'type' => 'string',
+        'shippingDetail' => [
+            'type' => 'EbaySdk\Api\Order\Types\ShippingDetail',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'shortDescription'
+            'elementName' => 'shippingDetail'
         ],
         'title' => [
             'type' => 'string',
@@ -105,7 +98,7 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
-            self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
+            self::$properties[__CLASS__] = array_merge(self::$properties[\Plenty\Modules\Market\Ebay\Api\Types\BaseType::class], self::$propertyTypes);
         }
 
         $this->setValues(__CLASS__, $childValues);

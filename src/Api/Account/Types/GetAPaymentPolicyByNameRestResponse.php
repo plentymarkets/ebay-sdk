@@ -50,7 +50,7 @@ class GetAPaymentPolicyByNameRestResponse extends \EbaySdk\Api\Account\Types\Pay
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
-            self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
+            self::$properties[__CLASS__] = array_merge(self::$properties[\EbaySdk\Api\Account\Types\PaymentPolicy::class], self::$propertyTypes);
         }
 
         $this->setValues(__CLASS__, $childValues);

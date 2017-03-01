@@ -11,6 +11,7 @@ namespace EbaySdk\Api\Inventory\Types;
  *
  * @property \EbaySdk\Api\Inventory\Types\Address $address
  * @property \EbaySdk\Api\Inventory\Types\GeoCoordinates $geoCoordinates
+ * @property string $locationId
  */
 class Location extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -29,6 +30,12 @@ class Location extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'geoCoordinates'
+        ],
+        'locationId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'locationId'
         ]
     ];
 
@@ -42,7 +49,7 @@ class Location extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
-            self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
+            self::$properties[__CLASS__] = array_merge(self::$properties[\Plenty\Modules\Market\Ebay\Api\Types\BaseType::class], self::$propertyTypes);
         }
 
         $this->setValues(__CLASS__, $childValues);

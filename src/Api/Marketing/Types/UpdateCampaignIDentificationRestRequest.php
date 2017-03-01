@@ -35,7 +35,7 @@ class UpdateCampaignIDentificationRestRequest extends \EbaySdk\Api\Marketing\Typ
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
-            self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
+            self::$properties[__CLASS__] = array_merge(self::$properties[\EbaySdk\Api\Marketing\Types\UpdateCampaignIdentificationRequest::class], self::$propertyTypes);
         }
 
         $this->setValues(__CLASS__, $childValues);

@@ -9,15 +9,15 @@ namespace EbaySdk\Api\Order\Types;
 
 /**
  *
- * @property \EbaySdk\Api\Order\Types\LineItem_0[] $lineItems
+ * @property \EbaySdk\Api\Order\Types\LineItem[] $lineItems
  * @property \EbaySdk\Api\Order\Types\PaymentInstrument $paymentInstrument
- * @property \EbaySdk\Api\Order\Types\PricingSummary_0 $pricingSummary
+ * @property \EbaySdk\Api\Order\Types\PricingSummary $pricingSummary
  * @property string $purchaseOrderCreationDate
  * @property string $purchaseOrderId
  * @property \EbaySdk\Api\Order\Enums\PurchaseOrderPaymentStatusEnum $purchaseOrderPaymentStatus
  * @property \EbaySdk\Api\Order\Enums\PurchaseOrderStatusEnum $purchaseOrderStatus
- * @property \EbaySdk\Api\Order\Types\Amount_0 $refundedAmount
- * @property \EbaySdk\Api\Order\Types\ShippingAddress_0 $shippingAddress
+ * @property \EbaySdk\Api\Order\Types\Amount $refundedAmount
+ * @property \EbaySdk\Api\Order\Types\ShippingAddress $shippingAddress
  * @property \EbaySdk\Api\Order\Types\ShippingFulfillment[] $shippingFulfillments
  * @property \EbaySdk\Api\Order\Types\ErrorDetailV3[] $warnings
  */
@@ -28,7 +28,7 @@ class PurchaseOrder extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      */
     private static $propertyTypes = [
         'lineItems' => [
-            'type' => 'EbaySdk\Api\Order\Types\LineItem_0',
+            'type' => 'EbaySdk\Api\Order\Types\LineItem',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItems'
@@ -40,7 +40,7 @@ class PurchaseOrder extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'paymentInstrument'
         ],
         'pricingSummary' => [
-            'type' => 'EbaySdk\Api\Order\Types\PricingSummary_0',
+            'type' => 'EbaySdk\Api\Order\Types\PricingSummary',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'pricingSummary'
@@ -70,13 +70,13 @@ class PurchaseOrder extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'purchaseOrderStatus'
         ],
         'refundedAmount' => [
-            'type' => 'EbaySdk\Api\Order\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundedAmount'
         ],
         'shippingAddress' => [
-            'type' => 'EbaySdk\Api\Order\Types\ShippingAddress_0',
+            'type' => 'EbaySdk\Api\Order\Types\ShippingAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingAddress'
@@ -105,7 +105,7 @@ class PurchaseOrder extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
-            self::$properties[__CLASS__] = array_merge(self::$properties[get_parent_class()], self::$propertyTypes);
+            self::$properties[__CLASS__] = array_merge(self::$properties[\Plenty\Modules\Market\Ebay\Api\Types\BaseType::class], self::$propertyTypes);
         }
 
         $this->setValues(__CLASS__, $childValues);
