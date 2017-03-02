@@ -5,8 +5,8 @@
   "namespace": "EbaySdk",
   "pluginIcon":"icon_plugin_xs.png",
   "author": "plentymarkets GmbH",
-  "email":"support@plentymarkets.eu",
-  "authorIcon":"icon_author_xs.png",
+  "email": "support@plentymarkets.eu",
+  "authorIcon": "icon_author_xs.png",
   "shortDescription": {
     "de": "Das eBay SDK-Plugin ermöglicht den Zugriff auf verschiedene eBay API-Services und die Entwicklung eigener eBay-Plugins in plentymarkets.",
     "en": "The eBay SDK plugin enables plentymarkets customers to use various eBay API services and to build their own eBay plugins in plentymarkets."
