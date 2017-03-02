@@ -26,9 +26,11 @@ $service = pluginApp(AccountService::class, [
     ]
 ]);
 
-$request = pluginApp(GetFulfillmentPoliciesByMarketplaceRestRequest::class);
-
-$request->marketplace_id = 'EBAY_US';
+$request = pluginApp(GetFulfillmentPoliciesByMarketplaceRestRequest::class, [
+    'values' => [
+        'marketplace_id' => MarketplaceIdEnum::C_EBAY_DE
+    ],
+]);
 
 $response = $service->getFulfillmentPoliciesByMarketplace($request);
 
