@@ -69,6 +69,10 @@ $accountService = pluginApp(AccountService::class, [
 ]);		
 ```
 
+### Further usage
+
+Use the [eBay SDK test plugin](https://github.com/plentymarkets/ebay-sdk-test-plugin) for further examples of usage and to add your own examples.
+
 ## API Reference
 
 |  API            |  Overview                                                                                   |  API Reference                                                                            |
