@@ -10,6 +10,8 @@ Credentials-IDs werden mit Hilfe des Credentials Repository aufgerufen. Die Auth
 
 ## Anwendung
 
+
+
 Alle Rahmenbedingungen für eine bestimmte eBay-Plattform anhand der Credentials-ID eines bereits durch die plentymarkets Developer App authentifizierten Kunden erhalten.
  
 ```
@@ -66,7 +68,9 @@ $accountService = pluginApp(AccountService::class, [
 ]);		
 ```
 
-### 
+### Weitere Anwendungsbeispiele
+
+Über das [eBay-SDK-Test Plugin](https://github.com/plentymarkets/ebay-sdk-test-plugin) werden weitere Anwendungsbeispiele aufgeführt. Gerne können dort auch eigene Beispiele hinzugefügt werden.
 
 ## API Reference
 
