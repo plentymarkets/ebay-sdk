@@ -12,7 +12,7 @@
     "en": "The eBay SDK plugin enables plentymarkets customers to use various eBay API services and to build their own eBay plugins in plentymarkets."
 },
   "license":"AGPL-3.0",
-  "categories": ["Plugins/Backend"],
+  "categories": [3523],
   "price":0.00,
   "type": "general",
   "serviceProvider": "EbaySdk\\EbaySdkServiceProvider"
