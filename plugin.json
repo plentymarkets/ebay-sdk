@@ -10,7 +10,11 @@
   "shortDescription": {
     "de": "Das eBay SDK-Plugin ermöglicht den Zugriff auf verschiedene eBay API-Services und die Entwicklung eigener eBay-Plugins in plentymarkets.",
     "en": "The eBay SDK plugin enables plentymarkets customers to use various eBay API services and to build their own eBay plugins in plentymarkets."
-},
+  },
+  "marketplaceName": {
+    "de": "eBay SDK",
+    "en": "eBay SDK"
+  },
   "license":"AGPL-3.0",
   "categories": [3523],
   "price":0.00,
