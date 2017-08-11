@@ -15,7 +15,7 @@ use EbaySdk\Traits\HttpHeadersTrait;
  * @property \EbaySdk\Api\Marketing\Types\ErrorDetailV3[] $errors
  * @property \EbaySdk\Api\Marketing\Types\ErrorDetailV3[] $warnings
  */
-class BulkCreateAdsByInventoryReferenceRestResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
+class BulkCreateAdsByInventoryReferenceRestResponse extends \EbaySdk\Api\Marketing\Types\BulkCreateAdsByInventoryReferenceResponse
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;
@@ -50,7 +50,7 @@ class BulkCreateAdsByInventoryReferenceRestResponse extends \Plenty\Modules\Mark
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
-            self::$properties[__CLASS__] = array_merge(self::$properties[\Plenty\Modules\Market\Ebay\Api\Types\BaseType::class], self::$propertyTypes);
+            self::$properties[__CLASS__] = array_merge(self::$properties[\EbaySdk\Api\Marketing\Types\BulkCreateAdsByInventoryReferenceResponse::class], self::$propertyTypes);
         }
 
         $this->setValues(__CLASS__, $childValues);

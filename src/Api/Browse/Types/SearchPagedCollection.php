@@ -15,6 +15,7 @@ namespace EbaySdk\Api\Browse\Types;
  * @property string $next
  * @property integer $offset
  * @property string $prev
+ * @property \EbaySdk\Api\Browse\Types\Refinement $refinement
  * @property integer $total
  * @property \EbaySdk\Api\Browse\Types\ErrorDetailV3[] $warnings
  */
@@ -59,6 +60,12 @@ class SearchPagedCollection extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'prev'
+        ],
+        'refinement' => [
+            'type' => 'EbaySdk\Api\Browse\Types\Refinement',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'refinement'
         ],
         'total' => [
             'type' => 'integer',

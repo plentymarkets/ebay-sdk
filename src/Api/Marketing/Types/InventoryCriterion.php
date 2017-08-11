@@ -12,6 +12,7 @@ namespace EbaySdk\Api\Marketing\Types;
  * @property \EbaySdk\Api\Marketing\Enums\InventoryCriterionEnum $inventoryCriterionType
  * @property \EbaySdk\Api\Marketing\Types\InventoryItem[] $inventoryItems
  * @property string[] $listingIds
+ * @property \EbaySdk\Api\Marketing\Types\RuleCriteria $ruleCriteria
  */
 class InventoryCriterion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -36,6 +37,12 @@ class InventoryCriterion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'listingIds'
+        ],
+        'ruleCriteria' => [
+            'type' => 'EbaySdk\Api\Marketing\Types\RuleCriteria',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ruleCriteria'
         ]
     ];
 

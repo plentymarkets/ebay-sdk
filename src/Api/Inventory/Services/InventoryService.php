@@ -101,6 +101,13 @@ class InventoryService extends \EbaySdk\Api\Inventory\Services\InventoryBaseServ
                 ]
             ]
         ],
+        'BulkMigrateListings' => [
+            'method' => 'POST',
+            'resource' => 'bulk_migrate_listing',
+            'responseClass' => '\EbaySdk\Api\Inventory\Types\BulkMigrateListingsRestResponse',
+            'params' => [
+            ]
+        ],
         'CreateInventoryLocation' => [
             'method' => 'POST',
             'resource' => 'location/{merchantLocationKey}',
@@ -252,7 +259,7 @@ class InventoryService extends \EbaySdk\Api\Inventory\Services\InventoryBaseServ
         ],
         'UpdateOffer' => [
             'method' => 'PUT',
-            'resource' => 'offer/{offer_Id}',
+            'resource' => 'offer/{offerId}',
             'responseClass' => '\EbaySdk\Api\Inventory\Types\UpdateOfferRestResponse',
             'params' => [
                 'offerId' => [
@@ -374,6 +381,15 @@ class InventoryService extends \EbaySdk\Api\Inventory\Services\InventoryBaseServ
     public function getInventoryItemGroup(\EbaySdk\Api\Inventory\Types\GetInventoryItemGroupRestRequest $request)
     {
         return $this->callOperation('GetInventoryItemGroup', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Inventory\Types\BulkMigrateListingsRestRequest $request
+     * @return \EbaySdk\Api\Inventory\Types\BulkMigrateListingsRestResponse
+     */
+    public function bulkMigrateListings(\EbaySdk\Api\Inventory\Types\BulkMigrateListingsRestRequest $request)
+    {
+        return $this->callOperation('BulkMigrateListings', $request);
     }
 
     /**

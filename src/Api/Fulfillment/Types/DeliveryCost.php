@@ -12,6 +12,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $importCharges
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $shippingCost
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $shippingIntermediationFee
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $discountAmount
  */
 class DeliveryCost extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -36,6 +37,12 @@ class DeliveryCost extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingIntermediationFee'
+        ],
+        'discountAmount' => [
+            'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'discountAmount'
         ]
     ];
 

@@ -9,9 +9,16 @@ namespace EbaySdk\Api\Browse\Types;
 
 /**
  *
- * @property string $shippingCarrierName
- * @property \EbaySdk\Api\Browse\Types\Amount $shippingCost
- * @property string $shippingServiceName
+ * @property \EbaySdk\Api\Browse\Types\ConvertedAmount $additionalShippingCostPerUnit
+ * @property string $cutOffDateUsedForEstimate
+ * @property string $maxEstimatedDeliveryDate
+ * @property string $minEstimatedDeliveryDate
+ * @property integer $quantityUsedForEstimate
+ * @property string $shippingCarrierCode
+ * @property \EbaySdk\Api\Browse\Types\ConvertedAmount $shippingCost
+ * @property string $shippingCostType
+ * @property string $shippingServiceCode
+ * @property \EbaySdk\Api\Browse\Types\ShipToLocation $shipToLocationUsedForEstimate
  * @property string $trademarkSymbol
  * @property string $type
  */
@@ -21,23 +28,65 @@ class ShippingOption extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'shippingCarrierName' => [
+        'additionalShippingCostPerUnit' => [
+            'type' => 'EbaySdk\Api\Browse\Types\ConvertedAmount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'additionalShippingCostPerUnit'
+        ],
+        'cutOffDateUsedForEstimate' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'shippingCarrierName'
+            'elementName' => 'cutOffDateUsedForEstimate'
+        ],
+        'maxEstimatedDeliveryDate' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'maxEstimatedDeliveryDate'
+        ],
+        'minEstimatedDeliveryDate' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'minEstimatedDeliveryDate'
+        ],
+        'quantityUsedForEstimate' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'quantityUsedForEstimate'
+        ],
+        'shippingCarrierCode' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'shippingCarrierCode'
         ],
         'shippingCost' => [
-            'type' => 'EbaySdk\Api\Browse\Types\Amount',
+            'type' => 'EbaySdk\Api\Browse\Types\ConvertedAmount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'
         ],
-        'shippingServiceName' => [
+        'shippingCostType' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'shippingServiceName'
+            'elementName' => 'shippingCostType'
+        ],
+        'shippingServiceCode' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'shippingServiceCode'
+        ],
+        'shipToLocationUsedForEstimate' => [
+            'type' => 'EbaySdk\Api\Browse\Types\ShipToLocation',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'shipToLocationUsedForEstimate'
         ],
         'trademarkSymbol' => [
             'type' => 'string',

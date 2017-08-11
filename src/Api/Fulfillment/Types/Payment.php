@@ -13,6 +13,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property string $paymentDate
  * @property \EbaySdk\Api\Fulfillment\Types\PaymentHold[] $paymentHolds
  * @property \EbaySdk\Api\Fulfillment\Enums\PaymentMethodTypeEnum $paymentMethod
+ * @property \EbaySdk\Api\Fulfillment\Enums\PaymentModeTypeEnum $paymentMode
  * @property string $paymentReferenceId
  * @property \EbaySdk\Api\Fulfillment\Enums\PaymentStatusEnum $paymentStatus
  */
@@ -45,6 +46,12 @@ class Payment extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paymentMethod'
+        ],
+        'paymentMode' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'paymentMode'
         ],
         'paymentReferenceId' => [
             'type' => 'string',

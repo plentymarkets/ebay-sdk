@@ -11,8 +11,8 @@ namespace EbaySdk\Api\Order\Types;
  *
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
- * @property string $shippingCarrierName
- * @property string $shippingServiceName
+ * @property string $shippingCarrierCode
+ * @property string $shippingServiceCode
  */
 class ShippingDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -32,17 +32,17 @@ class ShippingDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'minEstimatedDeliveryDate'
         ],
-        'shippingCarrierName' => [
+        'shippingCarrierCode' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'shippingCarrierName'
+            'elementName' => 'shippingCarrierCode'
         ],
-        'shippingServiceName' => [
+        'shippingServiceCode' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'shippingServiceName'
+            'elementName' => 'shippingServiceCode'
         ]
     ];
 

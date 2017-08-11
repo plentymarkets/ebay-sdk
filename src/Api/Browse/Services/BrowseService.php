@@ -15,7 +15,7 @@ class BrowseService extends \EbaySdk\Api\Browse\Services\BrowseBaseService
      * @property array $operations Associative array of operations provided by the service.
      */
     protected static $operations = [
-        'getItem' => [
+        'GetItem' => [
             'method' => 'GET',
             'resource' => 'item/{item_id}',
             'responseClass' => '\EbaySdk\Api\Browse\Types\GetItemRestResponse',
@@ -26,29 +26,27 @@ class BrowseService extends \EbaySdk\Api\Browse\Services\BrowseBaseService
                 ]
             ]
         ],
-        'getItemFeed' => [
+        'GetItemByLegacyId' => [
             'method' => 'GET',
-            'resource' => 'item_feed',
-            'responseClass' => '\EbaySdk\Api\Browse\Types\GetItemFeedRestResponse',
+            'resource' => 'item/get_item_by_legacy_id',
+            'responseClass' => '\EbaySdk\Api\Browse\Types\GetItemByLegacyIdRestResponse',
             'params' => [
-                'category_id' => [
+                'legacy_item_id' => [
                     'valid' => ['string'],
                     'required' => true
                 ],
-                'date' => [
-                    'valid' => ['string'],
-                    'required' => true
+                'legacy_variation_id' => [
+                    'valid' => ['string']
                 ],
-                'feed_type' => [
-                    'valid' => ['string'],
-                    'required' => true
+                'legacy_variation_sku' => [
+                    'valid' => ['string']
                 ]
             ]
         ],
-        'getItemGroup' => [
+        'GetItemsByItemGroup' => [
             'method' => 'GET',
-            'resource' => 'item_group/{item_group_id}',
-            'responseClass' => '\EbaySdk\Api\Browse\Types\GetItemGroupRestResponse',
+            'resource' => 'item/get_items_by_item_group',
+            'responseClass' => '\EbaySdk\Api\Browse\Types\GetItemsByItemGroupRestResponse',
             'params' => [
                 'item_group_id' => [
                     'valid' => ['string'],
@@ -56,12 +54,27 @@ class BrowseService extends \EbaySdk\Api\Browse\Services\BrowseBaseService
                 ]
             ]
         ],
-        'searchForItems' => [
+        'SearchForItems' => [
             'method' => 'GET',
             'resource' => 'item_summary/search',
             'responseClass' => '\EbaySdk\Api\Browse\Types\SearchForItemsRestResponse',
             'params' => [
+                'aspect_filter' => [
+                    'valid' => ['string']
+                ],
+                'category_ids' => [
+                    'valid' => ['string']
+                ],
+                'epid' => [
+                    'valid' => ['string']
+                ],
+                'fieldgroups' => [
+                    'valid' => ['string']
+                ],
                 'filter' => [
+                    'valid' => ['string']
+                ],
+                'gtin' => [
                     'valid' => ['string']
                 ],
                 'limit' => [
@@ -94,25 +107,25 @@ class BrowseService extends \EbaySdk\Api\Browse\Services\BrowseBaseService
      */
     public function getItem(\EbaySdk\Api\Browse\Types\GetItemRestRequest $request)
     {
-        return $this->callOperation('getItem', $request);
+        return $this->callOperation('GetItem', $request);
     }
 
     /**
-     * @param \EbaySdk\Api\Browse\Types\GetItemFeedRestRequest $request
-     * @return \EbaySdk\Api\Browse\Types\GetItemFeedRestResponse
+     * @param \EbaySdk\Api\Browse\Types\GetItemByLegacyIdRestRequest $request
+     * @return \EbaySdk\Api\Browse\Types\GetItemByLegacyIdRestResponse
      */
-    public function getItemFeed(\EbaySdk\Api\Browse\Types\GetItemFeedRestRequest $request)
+    public function getItemByLegacyId(\EbaySdk\Api\Browse\Types\GetItemByLegacyIdRestRequest $request)
     {
-        return $this->callOperation('getItemFeed', $request);
+        return $this->callOperation('GetItemByLegacyId', $request);
     }
 
     /**
-     * @param \EbaySdk\Api\Browse\Types\GetItemGroupRestRequest $request
-     * @return \EbaySdk\Api\Browse\Types\GetItemGroupRestResponse
+     * @param \EbaySdk\Api\Browse\Types\GetItemsByItemGroupRestRequest $request
+     * @return \EbaySdk\Api\Browse\Types\GetItemsByItemGroupRestResponse
      */
-    public function getItemGroup(\EbaySdk\Api\Browse\Types\GetItemGroupRestRequest $request)
+    public function getItemsByItemGroup(\EbaySdk\Api\Browse\Types\GetItemsByItemGroupRestRequest $request)
     {
-        return $this->callOperation('getItemGroup', $request);
+        return $this->callOperation('GetItemsByItemGroup', $request);
     }
 
     /**
@@ -121,6 +134,6 @@ class BrowseService extends \EbaySdk\Api\Browse\Services\BrowseBaseService
      */
     public function searchForItems(\EbaySdk\Api\Browse\Types\SearchForItemsRestRequest $request)
     {
-        return $this->callOperation('searchForItems', $request);
+        return $this->callOperation('SearchForItems', $request);
     }
 }

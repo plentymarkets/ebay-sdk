@@ -11,12 +11,17 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property integer $errorId
  * @property string $domain
+ * @property string $subdomain
  * @property string $severity
  * @property string $category
  * @property string $message
  * @property \EbaySdk\Api\PostOrder\Types\ErrorParameter[] $parameter
  * @property string $longMessage
  * @property integer $httpStatusCode
+ * @property string $errorName
+ * @property string $resolution
+ * @property string $organization
+ * @property string $errorGroups
  */
 class Error extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -35,6 +40,12 @@ class Error extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'domain'
+        ],
+        'subdomain' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'subdomain'
         ],
         'severity' => [
             'type' => 'string',
@@ -71,6 +82,30 @@ class Error extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'httpStatusCode'
+        ],
+        'errorName' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'errorName'
+        ],
+        'resolution' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'resolution'
+        ],
+        'organization' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'organization'
+        ],
+        'errorGroups' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'errorGroups'
         ]
     ];
 

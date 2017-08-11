@@ -14,6 +14,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property string $shipmentTrackingNumber
  * @property string $shippedDate
  * @property string $shippingCarrierCode
+ * @property string $shippingServiceCode
  */
 class ShippingFulfillment extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -50,6 +51,12 @@ class ShippingFulfillment extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCarrierCode'
+        ],
+        'shippingServiceCode' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'shippingServiceCode'
         ]
     ];
 

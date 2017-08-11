@@ -11,7 +11,7 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $buyer
  * @property integer $caseId
- * @property \EbaySdk\Api\PostOrder\Types\Rsp:CaseStatusEnum $caseStatusEnum
+ * @property \EbaySdk\Api\PostOrder\Enums\CaseStatusEnum $caseStatusEnum
  * @property \EbaySdk\Api\PostOrder\Types\Amount $claimAmount
  * @property \EbaySdk\Api\PostOrder\Types\DateTime $creationDate
  * @property integer $itemId
@@ -39,7 +39,7 @@ class CaseSummaryType extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'caseId'
         ],
         'caseStatusEnum' => [
-            'type' => 'EbaySdk\Api\PostOrder\Types\Rsp:CaseStatusEnum',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseStatusEnum'

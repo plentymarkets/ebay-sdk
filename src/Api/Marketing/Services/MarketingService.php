@@ -375,6 +375,28 @@ class MarketingService extends \EbaySdk\Api\Marketing\Services\MarketingBaseServ
                 ]
             ]
         ],
+        'GetListingsInSpecificPromotion' => [
+            'method' => 'GET',
+            'resource' => 'promotion/{promotion_id}/get_listing_set',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\GetListingsInSpecificPromotionRestResponse',
+            'params' => [
+                'promotion_id' => [
+                    'valid' => ['string']
+                ],
+                'limit' => [
+                    'valid' => ['string']
+                ],
+                'offset' => [
+                    'valid' => ['string']
+                ],
+                'q' => [
+                    'valid' => ['string']
+                ],
+                'sort' => [
+                    'valid' => ['string']
+                ]
+            ]
+        ],
         'GetPromotions' => [
             'method' => 'GET',
             'resource' => 'promotion',
@@ -430,6 +452,103 @@ class MarketingService extends \EbaySdk\Api\Marketing\Services\MarketingBaseServ
                 'marketplace_id' => [
                     'valid' => ['string'],
                     'required' => true
+                ]
+            ]
+        ],
+        'GetSpecificReport' => [
+            'method' => 'GET',
+            'resource' => 'ad_report/{report_id}',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\GetSpecificReportRestResponse',
+            'params' => [
+                'report_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
+        ],
+        'GetMetadataForAllReports' => [
+            'method' => 'GET',
+            'resource' => 'ad_report_metadata',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\GetMetadataForAllReportsRestResponse',
+            'params' => [
+            ]
+        ],
+        'GetMetadataForAReportType' => [
+            'method' => 'GET',
+            'resource' => 'ad_report_metadata/{report_type}',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\GetMetadataForAReportTypeRestResponse',
+            'params' => [
+                'report_type' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
+        ],
+        'CreateReportTask' => [
+            'method' => 'POST',
+            'resource' => 'ad_report_task',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\CreateReportTasktRestResponse',
+            'params' => [
+            ]
+        ],
+        'DeleteSpecificReportTask' => [
+            'method' => 'DELETE',
+            'resource' => 'ad_report_task/{report_task_id}',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\DeleteSpecificReportTaskRestResponse',
+            'params' => [
+                'report_task_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
+        ],
+        'GetReportTasks' => [
+            'method' => 'GET',
+            'resource' => 'ad_report_task',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\GetReportTasksRestResponse',
+            'params' => [
+                'limit' => [
+                    'valid' => ['string']
+                ],
+                'offset' => [
+                    'valid' => ['string']
+                ],
+                'report_task_statuses' => [
+                    'valid' => ['string']
+                ]
+            ]
+        ],
+        'GetSpecificReportTask' => [
+            'method' => 'GET',
+            'resource' => 'ad_report_task/{report_task_id}',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\GetSpecificReportTaskRestResponse',
+            'params' => [
+                'report_task_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
+        ],
+        'GetAPromotionReport' => [
+            'method' => 'GET',
+            'resource' => 'promotion_report',
+            'responseClass' => '\EbaySdk\Api\Marketing\Types\GetAPromotionReportRestResponse',
+            'params' => [
+                'limit' => [
+                    'valid' => ['string']
+                ],
+                'marketplace_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ],
+                'offset' => [
+                    'valid' => ['string']
+                ],
+                'promotion_status' => [
+                    'valid' => ['string']
+                ],
+                'q' => [
+                    'valid' => ['string']
                 ]
             ]
         ]
@@ -705,6 +824,15 @@ class MarketingService extends \EbaySdk\Api\Marketing\Services\MarketingBaseServ
     }
 
     /**
+     * @param \EbaySdk\Api\Marketing\Types\GetListingsInSpecificPromotionRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\GetListingsInSpecificPromotionRestResponse
+     */
+    public function getListingsInSpecificPromotion(\EbaySdk\Api\Marketing\Types\GetListingsInSpecificPromotionRestRequest $request)
+    {
+        return $this->callOperation('GetListingsInSpecificPromotion', $request);
+    }
+
+    /**
      * @param \EbaySdk\Api\Marketing\Types\GetPromotionsRestRequest $request
      * @return \EbaySdk\Api\Marketing\Types\GetPromotionsRestResponse
      */
@@ -738,5 +866,77 @@ class MarketingService extends \EbaySdk\Api\Marketing\Services\MarketingBaseServ
     public function getPromotionSummaryReport(\EbaySdk\Api\Marketing\Types\GetPromotionSummaryReportRestRequest $request)
     {
         return $this->callOperation('GetPromotionSummaryReport', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Marketing\Types\GetSpecificReportRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\GetSpecificReportRestResponse
+     */
+    public function getSpecificReport(\EbaySdk\Api\Marketing\Types\GetSpecificReportRestRequest $request)
+    {
+        return $this->callOperation('GetSpecificReport', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Marketing\Types\GetMetadataForAllReportsRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\GetMetadataForAllReportsRestResponse
+     */
+    public function getMetadataForAllReports(\EbaySdk\Api\Marketing\Types\GetMetadataForAllReportsRestRequest $request)
+    {
+        return $this->callOperation('GetMetadataForAllReports', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Marketing\Types\GetMetadataForAReportTypeRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\GetMetadataForAReportTypeRestResponse
+     */
+    public function getMetadataForAReportType(\EbaySdk\Api\Marketing\Types\GetMetadataForAReportTypeRestRequest $request)
+    {
+        return $this->callOperation('GetMetadataForAReportType', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Marketing\Types\CreateReportTaskRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\CreateReportTasktRestResponse
+     */
+    public function createReportTask(\EbaySdk\Api\Marketing\Types\CreateReportTaskRestRequest $request)
+    {
+        return $this->callOperation('CreateReportTask', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Marketing\Types\DeleteSpecificReportTaskRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\DeleteSpecificReportTaskRestResponse
+     */
+    public function deleteSpecificReportTask(\EbaySdk\Api\Marketing\Types\DeleteSpecificReportTaskRestRequest $request)
+    {
+        return $this->callOperation('DeleteSpecificReportTask', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Marketing\Types\GetReportTasksRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\GetReportTasksRestResponse
+     */
+    public function getReportTasks(\EbaySdk\Api\Marketing\Types\GetReportTasksRestRequest $request)
+    {
+        return $this->callOperation('GetReportTasks', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Marketing\Types\GetSpecificReportTaskRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\GetSpecificReportTaskRestResponse
+     */
+    public function getSpecificReportTask(\EbaySdk\Api\Marketing\Types\GetSpecificReportTaskRestRequest $request)
+    {
+        return $this->callOperation('GetSpecificReportTask', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Marketing\Types\GetAPromotionReportRestRequest $request
+     * @return \EbaySdk\Api\Marketing\Types\GetAPromotionReportRestResponse
+     */
+    public function getAPromotionReport(\EbaySdk\Api\Marketing\Types\GetAPromotionReportRestRequest $request)
+    {
+        return $this->callOperation('GetAPromotionReport', $request);
     }
 }

@@ -14,23 +14,26 @@ namespace EbaySdk\Api\Browse\Types;
  * @property string[] $buyingOptions
  * @property \EbaySdk\Api\Browse\Types\Category[] $categories
  * @property string $condition
- * @property \EbaySdk\Api\Browse\Types\Amount_0 $currentBidPrice
+ * @property string $conditionId
+ * @property \EbaySdk\Api\Browse\Types\ConvertedAmount $currentBidPrice
  * @property \EbaySdk\Api\Browse\Types\TargetLocation $distanceFromPickupLocation
  * @property string $energyEfficiencyClass
+ * @property string $epid
  * @property \EbaySdk\Api\Browse\Types\Image $image
  * @property string $itemAffiliateWebUrl
  * @property string $itemGroupHref
+ * @property string $itemGroupType
+ * @property string $itemHref
  * @property string $itemId
  * @property \EbaySdk\Api\Browse\Types\ItemLocationImpl $itemLocation
  * @property string $itemWebUrl
- * @property \EbaySdk\Api\Browse\Types\MarketingPrice_0 $marketingPrice
+ * @property \EbaySdk\Api\Browse\Types\MarketingPrice $marketingPrice
  * @property \EbaySdk\Api\Browse\Types\PickupOptionSummary[] $pickupOptions
- * @property \EbaySdk\Api\Browse\Types\Amount_0 $price
+ * @property \EbaySdk\Api\Browse\Types\ConvertedAmount $price
  * @property \EbaySdk\Api\Browse\Types\Seller $seller
  * @property \EbaySdk\Api\Browse\Types\ShippingOptionSummary[] $shippingOptions
  * @property \EbaySdk\Api\Browse\Types\Image[] $thumbnailImages
  * @property string $title
- * @property boolean $topRatedBuyingExperience
  */
 class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -68,8 +71,14 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'condition'
         ],
+        'conditionId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'conditionId'
+        ],
         'currentBidPrice' => [
-            'type' => 'EbaySdk\Api\Browse\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Browse\Types\ConvertedAmount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'currentBidPrice'
@@ -85,6 +94,12 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'energyEfficiencyClass'
+        ],
+        'epid' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'epid'
         ],
         'image' => [
             'type' => 'EbaySdk\Api\Browse\Types\Image',
@@ -103,6 +118,18 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemGroupHref'
+        ],
+        'itemGroupType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'itemGroupType'
+        ],
+        'itemHref' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'itemHref'
         ],
         'itemId' => [
             'type' => 'string',
@@ -123,7 +150,7 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'itemWebUrl'
         ],
         'marketingPrice' => [
-            'type' => 'EbaySdk\Api\Browse\Types\MarketingPrice_0',
+            'type' => 'EbaySdk\Api\Browse\Types\MarketingPrice',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'marketingPrice'
@@ -135,7 +162,7 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'pickupOptions'
         ],
         'price' => [
-            'type' => 'EbaySdk\Api\Browse\Types\Amount_0',
+            'type' => 'EbaySdk\Api\Browse\Types\ConvertedAmount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'
@@ -163,12 +190,6 @@ class ItemSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'title'
-        ],
-        'topRatedBuyingExperience' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'topRatedBuyingExperience'
         ]
     ];
 

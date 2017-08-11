@@ -175,6 +175,16 @@ class AccountService extends \EbaySdk\Api\Account\Services\AccountBaseService
             'params' => [
             ]
         ],
+        'GetShippingRateTables' => [
+            'method' => 'POST',
+            'resource' => 'rate_table',
+            'responseClass' => '\EbaySdk\Api\Account\Types\GetShippingRateTablesRestResponse',
+            'params' => [
+                'country_code' => [
+                    'valid' => ['string']
+                ]
+            ]
+        ],
         'CreateAReturnPolicy' => [
             'method' => 'POST',
             'resource' => 'return_policy',
@@ -447,6 +457,15 @@ class AccountService extends \EbaySdk\Api\Account\Services\AccountBaseService
     public function optOutOfProgram(\EbaySdk\Api\Account\Types\OptOutOfProgramRestRequest $request)
     {
         return $this->callOperation('OptOutOfProgram', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Account\Types\GetShippingRateTablesRestRequest $request
+     * @return \EbaySdk\Api\Account\Types\GetShippingRateTablesRestResponse
+     */
+    public function getShippingRateTables(\EbaySdk\Api\Account\Types\GetShippingRateTablesRestRequest $request)
+    {
+        return $this->callOperation('GetShippingRateTables', $request);
     }
 
     /**

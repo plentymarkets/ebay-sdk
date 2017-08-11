@@ -16,14 +16,15 @@ namespace EbaySdk\Api\PostOrder\Types;
  * @property string $cancelReason
  * @property \EbaySdk\Api\PostOrder\Types\DateTime $cancelRequestDate
  * @property string $legacyOrderId
+ * @property \EbaySdk\Api\PostOrder\Types\OrderCancelLineItem[] $lineItems
  * @property \EbaySdk\Api\PostOrder\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $paymentStatus
  * @property string $requestorType
  * @property \EbaySdk\Api\PostOrder\Types\Amount $requestRefundAmount
  * @property \EbaySdk\Api\PostOrder\Types\DateTime $sellerResponseDueDate
  * @property \EbaySdk\Api\PostOrder\Types\DateTime $shipmentDate
- * @property string $state
- * @property string $status
+ * @property string $cancelState
+ * @property string $cancelStatus
  */
 class CancelSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -73,6 +74,12 @@ class CancelSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'legacyOrderId'
         ],
+        'lineItems' => [
+            'type' => 'EbaySdk\Api\PostOrder\Types\OrderCancelLineItem',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'lineItems'
+        ],
         'marketplaceId' => [
             'type' => 'string',
             'repeatable' => false,
@@ -109,17 +116,17 @@ class CancelSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'shipmentDate'
         ],
-        'state' => [
+        'cancelState' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'state'
+            'elementName' => 'cancelState'
         ],
-        'status' => [
+        'cancelStatus' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'status'
+            'elementName' => 'cancelStatus'
         ]
     ];
 

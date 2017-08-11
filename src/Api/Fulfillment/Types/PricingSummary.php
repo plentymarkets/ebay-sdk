@@ -13,7 +13,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $deliveryCost
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $deliveryDiscount
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $fee
- * @property \EbaySdk\Api\Fulfillment\Types\Amount $priceDiscountSubtotal
+ * @property \EbaySdk\Api\Fulfillment\Types\Amount $priceDiscount
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $priceSubtotal
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $tax
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $total
@@ -48,11 +48,11 @@ class PricingSummary extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'fee'
         ],
-        'priceDiscountSubtotal' => [
+        'priceDiscount' => [
             'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'priceDiscountSubtotal'
+            'elementName' => 'priceDiscount'
         ],
         'priceSubtotal' => [
             'type' => 'EbaySdk\Api\Fulfillment\Types\Amount',

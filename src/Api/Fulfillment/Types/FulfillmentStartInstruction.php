@@ -11,7 +11,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  *
  * @property boolean $ebaySupportedFulfillment
  * @property \EbaySdk\Api\Fulfillment\Types\Address $finalDestinationAddress
- * @property \EbaySdk\Api\Fulfillment\Types\FulfillmentInstructionsType $fulfillmentInstructionsType
+ * @property \EbaySdk\Api\Fulfillment\Enums\FulfillmentInstructionsType $fulfillmentInstructionsType
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
  * @property \EbaySdk\Api\Fulfillment\Types\ShippingStep $shippingStep
@@ -35,7 +35,7 @@ class FulfillmentStartInstruction extends \Plenty\Modules\Market\Ebay\Api\Types\
             'elementName' => 'finalDestinationAddress'
         ],
         'fulfillmentInstructionsType' => [
-            'type' => 'EbaySdk\Api\Fulfillment\Types\FulfillmentInstructionsType',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fulfillmentInstructionsType'

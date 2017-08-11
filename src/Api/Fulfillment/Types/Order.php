@@ -17,7 +17,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property \EbaySdk\Api\Fulfillment\Types\FulfillmentStartInstruction[] $fulfillmentStartInstructions
  * @property string $lastModifiedDate
  * @property \EbaySdk\Api\Fulfillment\Types\LineItem[] $lineItems
- * @property \EbaySdk\Api\Fulfillment\Types\OrderFulfillmentStatus $orderFulfillmentStatus
+ * @property \EbaySdk\Api\Fulfillment\Enums\OrderFulfillmentStatus $orderFulfillmentStatus
  * @property string $orderId
  * @property \EbaySdk\Api\Fulfillment\Enums\OrderPaymentStatusEnum $orderPaymentStatus
  * @property \EbaySdk\Api\Fulfillment\Types\PaymentSummary $paymentSummary
@@ -79,7 +79,7 @@ class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'lineItems'
         ],
         'orderFulfillmentStatus' => [
-            'type' => 'EbaySdk\Api\Fulfillment\Types\OrderFulfillmentStatus',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'orderFulfillmentStatus'

@@ -25,8 +25,8 @@ namespace EbaySdk\Api\PostOrder\Types;
  * @property \EbaySdk\Api\PostOrder\Types\Amount $requestRefundAmount
  * @property \EbaySdk\Api\PostOrder\Types\DateTime $sellerResponseDueDate
  * @property \EbaySdk\Api\PostOrder\Types\DateTime $shipmentDate
- * @property string $state
- * @property string $status
+ * @property string $cancelState
+ * @property string $cancelStatus
  * @property string $transactionId
  */
 class CancelDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -131,17 +131,17 @@ class CancelDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'shipmentDate'
         ],
-        'state' => [
+        'cancelState' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'state'
+            'elementName' => 'cancelState'
         ],
-        'status' => [
+        'cancelStatus' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'status'
+            'elementName' => 'cancelStatus'
         ],
         'transactionId' => [
             'type' => 'string',

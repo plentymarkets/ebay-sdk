@@ -25,6 +25,76 @@ class MetadataService extends \EbaySdk\Api\Metadata\Services\MetadataBaseService
                     'required' => true
                 ]
             ]
+        ],
+        'GetPoliciesForAutoPartsCompatibility' => [
+            'method' => 'GET',
+            'resource' => 'marketplace/{marketplace_id}/get_automotive_parts_compatibility_policies',
+            'responseClass' => '\EbaySdk\Api\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestResponse',
+            'params' => [
+                'filter' => [
+                    'valid' => ['string']
+                ],
+                'marketplace_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
+        ],
+        'GetPoliciesForItemCondition' => [
+            'method' => 'GET',
+            'resource' => 'marketplace/{marketplace_id}/get_item_condition_policies',
+            'responseClass' => '\EbaySdk\Api\Metadata\Types\GetPoliciesForItemConditionRestResponse',
+            'params' => [
+                'filter' => [
+                    'valid' => ['string']
+                ],
+                'marketplace_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
+        ],
+        'GetPoliciesForListingStructures' => [
+            'method' => 'GET',
+            'resource' => 'marketplace/{marketplace_id}/get_listing_structure_policies',
+            'responseClass' => '\EbaySdk\Api\Metadata\Types\GetPoliciesForListingStructuresRestResponse',
+            'params' => [
+                'filter' => [
+                    'valid' => ['string']
+                ],
+                'marketplace_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
+        ],
+        'GetPoliciesForNegotiatedPrice' => [
+            'method' => 'GET',
+            'resource' => 'marketplace/{marketplace_id}/get_negotiated_price_policies',
+            'responseClass' => '\EbaySdk\Api\Metadata\Types\GetPoliciesForNegotiatedPriceRestResponse',
+            'params' => [
+                'filter' => [
+                    'valid' => ['string']
+                ],
+                'marketplace_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
+        ],
+        'GetPoliciesForReturns' => [
+            'method' => 'GET',
+            'resource' => 'marketplace/{marketplace_id}/get_return_policies',
+            'responseClass' => '\EbaySdk\Api\Metadata\Types\GetPoliciesForReturnsRestResponse',
+            'params' => [
+                'filter' => [
+                    'valid' => ['string']
+                ],
+                'marketplace_id' => [
+                    'valid' => ['string'],
+                    'required' => true
+                ]
+            ]
         ]
     ];
 
@@ -43,5 +113,50 @@ class MetadataService extends \EbaySdk\Api\Metadata\Services\MetadataBaseService
     public function getSalesTaxJurisdictions(\EbaySdk\Api\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request)
     {
         return $this->callOperation('GetSalesTaxJurisdictions', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request
+     * @return \EbaySdk\Api\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestResponse
+     */
+    public function getPoliciesForAutoPartsCompatibility(\EbaySdk\Api\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request)
+    {
+        return $this->callOperation('GetPoliciesForAutoPartsCompatibility', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Metadata\Types\GetPoliciesForItemConditionRestRequest $request
+     * @return \EbaySdk\Api\Metadata\Types\GetPoliciesForItemConditionRestResponse
+     */
+    public function getPoliciesForItemCondition(\EbaySdk\Api\Metadata\Types\GetPoliciesForItemConditionRestRequest $request)
+    {
+        return $this->callOperation('GetPoliciesForItemCondition', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request
+     * @return \EbaySdk\Api\Metadata\Types\GetPoliciesForListingStructuresRestResponse
+     */
+    public function getPoliciesForListingStructures(\EbaySdk\Api\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request)
+    {
+        return $this->callOperation('GetPoliciesForListingStructures', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request
+     * @return \EbaySdk\Api\Metadata\Types\GetPoliciesForNegotiatedPriceRestResponse
+     */
+    public function getPoliciesForNegotiatedPrice(\EbaySdk\Api\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request)
+    {
+        return $this->callOperation('GetPoliciesForNegotiatedPrice', $request);
+    }
+
+    /**
+     * @param \EbaySdk\Api\Metadata\Types\GetPoliciesForReturnsRestRequest $request
+     * @return \EbaySdk\Api\Metadata\Types\GetPoliciesForReturnsRestResponse
+     */
+    public function getPoliciesForReturns(\EbaySdk\Api\Metadata\Types\GetPoliciesForReturnsRestRequest $request)
+    {
+        return $this->callOperation('GetPoliciesForReturns', $request);
     }
 }

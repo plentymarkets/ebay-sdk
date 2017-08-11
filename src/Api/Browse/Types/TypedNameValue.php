@@ -11,7 +11,7 @@ namespace EbaySdk\Api\Browse\Types;
  *
  * @property string $name
  * @property \EbaySdk\Api\Browse\Enums\ValueTypeEnum $type
- * @property mixed $value
+ * @property string $value
  */
 class TypedNameValue extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -32,7 +32,7 @@ class TypedNameValue extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'type'
         ],
         'value' => [
-            'type' => 'any',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'value'

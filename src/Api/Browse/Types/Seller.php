@@ -12,6 +12,7 @@ namespace EbaySdk\Api\Browse\Types;
  * @property string $feedbackPercentage
  * @property integer $feedbackScore
  * @property string $sellerAccountType
+ * @property \EbaySdk\Api\Browse\Types\SellerLegalInfo $sellerLegalInfo
  * @property string $username
  */
 class Seller extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -37,6 +38,12 @@ class Seller extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerAccountType'
+        ],
+        'sellerLegalInfo' => [
+            'type' => 'EbaySdk\Api\Browse\Types\SellerLegalInfo',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'sellerLegalInfo'
         ],
         'username' => [
             'type' => 'string',

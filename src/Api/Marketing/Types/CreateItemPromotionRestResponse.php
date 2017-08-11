@@ -15,7 +15,7 @@ use EbaySdk\Traits\HttpHeadersTrait;
  * @property \EbaySdk\Api\Marketing\Types\ErrorDetailV3[] $errors
  * @property \EbaySdk\Api\Marketing\Types\ErrorDetailV3[] $warnings
  */
-class CreateItemPromotionRestResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
+class CreateItemPromotionRestResponse extends \EbaySdk\Api\Marketing\Types\BaseResponse
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;
@@ -50,7 +50,7 @@ class CreateItemPromotionRestResponse extends \Plenty\Modules\Market\Ebay\Api\Ty
         parent::__construct($parentValues);
 
         if (!array_key_exists(__CLASS__, self::$properties)) {
-            self::$properties[__CLASS__] = array_merge(self::$properties[\Plenty\Modules\Market\Ebay\Api\Types\BaseType::class], self::$propertyTypes);
+            self::$properties[__CLASS__] = array_merge(self::$properties[\EbaySdk\Api\Marketing\Types\BaseResponse::class], self::$propertyTypes);
         }
 
         $this->setValues(__CLASS__, $childValues);

@@ -10,7 +10,6 @@ namespace EbaySdk\Api\Marketing\Types;
 /**
  *
  * @property string $inventoryReferenceId
- * @property \EbaySdk\Api\Marketing\Enums\InventoryReferenceTypeEnum $inventoryReferenceType
  */
 class InventoryItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -23,12 +22,6 @@ class InventoryItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'inventoryReferenceId'
-        ],
-        'inventoryReferenceType' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'inventoryReferenceType'
         ]
     ];
 

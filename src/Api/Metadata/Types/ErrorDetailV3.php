@@ -12,12 +12,12 @@ namespace EbaySdk\Api\Metadata\Types;
  * @property string $category
  * @property string $domain
  * @property integer $errorId
- * @property string $inputRefIds
+ * @property string[] $inputRefIds
  * @property string $longMessage
  * @property string $message
- * @property string $outputRefIds
+ * @property string[] $outputRefIds
  * @property \EbaySdk\Api\Metadata\Types\ErrorParameterV3[] $parameters
- * @property string $subDomain
+ * @property string $subdomain
  */
 class ErrorDetailV3 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -45,7 +45,7 @@ class ErrorDetailV3 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
         ],
         'inputRefIds' => [
             'type' => 'string',
-            'repeatable' => false,
+            'repeatable' => true,
             'attribute' => false,
             'elementName' => 'inputRefIds'
         ],
@@ -63,7 +63,7 @@ class ErrorDetailV3 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
         ],
         'outputRefIds' => [
             'type' => 'string',
-            'repeatable' => false,
+            'repeatable' => true,
             'attribute' => false,
             'elementName' => 'outputRefIds'
         ],
@@ -73,11 +73,11 @@ class ErrorDetailV3 extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'parameters'
         ],
-        'subDomain' => [
+        'subdomain' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'subDomain'
+            'elementName' => 'subdomain'
         ]
     ];
 

@@ -11,6 +11,8 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property string $itemId
  * @property string $transactionId
+ * @property string $itemTitle
+ * @property integer $cancelQuantity
  */
 class OrderCancelLineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -29,6 +31,18 @@ class OrderCancelLineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'transactionId'
+        ],
+        'itemTitle' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'itemTitle'
+        ],
+        'cancelQuantity' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'cancelQuantity'
         ]
     ];
 

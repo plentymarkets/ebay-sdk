@@ -16,12 +16,14 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property string $legacyItemId
  * @property string $legacyVariationId
  * @property \EbaySdk\Api\Fulfillment\Types\Amount $lineItemCost
+ * @property \EbaySdk\Api\Fulfillment\Types\LineItemFulfillmentInstructions $lineItemFulfillmentInstructions
  * @property \EbaySdk\Api\Fulfillment\Enums\LineItemFulfillmentStatusEnum $lineItemFulfillmentStatus
  * @property string $lineItemId
  * @property \EbaySdk\Api\Fulfillment\Enums\MarketplaceIdEnum $listingMarketplaceId
  * @property \EbaySdk\Api\Fulfillment\Types\LineItemProperties $properties
  * @property \EbaySdk\Api\Fulfillment\Enums\MarketplaceIdEnum $purchaseMarketplaceId
  * @property integer $quantity
+ * @property \EbaySdk\Api\Fulfillment\Types\LineItemRefund[] $refunds
  * @property string $sku
  * @property \EbaySdk\Api\Fulfillment\Enums\SoldFormatEnum $soldFormat
  * @property \EbaySdk\Api\Fulfillment\Types\Tax[] $taxes
@@ -76,6 +78,12 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'lineItemCost'
         ],
+        'lineItemFulfillmentInstructions' => [
+            'type' => 'EbaySdk\Api\Fulfillment\Types\LineItemFulfillmentInstructions',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'lineItemFulfillmentInstructions'
+        ],
         'lineItemFulfillmentStatus' => [
             'type' => 'string',
             'repeatable' => false,
@@ -111,6 +119,12 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'quantity'
+        ],
+        'refunds' => [
+            'type' => 'EbaySdk\Api\Fulfillment\Types\LineItemRefund',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'refunds'
         ],
         'sku' => [
             'type' => 'string',

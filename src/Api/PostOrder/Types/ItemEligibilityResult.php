@@ -11,8 +11,8 @@ namespace EbaySdk\Api\PostOrder\Types;
  *
  * @property boolean $eligible
  * @property \EbaySdk\Api\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
- * @property integer $itemId
- * @property integer $transactionId
+ * @property string $itemId
+ * @property string $transactionId
  */
 class ItemEligibilityResult extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
@@ -33,13 +33,13 @@ class ItemEligibilityResult extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'elementName' => 'failureReason'
         ],
         'itemId' => [
-            'type' => 'integer',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemId'
         ],
         'transactionId' => [
-            'type' => 'integer',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'transactionId'

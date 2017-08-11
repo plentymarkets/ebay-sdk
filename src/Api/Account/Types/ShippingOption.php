@@ -14,6 +14,7 @@ namespace EbaySdk\Api\Account\Types;
  * @property boolean $insuranceOffered
  * @property \EbaySdk\Api\Account\Enums\ShippingOptionTypeEnum $optionType
  * @property \EbaySdk\Api\Account\Types\Amount $packageHandlingCost
+ * @property string $rateTableId
  * @property \EbaySdk\Api\Account\Types\ShippingService[] $shippingServices
  */
 class ShippingOption extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -51,6 +52,12 @@ class ShippingOption extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'packageHandlingCost'
+        ],
+        'rateTableId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'rateTableId'
         ],
         'shippingServices' => [
             'type' => 'EbaySdk\Api\Account\Types\ShippingService',
