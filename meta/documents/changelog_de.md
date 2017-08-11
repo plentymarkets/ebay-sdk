@@ -1,5 +1,9 @@
 # Release Notes für EbaySdk
 
+## Unreleased
+### Geändert
+- Dokumentation beinhaltet jetzt auch Feed API und Taxonomy API
+
 ## v1.1.0 (2017-08-11)
 ### Hinzugefügt
 - Feed API 
