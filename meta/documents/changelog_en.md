@@ -1,7 +1,8 @@
 # Release Notes for EbaySdk
 
-## Unreleased
+## v1.1.1 (2017-09-16)
 ### Geändert
+- Fixed a bug on the Analytics API
 - Documentation now includes Feed API and Taxonomy API
 
 ## v1.1.0 (2017-08-11)
