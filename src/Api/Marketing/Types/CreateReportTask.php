@@ -15,7 +15,7 @@ namespace EbaySdk\Api\Marketing\Types;
  * @property \EbaySdk\Api\Marketing\Types\Dimension[] $dimensions
  * @property \EbaySdk\Api\Marketing\Types\InventoryReference[] $inventoryReferences
  * @property string[] $listingIds
- * @property \EbaySdk\Api\Marketing\Types\Bas:MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\Marketing\Enums\MarketplaceIdEnum $marketplaceId
  * @property string[] $metricKeys
  * @property \EbaySdk\Api\Marketing\Enums\ReportFormatEnum $reportFormat
  * @property \EbaySdk\Api\Marketing\Enums\ReportTypeEnum $reportType
@@ -63,7 +63,7 @@ class CreateReportTask extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'listingIds'
         ],
         'marketplaceId' => [
-            'type' => 'EbaySdk\Api\Marketing\Types\Bas:MarketplaceIdEnum',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'marketplaceId'

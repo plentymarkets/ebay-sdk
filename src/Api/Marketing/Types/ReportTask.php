@@ -15,7 +15,7 @@ namespace EbaySdk\Api\Marketing\Types;
  * @property \EbaySdk\Api\Marketing\Types\Dimension[] $dimensions
  * @property \EbaySdk\Api\Marketing\Types\InventoryReference[] $inventoryReferences
  * @property string[] $listingIds
- * @property \EbaySdk\Api\Marketing\Types\Bas:MarketplaceIdEnum $marketplaceId
+ * @property \EbaySdk\Api\Marketing\Enums\MarketplaceIdEnum $marketplaceId
  * @property string[] $metricKeys
  * @property string $reportExpirationDate
  * @property \EbaySdk\Api\Marketing\Enums\ReportFormatEnum $reportFormat
@@ -73,7 +73,7 @@ class ReportTask extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'elementName' => 'listingIds'
         ],
         'marketplaceId' => [
-            'type' => 'EbaySdk\Api\Marketing\Types\Bas:MarketplaceIdEnum',
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'marketplaceId'
