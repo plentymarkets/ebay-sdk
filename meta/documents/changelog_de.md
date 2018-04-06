@@ -1,5 +1,9 @@
 # Release Notes für EbaySdk
 
+## v1.2.0 (2018-04-06)
+#### Hinzugefügt
+- Trading API
+
 ## v1.1.2 (2017-11-14)
 #### Fix
 - Folgenden REST Routen für das Marketing API wurden angepasst damit diese konform sind mit das eBay REST API:
