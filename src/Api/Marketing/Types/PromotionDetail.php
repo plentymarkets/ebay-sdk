@@ -84,7 +84,7 @@ class PromotionDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'promotionStatus'
+            'elementName' => 'promotionType'
         ],
         'startDate' => [
             'type' => 'string',

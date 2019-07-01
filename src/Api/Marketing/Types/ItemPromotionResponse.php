@@ -87,6 +87,12 @@ class ItemPromotionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'attribute' => false,
             'elementName' => 'promotionStatus'
         ],
+        'promotionType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'promotionType'
+        ],
         'startDate' => [
             'type' => 'string',
             'repeatable' => false,
