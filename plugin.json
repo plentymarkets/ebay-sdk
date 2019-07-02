@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "EbaySdk",
   "description": "Ebay SDK",
   "namespace": "EbaySdk",
@@ -16,7 +16,7 @@
     "en": "eBay SDK"
   },
   "license":"AGPL-3.0",
-  "categories": [3523],
+  "categories": [3881],
   "price":0.00,
   "type": "general",
   "serviceProvider": "EbaySdk\\EbaySdkServiceProvider"
