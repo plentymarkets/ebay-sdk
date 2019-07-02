@@ -18,6 +18,7 @@ namespace EbaySdk\Api\Marketing\Types;
  * @property \EbaySdk\Api\Marketing\Enums\PromotionPriorityEnum $priority
  * @property string $promotionImageUrl
  * @property \EbaySdk\Api\Marketing\Enums\PromotionStatusEnum $promotionStatus
+ * @property \EbaySdk\Api\Marketing\Enums\PromotionTypeEnum $promotionType
  * @property string $startDate
  */
 class ItemPromotion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
@@ -79,6 +80,12 @@ class ItemPromotion extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'promotionStatus'
+        ],
+        'promotionType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'promotionType'
         ],
         'startDate' => [
             'type' => 'string',

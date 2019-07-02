@@ -19,6 +19,7 @@ namespace EbaySdk\Api\Marketing\Types;
  * @property string $promotionId
  * @property string $promotionImageUrl
  * @property \EbaySdk\Api\Marketing\Enums\PromotionStatusEnum $promotionStatus
+ * @property \EbaySdk\Api\Marketing\Enums\PromotionTypeEnum $promotionType
  * @property string $startDate
  */
 class ItemPromotionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
