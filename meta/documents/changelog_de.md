@@ -1,5 +1,8 @@
 # Release Notes für EbaySdk
 
+## v1.2.2 (2019-07-17)
+- NEW Property `cancelQuantity` in `ItemEligibilityResult` für die PostOrder API hinzugefügt.
+
 ## v1.2.1 (2019-07-02)
 - NEW `PromotionType` und `PromotionTypeEnum` für die Marketing API hinzugefügt.
 
