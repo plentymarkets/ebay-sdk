@@ -1,5 +1,8 @@
 # Release Notes for EbaySdk
 
+## v1.2.3 (2019-12-19)
+- NEW Property `applyDiscountToSingleItemOnly` for Marketing API added.
+
 ## v1.2.2 (2019-07-17)
 - NEW Property `cancelQuantity` in `ItemEligibilityResult` for PostOrder API added.
 
