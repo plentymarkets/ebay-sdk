@@ -99,6 +99,12 @@ class ItemPromotionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'startDate'
+        ],
+        'applyDiscountToSingleItemOnly' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'applyDiscountToSingleItemOnly'
         ]
     ];
 
