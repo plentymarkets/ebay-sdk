@@ -49,7 +49,13 @@ class ItemEligibilityResult extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
 			'repeatable' => false,
 			'attribute' => false,
 			'elementName' => 'cancelQuantity'
-		]
+		],
+		'easyRelistEligible' => [
+			'type' => 'boolean',
+			'repeatable' => false,
+			'attribute' => false,
+			'elementName' => 'easyRelistEligible'
+		],
     ];
 
     /**

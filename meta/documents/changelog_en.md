@@ -1,5 +1,8 @@
 # Release Notes for EbaySdk
 
+## v1.2.4 (2020-02-26)
+- NEW Property `easyRelistEligible` for PostOrder API added.
+
 ## v1.2.3 (2019-12-19)
 - NEW Property `applyDiscountToSingleItemOnly` for Marketing API added.
 
