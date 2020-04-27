@@ -12,7 +12,7 @@ namespace EbaySdk\Api\PostOrder\Enums;
  */
 class CancelReasonEnum
 {
-    const C_ADDRESS_ISSUE = 'ADDRESS_ISSUE';
+    const C_ADDRESS_ISSUES = 'ADDRESS_ISSUES';
     const C_BUYER_ASKED_CANCEL = 'BUYER_ASKED_CANCEL';
     const C_BUYER_CANCEL_OR_ADDRESS_ISSUE = 'BUYER_CANCEL_OR_ADDRESS_ISSUE';
     const C_FOUND_CHEAPER_PRICE = 'FOUND_CHEAPER_PRICE';
