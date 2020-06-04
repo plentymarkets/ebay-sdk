@@ -90,6 +90,12 @@ class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'orderId'
         ],
+		'legacyOrderId' => [
+			'type' => 'string',
+			'repeatable' => false,
+			'attribute' => false,
+			'elementName' => 'legacyOrderId'
+		],
         'orderPaymentStatus' => [
             'type' => 'string',
             'repeatable' => false,
@@ -113,7 +119,13 @@ class Order extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerId'
-        ]
+        ],
+		'salesRecordReference' => [
+			'type' => 'string',
+			'repeatable' => false,
+			'attribute' => false,
+			'elementName' => 'salesRecordReference'
+		]
     ];
 
     /**
