@@ -25,7 +25,7 @@ class CampaignAdRatePreferences extends \Plenty\Modules\Market\Ebay\Api\Types\Ba
      */
     public function __construct(array $values = [])
     {
-        [$parentValues, $childValues] = self::getParentValues(self::$propertyTypes, $values);
+        list($parentValues, $childValues) = self::getParentValues(self::$propertyTypes, $values);
 
         parent::__construct($parentValues);
 
