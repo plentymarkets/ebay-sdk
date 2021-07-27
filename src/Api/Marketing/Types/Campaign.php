@@ -71,6 +71,18 @@ class Campaign extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'startDate'
+        ],
+        'campaignAdRatePreferences' => [
+            'type' => 'EbaySdk\Api\Marketing\Types\CampaignAdRatePreferences',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'campaignAdRatePreferences'
+        ],
+        'autoAdRate' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'autoAdRate'
         ]
     ];
 
