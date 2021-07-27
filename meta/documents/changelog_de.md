@@ -1,5 +1,9 @@
 # Release Notes für EbaySdk
 
+## v1.2.5 (2021-07-27)
+- NEW Property `campaignAdRatePreferences` der Marketing API hinzugefügt.
+- NEW Property `autoAdRate` der Marketing API hinzugefügt.
+
 ## v1.2.4 (2020-02-26)
 - NEW Property `easyRelistEligible` PostOrder API hinzugefügt.
 
