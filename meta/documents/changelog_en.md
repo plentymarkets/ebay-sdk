@@ -1,5 +1,10 @@
 # Release Notes for EbaySdk
 
+## v1.2.6 (2021-08-17)
+- NEW Property `couponCode` for Marketing API added.
+- NEW Property `couponConfiguration` for Marketing API added.
+- NEW Property `maxDiscountAmount` for Marketing API added.
+
 ## v1.2.5 (2021-07-27)
 - NEW Property `campaignAdRatePreferences` for Marketing API added.
 - NEW Property `autoAdRate` for Marketing API added.
