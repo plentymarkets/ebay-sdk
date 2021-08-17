@@ -105,6 +105,12 @@ class ItemPromotionResponse extends \Plenty\Modules\Market\Ebay\Api\Types\BaseTy
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'applyDiscountToSingleItemOnly'
+        ],
+        'couponConfiguration' => [
+            'type' => 'EbaySdk\Api\Marketing\Types\CouponConfiguration',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'couponConfiguration'
         ]
     ];
 
