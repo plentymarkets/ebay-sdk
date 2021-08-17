@@ -15,4 +15,5 @@ class PromotionTypeEnum
     const C_MARKDOWN_SALE = 'MARKDOWN_SALE';
     const C_ORDER_DISCOUNT = 'ORDER_DISCOUNT';
     const C_VOLUME_DISCOUNT = 'VOLUME_DISCOUNT';
+    const C_CODED_COUPON = 'CODED_COUPON';
 }

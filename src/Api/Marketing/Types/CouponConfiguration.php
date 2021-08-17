@@ -9,39 +9,33 @@ namespace EbaySdk\Api\Marketing\Types;
 
 /**
  *
- * @property \EbaySdk\Api\Marketing\Types\DiscountBenefit $discountBenefit
- * @property \EbaySdk\Api\Marketing\Types\DiscountSpecification $discountSpecification
- * @property integer $ruleOrder
+ * @property string $coupnCode
+ * @property string $couponType
+ * @property string $maxCouponRedemptionPerUser
  */
-class DiscountRule extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
+class CouponConfiguration extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'discountBenefit' => [
-            'type' => 'EbaySdk\Api\Marketing\Types\DiscountBenefit',
+        'couponCode' => [
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'discountBenefit'
+            'elementName' => 'couponCode'
         ],
-        'discountSpecification' => [
-            'type' => 'EbaySdk\Api\Marketing\Types\DiscountSpecification',
+        'couponType' => [
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'discountSpecification'
+            'elementName' => 'couponType'
         ],
-        'ruleOrder' => [
+        'maxCouponRedemptionPerUser' => [
             'type' => 'integer',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'ruleOrder'
-        ],
-        'maxDiscountAmount' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'maxDiscountAmount'
+            'elementName' => 'maxCouponRedemptionPerUser'
         ]
     ];
 

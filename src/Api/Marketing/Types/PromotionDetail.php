@@ -92,6 +92,12 @@ class PromotionDetail extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'startDate'
+        ],
+        'couponCode' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'couponCode'
         ]
     ];
 
