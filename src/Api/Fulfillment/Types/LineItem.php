@@ -20,7 +20,7 @@ namespace EbaySdk\Api\Fulfillment\Types;
  * @property \EbaySdk\Api\Fulfillment\Enums\LineItemFulfillmentStatusEnum $lineItemFulfillmentStatus
  * @property string $lineItemId
  * @property \EbaySdk\Api\Fulfillment\Enums\MarketplaceIdEnum $listingMarketplaceId
- * @property \EbaySdk\Api\Fulfillment\Types\LineItemProperties $properties
+ * @property \EbaySdk\Api\Fulfillment\Types\LineItemProperties $lineItemProperties
  * @property \EbaySdk\Api\Fulfillment\Enums\MarketplaceIdEnum $purchaseMarketplaceId
  * @property integer $quantity
  * @property \EbaySdk\Api\Fulfillment\Types\LineItemRefund[] $refunds
@@ -102,7 +102,7 @@ class LineItem extends \Plenty\Modules\Market\Ebay\Api\Types\BaseType
             'attribute' => false,
             'elementName' => 'listingMarketplaceId'
         ],
-        'properties' => [
+        'lineItemProperties' => [
             'type' => 'EbaySdk\Api\Fulfillment\Types\LineItemProperties',
             'repeatable' => false,
             'attribute' => false,
