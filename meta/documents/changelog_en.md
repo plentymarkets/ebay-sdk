@@ -1,7 +1,7 @@
 # Release Notes for EbaySdk
 
 ## v1.3.0 (2022-12-02)
-- CHANGE Property `properties` within LineItem to `lineItemProperties`.
+- CHANGE Name of property `properties` of LineItem was changed to `lineItemProperties`.
 
 ## v1.2.6 (2021-08-17)
 - NEW Property `couponCode` for Marketing API added.
